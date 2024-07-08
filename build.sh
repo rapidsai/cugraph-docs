@@ -99,7 +99,7 @@ if hasArg docs || buildDefault; then
     PROJ_LIST=("libcugraph libcugraphops libwholegraph")
     for PROJECT in ${PROJ_LIST}; do
         echo "PROJECT IS ${PROJECT}"
-        XML_DIR="${REPODIR}/docs/cugraph/${PROJECT}"
+        XML_DIR="${REPODIR}/docs/cugraph-docs/${PROJECT}"
         rm -rf "${XML_DIR}"
         mkdir -p "${XML_DIR}"
         export XML_DIR_${PROJECT^^}="$XML_DIR"
