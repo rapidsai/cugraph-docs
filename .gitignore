@@ -72,7 +72,8 @@ docs/cugraph/api-docs/*
 
 
 # Sphinx docs & build artifacts
-docs/cugraph/source/api_docs/api/*
+docs/cugraph-docs/build/
+docs/cugraph-docs/source/api_docs/api/*
 _html
 _text
 

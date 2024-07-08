@@ -35,7 +35,6 @@ VALIDARGS="
 HELP="$0 [<target> ...] [<flag> ...]
  where <target> is:
    clean                      - remove all existing build artifacts and configuration (start over)
-   uninstall                  - uninstall libcugraph and cugraph from a prior build/install (see also -n)
    docs                       - build the docs (default)
  and <flag> is:
    -v                         - verbose build mode
@@ -49,8 +48,6 @@ HELP="$0 [<target> ...] [<flag> ...]
 
 # Set defaults for vars modified by flags to this script
 VERBOSE_FLAG=""
-BUILD_TYPE=Release
-INSTALL_TARGET="--target install"
 
 function hasArg {
     (( ${NUMARGS} != 0 )) && (echo " ${ARGS} " | grep -q " $1 ")
@@ -88,7 +85,7 @@ if hasArg clean; then
     set +e
 
     # Clean up the docs
-    ${REPODIR}/docs/cugraph-docs/make cleam
+    ${REPODIR}/docs/cugraph-docs/make clean
     # Go back to failing on first error for all other operations
     set -e
 fi
