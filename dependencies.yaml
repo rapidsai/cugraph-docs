@@ -10,6 +10,7 @@ files:
       - cuda_version
       - docs
       - depends_on_cugraph
+      - depends_on_dgl
       - depends_on_cugraph_dgl
       - depends_on_pylibcugraphops
       - depends_on_pylibwholegraph
@@ -24,16 +25,16 @@ files:
       - cuda_version
       - docs
       - depends_on_cugraph
+      - depends_on_dgl
       - depends_on_cugraph_dgl
       - depends_on_pylibcugraphops
       - depends_on_pylibwholegraph
 
 channels:
+  - pyg
   - rapidsai
   - rapidsai-nightly
   - dask/label/dev
-  - pyg
-  - dglteam/label/cu118
   - conda-forge
   - nvidia
 dependencies:
@@ -150,6 +151,20 @@ dependencies:
             packages:
               - cugraph-dgl-cu11==24.8.*
           - {matrix: null, packages: [*cugraph_dgl_conda]}
+
+  depends_on_dgl:
+    specific:
+      - output_types: [requirements]
+        matrices:
+          - matrix: {cuda: "12.*"}
+            packages:
+              - 'dglteam/label/th23_cu121::dgl'
+          - matrix: {cuda: "11.*"}
+            packages:
+              - 'dglteam/label/th23_cu118::dgl'
+          - {matrix: null, packages: [*cugraph_dgl_conda]}
+
+
 
   depends_on_pylibcugraph:
     common:
