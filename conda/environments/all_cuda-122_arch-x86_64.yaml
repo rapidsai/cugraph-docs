@@ -12,6 +12,7 @@ dependencies:
 - cuda-version=12.2
 - cugraph-dgl==24.8.*
 - cugraph==24.8.*
+- dglteam/label/th23_cu121::dgl
 - doxygen
 - graphviz
 - ipython

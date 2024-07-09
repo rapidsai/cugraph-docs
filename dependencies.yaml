@@ -154,7 +154,7 @@ dependencies:
 
   depends_on_dgl:
     specific:
-      - output_types: [requirements]
+      - output_types: [conda]
         matrices:
           - matrix: {cuda: "12.*"}
             packages:
@@ -162,7 +162,7 @@ dependencies:
           - matrix: {cuda: "11.*"}
             packages:
               - 'dglteam/label/th23_cu118::dgl'
-          - {matrix: null, packages: [*cugraph_dgl_conda]}
+          - {matrix: null, packages: ['dglteam/label/th23_cu121::dgl']}
 
 
 
