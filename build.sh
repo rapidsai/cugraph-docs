@@ -85,7 +85,8 @@ if hasArg clean; then
     set +e
 
     # Clean up the docs
-    ${REPODIR}/docs/cugraph-docs/make clean
+    cd ${REPODIR}/docs/cugraph-docs
+    make clean
     # Go back to failing on first error for all other operations
     set -e
 fi
