@@ -11,7 +11,6 @@ concurrency:
 
 jobs:
   docs-build:
-    needs: conda-python-build
     secrets: inherit
     uses: rapidsai/shared-workflows/.github/workflows/custom-job.yaml@python-3.12
     with:
