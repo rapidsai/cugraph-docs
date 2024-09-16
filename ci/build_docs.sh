@@ -16,10 +16,6 @@ conda activate docs
 
 rapids-print-env
 
-rapids-logger "Downloading artifacts from previous jobs"
-CPP_CHANNEL=$(rapids-download-conda-from-s3 cpp)
-PYTHON_CHANNEL=$(rapids-download-conda-from-s3 python)
-
 if [[ "${RAPIDS_CUDA_VERSION}" == "11.8.0" ]]; then
   CONDA_CUDA_VERSION="11.8"
   DGL_CHANNEL="dglteam/label/cu118"
