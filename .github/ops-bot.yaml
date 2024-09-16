@@ -2,4 +2,8 @@
 # - https://github.com/rapidsai/ops-bot
 
 auto_merger: true
+branch_checker: true
+label_checker: true
+release_drafter: true
+recently_updated: true
 forward_merger: true
