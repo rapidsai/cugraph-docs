@@ -1,4 +1,4 @@
-ame: pr
+name: pr
 
 on:
   push:
