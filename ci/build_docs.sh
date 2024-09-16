@@ -14,11 +14,12 @@ rapids-dependency-file-generator \
 rapids-mamba-retry env create --yes -f env.yaml -n docs
 conda activate docs
 
-rapids-print-env
+export RAPIDS_VERSION="$(rapids-version)"
+export RAPIDS_VERSION_MAJOR_MINOR="$(rapids-version-major-minor)"
+export RAPIDS_VERSION_NUMBER="$RAPIDS_VERSION_MAJOR_MINOR"
+export RAPIDS_DOCS_DIR="$(mktemp -d)"
 
-rapids-logger "Downloading artifacts from previous jobs"
-CPP_CHANNEL=$(rapids-download-conda-from-s3 cpp)
-PYTHON_CHANNEL=$(rapids-download-conda-from-s3 python)
+rapids-print-env
 
 if [[ "${RAPIDS_CUDA_VERSION}" == "11.8.0" ]]; then
   CONDA_CUDA_VERSION="11.8"
@@ -29,27 +30,20 @@ else
 fi
 
 rapids-mamba-retry install \
-  --channel "${CPP_CHANNEL}" \
-  --channel "${PYTHON_CHANNEL}" \
   --channel conda-forge \
   --channel pyg \
   --channel nvidia \
   --channel "${DGL_CHANNEL}" \
-  libcugraph \
-  pylibcugraph \
-  cugraph \
-  cugraph-pyg \
-  cugraph-dgl \
-  libcugraph_etl \
-  pylibcugraphops \
-  pylibwholegraph \
+  "libcugraph==${RAPIDS_VERSION_MAJOR_MINOR}.*" \
+  "pylibcugraph=${RAPIDS_VERSION_MAJOR_MINOR}.*" \
+  "cugraph=${RAPIDS_VERSION_MAJOR_MINOR}.*" \
+  "cugraph-pyg=${RAPIDS_VERSION_MAJOR_MINOR}.*" \
+  "cugraph-dgl=${RAPIDS_VERSION_MAJOR_MINOR}.*" \
+  "libcugraph_etl=${RAPIDS_VERSION_MAJOR_MINOR}.*" \
+  "pylibcugraphops=${RAPIDS_VERSION_MAJOR_MINOR}.*" \
+  "pylibwholegraph=${RAPIDS_VERSION_MAJOR_MINOR}.*" \
   pytorch \
   "cuda-version=${CONDA_CUDA_VERSION}"
-
-export RAPIDS_VERSION="$(rapids-version)"
-export RAPIDS_VERSION_MAJOR_MINOR="$(rapids-version-major-minor)"
-export RAPIDS_VERSION_NUMBER="$RAPIDS_VERSION_MAJOR_MINOR"
-export RAPIDS_DOCS_DIR="$(mktemp -d)"
 
 PROJ_LIST=("libcugraph libcugraphops libwholegraph")
 
