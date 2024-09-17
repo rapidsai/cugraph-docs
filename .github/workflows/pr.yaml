@@ -12,7 +12,7 @@ concurrency:
 jobs:
   docs-build:
     secrets: inherit
-    uses: rapidsai/shared-workflows/.github/workflows/custom-job.yaml@shared-workflows
+    uses: rapidsai/shared-workflows/.github/workflows/custom-job.yaml@branch-24.10
     with:
       build_type: pull-request
       node_type: "cpu4"
