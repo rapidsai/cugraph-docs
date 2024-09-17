@@ -16,7 +16,6 @@ dependencies:
 - doxygen
 - graphviz
 - ipython
-- make
 - nbsphinx
 - numpydoc
 - pre-commit

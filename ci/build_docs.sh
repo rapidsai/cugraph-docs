@@ -22,10 +22,8 @@ export RAPIDS_DOCS_DIR="$(mktemp -d)"
 rapids-print-env
 
 if [[ "${RAPIDS_CUDA_VERSION}" == "11.8.0" ]]; then
-  CONDA_CUDA_VERSION="11.8"
   DGL_CHANNEL="dglteam/label/cu118"
 else
-  CONDA_CUDA_VERSION="12.1"
   DGL_CHANNEL="dglteam/label/cu121"
 fi
 
@@ -43,7 +41,7 @@ rapids-mamba-retry install \
   "pylibcugraphops=${RAPIDS_VERSION_MAJOR_MINOR}.*" \
   "pylibwholegraph=${RAPIDS_VERSION_MAJOR_MINOR}.*" \
   pytorch \
-  "cuda-version=${CONDA_CUDA_VERSION}"
+  "cuda-version=${RAPIDS_CUDA_VERSION%.*}"
 
 PROJ_LIST=("libcugraph libcugraphops libwholegraph")
 
