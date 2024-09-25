@@ -25,4 +25,4 @@ Below are the steps to reproduce the reuslts on your workstation. These are docu
 
 4. Install the latest `nx-cugraph` by following the [guide](installation.md)
 
-5. Follow the instructions written in the README.md here: `cugraph/benchmarks/nx-cugraph/pytest-based/`
+5. Follow the instructions written in the README here: `cugraph/benchmarks/nx-cugraph/pytest-based/`

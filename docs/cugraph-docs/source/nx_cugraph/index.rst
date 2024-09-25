@@ -16,32 +16,29 @@ By simply `installing and enabling nx-cugraph <https://github.com/rapidsai/cugra
 
     %time result = nx.betweenness_centrality(G, k=10)
 
-.. need to point to nx-cugraph notebook?
-
-.. figure:: _static/colab.png
+.. figure:: ../_static/colab.png
     :width: 200px
-    :align: center
-    :target: https://colab.research.google.com/
-    :alt: colab logo should be here!
+    :target: https://github.com/rapidsai-community/showcase/blob/632d50068f2dec08a591c98f4c41092eab2dfae4/getting_started_tutorials/accelerated_networkx_demo.ipynb/
 
     Try it on Google Colab!
 
-+------------------------+------------------------+
-| Zero Code Change Acceleration  |    Second Heading                    |
-|                        |                        |
-+========================+========================+
-| body row 1, column 1   |           a             |
-+------------------------+------------------------+
-| body row 2             |          b              |
-+------------------------+------------------------+
+
++---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------+
+| **Zero Code Change Acceleration**                                                           | **Third-Party Library Compatible**                                                                                  |
+|                                                                                             |                                                                                                                     |
+| Just ``%load_ext cudf.pandas`` in Jupyter, or pass ``-m cudf.pandas`` on the command line.  | ``nx_cugraph`` is compatible with most third-party libraries that use pandas.                                       |
++---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------+
+| **Run the same code on CPU or GPU**                                                         | **100% of the NetworkX API**                                                                                        |
+|                                                                                             |                                                                                                                     |
+| Nothing changes, not even your `import` statements, when going from CPU to GPU.             | Combines the full flexibility of NetworkX with the speed of running on GPU.                                         |
++---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------+
+
 
 ``nx-cugraph`` is now Generally Available (GA) as part of the ``RAPIDS`` package.  See `RAPIDS
 Quick Start <https://rapids.ai/#quick-start>`_ to get up-and-running with ``nx-cugraph``.
 
-.. discuss where these should lead to!
-
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
     :caption: Contents:
 
     how-it-works
@@ -49,5 +46,3 @@ Quick Start <https://rapids.ai/#quick-start>`_ to get up-and-running with ``nx-c
     installation
     benchmarks
     faqs
-
-.. Previously there's just the "nx_cugraph" section. Removed for now in favor of new pages.
