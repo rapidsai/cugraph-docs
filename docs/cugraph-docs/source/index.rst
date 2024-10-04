@@ -71,7 +71,7 @@ Nx-cugraph offers those with existing NetworkX code, a **zero code change** opti
 
 There are several resources containing cuGraph examples, `the cuGraph notebook repository <https://github.com/rapidsai/cugraph/blob/main/notebooks/README.md>`_
 has many examples of loading graph data and running algorithms in Jupyter notebooks.
-The `cuGraph test code <https://github.com/rapidsai/cugraph/tree/main/python/cugraph/cugraph/tests>`_ contain python scripts setting up and calling cuGraph algorithms.
+The `cuGraph test code <https://github.com/rapidsai/cugraph/tree/main/python/cugraph/cugraph/tests>`_ contains python scripts setting up and calling cuGraph algorithms.
 A simple example of `testing the degree centrality algorithm <https://github.com/rapidsai/cugraph/blob/main/python/cugraph/cugraph/tests/centrality/test_degree_centrality.py>`_
 is a good place to start. Some of these show `multi-GPU tests/examples <https://github.com/rapidsai/cugraph/blob/main/python/cugraph/cugraph/tests/centrality/test_degree_centrality_mg.py>`_ with larger data sets as well
 
