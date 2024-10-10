@@ -6,6 +6,9 @@ set -euo pipefail
 rapids-logger "Create test conda environment"
 . /opt/conda/etc/profile.d/conda.sh
 
+RAPIDS_VERSION="$(rapids-version)"
+RAPIDS_VERSION_MAJOR_MINOR="$(rapids-version-major-minor)"
+
 rapids-dependency-file-generator \
   --output conda \
   --file-key docs \
@@ -14,9 +17,6 @@ rapids-dependency-file-generator \
 rapids-mamba-retry env create --yes -f env.yaml -n docs
 conda activate docs
 
-export RAPIDS_VERSION="$(rapids-version)"
-export RAPIDS_VERSION_MAJOR_MINOR="$(rapids-version-major-minor)"
-export RAPIDS_VERSION_NUMBER="$RAPIDS_VERSION_MAJOR_MINOR"
 export RAPIDS_DOCS_DIR="$(mktemp -d)"
 
 rapids-print-env
@@ -32,14 +32,14 @@ rapids-mamba-retry install \
   --channel pyg \
   --channel nvidia \
   --channel "${DGL_CHANNEL}" \
-  "libcugraph==${RAPIDS_VERSION_MAJOR_MINOR}.*" \
-  "pylibcugraph=${RAPIDS_VERSION_MAJOR_MINOR}.*" \
-  "cugraph=${RAPIDS_VERSION_MAJOR_MINOR}.*" \
-  "cugraph-pyg=${RAPIDS_VERSION_MAJOR_MINOR}.*" \
-  "cugraph-dgl=${RAPIDS_VERSION_MAJOR_MINOR}.*" \
-  "libcugraph_etl=${RAPIDS_VERSION_MAJOR_MINOR}.*" \
-  "pylibcugraphops=${RAPIDS_VERSION_MAJOR_MINOR}.*" \
-  "pylibwholegraph=${RAPIDS_VERSION_MAJOR_MINOR}.*" \
+  "libcugraph==${RAPIDS_VERSION}.*" \
+  "pylibcugraph=${RAPIDS_VERSION}.*" \
+  "cugraph=${RAPIDS_VERSION}.*" \
+  "cugraph-pyg=${RAPIDS_VERSION}.*" \
+  "cugraph-dgl=${RAPIDS_VERSION}.*" \
+  "libcugraph_etl=${RAPIDS_VERSION}.*" \
+  "pylibcugraphops=${RAPIDS_VERSION}.*" \
+  "pylibwholegraph=${RAPIDS_VERSION}.*" \
   pytorch \
   "cuda-version=${RAPIDS_CUDA_VERSION%.*}"
 
@@ -49,7 +49,7 @@ for PROJECT in ${PROJ_LIST}; do
   rapids-logger "Download ${PROJECT} xml_tar"
   TMP_DIR=$(mktemp -d)
   export XML_DIR_${PROJECT^^}="$TMP_DIR"
-  curl "https://d1664dvumjb44w.cloudfront.net/${PROJECT}/xml_tar/${RAPIDS_VERSION_NUMBER}/xml.tar.gz" | tar -xzf - -C "${TMP_DIR}"
+  curl "https://d1664dvumjb44w.cloudfront.net/${PROJECT}/xml_tar/${RAPIDS_VERSION_MAJOR_MINOR}/xml.tar.gz" | tar -xzf - -C "${TMP_DIR}"
 done
 
 
