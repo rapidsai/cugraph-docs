@@ -28,7 +28,6 @@ concurrency:
 jobs:
   docs-build:
     if: github.ref_type == 'branch'
-    needs: python-build
     secrets: inherit
     uses: rapidsai/shared-workflows/.github/workflows/custom-job.yaml@branch-25.02
     with:
