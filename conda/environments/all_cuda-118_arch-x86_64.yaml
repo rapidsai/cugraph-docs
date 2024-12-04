@@ -10,8 +10,8 @@ channels:
 dependencies:
 - breathe
 - cuda-version=11.8
-- cugraph-dgl==24.8.*
-- cugraph==24.8.*
+- cugraph-dgl==25.2.*
+- cugraph==25.2.*
 - dglteam/label/th23_cu118::dgl
 - doxygen
 - graphviz
@@ -21,8 +21,8 @@ dependencies:
 - numpydoc
 - pre-commit
 - pydata-sphinx-theme
-- pylibcugraphops==24.8.*
-- pylibwholegraph==24.8.*
+- pylibcugraphops==25.2.*
+- pylibwholegraph==25.2.*
 - recommonmark
 - sphinx-copybutton
 - sphinx-markdown-tables
