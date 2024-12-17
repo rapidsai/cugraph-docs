@@ -10,11 +10,45 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  docs-build:
+  pr-builder:
+    needs:
+      - telemetry-setup
+      - docs-build
     secrets: inherit
-    uses: rapidsai/shared-workflows/.github/workflows/custom-job.yaml@branch-24.10
+    uses: rapidsai/shared-workflows/.github/workflows/pr-builder.yaml@branch-25.02
+    if: always()
+    with:
+      needs: ${{ toJSON(needs) }}
+  telemetry-setup:
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    env:
+        OTEL_SERVICE_NAME: "pr-cugraph-docs"
+    steps:
+      - name: Telemetry setup
+        uses: rapidsai/shared-actions/telemetry-dispatch-stash-base-env-vars@main
+  docs-build:
+    needs: telemetry-setup
+    secrets: inherit
+    uses: rapidsai/shared-workflows/.github/workflows/custom-job.yaml@branch-25.02
     with:
       build_type: pull-request
-      node_type: "cpu4"
+      #node_type: "gpu-v100-latest-1"
+      nod_type: "cpu4"
+      arch: "amd64"
       container_image: "rapidsai/ci-conda:latest"
       run_script: "ci/build_docs.sh"
+  telemetry-summarize:
+    runs-on: ubuntu-latest
+    needs: pr-builder
+    if: always()
+    continue-on-error: true
+    steps:
+      - name: Load stashed telemetry env vars
+        uses: rapidsai/shared-actions/telemetry-dispatch-load-base-env-vars@main
+        with:
+            load_service_name: true
+      - name: Telemetry summarize
+        uses: rapidsai/shared-actions/telemetry-dispatch-write-summary@main
+        with:
+          cert_concat: "${{ secrets.OTEL_EXPORTER_OTLP_CA_CERTIFICATE }};${{ secrets.OTEL_EXPORTER_OTLP_CLIENT_CERTIFICATE }};${{ secrets.OTEL_EXPORTER_OTLP_CLIENT_KEY }}"
