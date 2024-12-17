@@ -11,6 +11,7 @@ dependencies:
 - breathe
 - cuda-version=12.2
 - cugraph-dgl==25.2.*
+- cugraph-pyg==25.2.*
 - cugraph==25.2.*
 - dglteam/label/th23_cu121::dgl
 - doxygen

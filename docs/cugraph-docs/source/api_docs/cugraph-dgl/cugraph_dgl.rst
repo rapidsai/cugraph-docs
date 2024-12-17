@@ -11,5 +11,5 @@ Methods
 .. autosummary::
    :toctree: ../api/cugraph-dgl/
 
-   cugraph_storage_from_heterograph
-   CuGraphStorage
+   convert.cugraph_storage_from_heterograph
+   cugraph_storage.CuGraphStorage
