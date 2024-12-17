@@ -63,4 +63,4 @@ mkdir -p "${RAPIDS_DOCS_DIR}/cugraph-docs/html"
 mv _html/* "${RAPIDS_DOCS_DIR}/cugraph-docs/html"
 popd
 
-rapids-upload-docs
+RAPIDS_VERSION_NUMBER="${RAPIDS_VERSION_MAJOR_MINOR}" rapids-upload-docs
