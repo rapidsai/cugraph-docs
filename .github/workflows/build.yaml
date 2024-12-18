@@ -31,6 +31,7 @@ jobs:
     secrets: inherit
     uses: rapidsai/shared-workflows/.github/workflows/custom-job.yaml@branch-25.02
     with:
+      arch: "amd64"
       branch: ${{ inputs.branch }}
       build_type: ${{ inputs.build_type || 'branch' }}
       container_image: "rapidsai/ci-conda:latest"
