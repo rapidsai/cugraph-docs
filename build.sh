@@ -101,14 +101,8 @@ if hasArg docs || buildDefault; then
         rm -rf "${XML_DIR}"
         mkdir -p "${XML_DIR}"
         export XML_DIR_${PROJECT^^}="$XML_DIR"
-
-        if [[ $PROJECT == "libcugraph" ]]; then
-            echo "TMP (FIXME) downloading xml for ${PROJECT} into ${XML_DIR}. Environment variable XML_DIR_${PROJECT^^} is set to ${XML_DIR}"
-            curl -O "https://raw.githubusercontent.com/BradReesWork/data/main/xml.tar.gz"
-        else
-            echo "downloading xml for ${PROJECT} into ${XML_DIR}. Environment variable XML_DIR_${PROJECT^^} is set to ${XML_DIR}"
-            curl -O "https://d1664dvumjb44w.cloudfront.net/${PROJECT}/xml_tar/${RAPIDS_VERSION}/xml.tar.gz"
-        fi
+        echo "Pulling https://d1664dvumjb44w.cloudfront.net/${PROJECT}/xml_tar/${RAPIDS_VERSION}/xml.tar.gz"
+        curl -O "https://d1664dvumjb44w.cloudfront.net/${PROJECT}/xml_tar/${RAPIDS_VERSION}/xml.tar.gz"
 
         tar -xzf xml.tar.gz -C "${XML_DIR}"
         rm "./xml.tar.gz"

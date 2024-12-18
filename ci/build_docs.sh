@@ -58,12 +58,8 @@ for PROJECT in ${PROJ_LIST}; do
   TMP_DIR=$(mktemp -d)
   export XML_DIR_${PROJECT^^}="$TMP_DIR"
 
-  if [[ $PROJECT == "libcugraph" ]]; then
-      echo "TMP (FIXME) downloading xml for ${PROJECT} into ${XML_DIR}. Environment variable XML_DIR_${PROJECT^^} is set to ${XML_DIR}"
-      curl -O "https://raw.githubusercontent.com/BradReesWork/data/main/xml.tar.gz"
-  else
-    curl "https://d1664dvumjb44w.cloudfront.net/${PROJECT}/xml_tar/${RAPIDS_VERSION_NUMBER}/xml.tar.gz" | tar -xzf - -C "${TMP_DIR}"
-  fi
+  curl "https://d1664dvumjb44w.cloudfront.net/${PROJECT}/xml_tar/24.12/xml.tar.gz" | tar -xzf - -C "${TMP_DIR}"
+  
 done
 
 
