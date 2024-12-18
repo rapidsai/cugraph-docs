@@ -9,7 +9,7 @@ channels:
 - nvidia
 dependencies:
 - breathe
-- cuda-version=12.2
+- cuda-version=12.5
 - cugraph-dgl==25.2.*
 - cugraph-pyg==25.2.*
 - cugraph==25.2.*
@@ -28,4 +28,4 @@ dependencies:
 - sphinx-markdown-tables
 - sphinx<6
 - sphinxcontrib-websupport
-name: all_cuda-122_arch-x86_64
+name: all_cuda-125_arch-x86_64
