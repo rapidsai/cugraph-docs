@@ -8,6 +8,7 @@ Graph Support
 
    graph_algorithms.rst
    compatibility.rst
+   cugraph_cpp.rst
    gnn_support.rst
    datastores.rst
    cugraph_service.rst
