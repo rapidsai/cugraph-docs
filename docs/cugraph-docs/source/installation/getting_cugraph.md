@@ -1,9 +1,4 @@
 
-
-.. toctree::
-   :maxdepth: 3
-
- 
 # Getting cuGraph Packages
 
 Start by reading the [RAPIDS Instalation guide](https://docs.rapids.ai/install)
@@ -26,7 +21,8 @@ The RAPIDS Docker containers contain all RAPIDS packages, including all from cuG
 
 
 ## Conda
-It is easy to install cuGraph using conda. You can get a minimal conda installation with [Miniconda](https://conda.io/miniconda.html) or get the full installation with [Anaconda](https://www.anaconda.com/download).
+
+It is easy to install cuGraph using conda. You can get a minimal conda installation with [miniforge](https://github.com/conda-forge/miniforge).
 
 cuGraph Conda packages
  * cugraph - this will also import:
@@ -36,7 +32,6 @@ cuGraph Conda packages
  * cugraph-service-server
  * cugraph-dgl
  * cugraph-pyg
- * cugraph-equivariant
  * nx-cugraph
 
 Replace the package name in the example below to the one you want to install.
@@ -50,7 +45,7 @@ conda install -c rapidsai -c conda-forge -c nvidia cugraph cuda-version=12.0
 
 Alternatively, use `cuda-version=11.8` for packages supporting CUDA 11.
 
-Note: This conda installation only applies to Linux and Python versions 3.9/3.10/3.11.
+Note: This conda installation only applies to Linux and Python versions 3.10/3.11/3.12.
 
 <br>
 
@@ -66,7 +61,6 @@ Replace `-cu12` with `-cu11` for packages supporting CUDA 11.
 Also available:
  * cugraph-dgl-cu12
  * cugraph-pyg-cu12
- * cugraph-equivariant-cu12
  * nx-cugraph-cu12
 
 <br>
