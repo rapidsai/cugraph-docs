@@ -60,8 +60,8 @@ pushd docs/cugraph-docs
 # type of failure well.
 python -c "import cugraph; print(f'Using cugraph: {cugraph}')"
 sphinx-build -b dirhtml source _html
-mkdir -p "${RAPIDS_DOCS_DIR}/cugraph-docs/html"
-mv _html/* "${RAPIDS_DOCS_DIR}/cugraph-docs/html"
+mkdir -p "${RAPIDS_DOCS_DIR}/cugraph/html"
+mv _html/* "${RAPIDS_DOCS_DIR}/cugraph/html"
 popd
 
 RAPIDS_VERSION_NUMBER="${RAPIDS_VERSION_MAJOR_MINOR}" rapids-upload-docs
