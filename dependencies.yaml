@@ -3,7 +3,8 @@ files:
   all:
     output: [conda]
     matrix:
-      cuda: ["12.2"]
+      # docs are only built on the latest CUDA version RAPIDS supports
+      cuda: ["12.5"]
       arch: [x86_64]
     includes:
       - checks

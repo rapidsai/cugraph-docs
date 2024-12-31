@@ -26,6 +26,7 @@ for PROJECT in ${PROJ_LIST}; do
   rapids-logger "Download ${PROJECT} xml_tar"
   TMP_DIR=$(mktemp -d)
   export XML_DIR_${PROJECT^^}="$TMP_DIR"
+
   curl "https://d1664dvumjb44w.cloudfront.net/${PROJECT}/xml_tar/${RAPIDS_VERSION_MAJOR_MINOR}/xml.tar.gz" | tar -xzf - -C "${TMP_DIR}"
 done
 
@@ -36,8 +37,8 @@ pushd docs/cugraph-docs
 # type of failure well.
 python -c "import cugraph; print(f'Using cugraph: {cugraph}')"
 sphinx-build -b dirhtml source _html
-mkdir -p "${RAPIDS_DOCS_DIR}/cugraph-docs/html"
-mv _html/* "${RAPIDS_DOCS_DIR}/cugraph-docs/html"
+mkdir -p "${RAPIDS_DOCS_DIR}/cugraph/html"
+mv _html/* "${RAPIDS_DOCS_DIR}/cugraph/html"
 popd
 
 RAPIDS_VERSION_NUMBER="${RAPIDS_VERSION_MAJOR_MINOR}" rapids-upload-docs
