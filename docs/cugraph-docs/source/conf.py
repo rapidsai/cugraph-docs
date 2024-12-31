@@ -193,8 +193,9 @@ texinfo_documents = [
 ]
 
 # Example configuration for intersphinx: refer to the Python standard library.
-intersphinx_mapping = {'https://docs.python.org/': None}
-
+intersphinx_mapping = {
+    "python": ("https://docs.python.org/", None),
+}
 
 # Config numpydoc
 numpydoc_show_inherited_class_members = False
