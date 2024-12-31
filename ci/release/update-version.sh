@@ -50,6 +50,7 @@ DEPENDENCIES=(
   cugraph
   cugraph-dgl
   cugraph-pyg
+  libcugraph
   libcugraph_etl
   libcugraphops
   nx-cugraph
