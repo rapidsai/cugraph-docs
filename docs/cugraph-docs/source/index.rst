@@ -40,7 +40,7 @@ Please see the latest `RAPIDS System Requirements documentation <https://docs.ra
 
 This includes several ways to set up cuGraph
 
-* From Unix
+* On Unix
 
   * `Conda <https://docs.rapids.ai/install/#conda>`_
   * `Docker <https://docs.rapids.ai/install/#docker>`_
@@ -49,7 +49,7 @@ This includes several ways to set up cuGraph
 
 **Note: Windows use of RAPIDS depends on prior installation of** `WSL2 <https://learn.microsoft.com/en-us/windows/wsl/install>`_.
 
-* From Windows
+* On Windows
 
   * `Conda <https://docs.rapids.ai/install#wsl2-conda>`_
   * `Docker <https://docs.rapids.ai/install#wsl2-docker>`_
