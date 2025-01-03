@@ -75,12 +75,12 @@ dependencies:
     common:
       - output_types: [conda]
         packages:
-          - cugraph==25.2.*
-          - cugraph-dgl==25.2.*
-          - cugraph-pyg==25.2.*
+          - cugraph==25.2.*,>=0.0.0a0
+          - cugraph-dgl==25.2.*,>=0.0.0a0
+          - cugraph-pyg==25.2.*,>=0.0.0a0
           - 'dglteam/label/th23_cu121::dgl'
-          - libcugraph==25.2.*
-          - libcugraph_etl==25.2.*
-          - pylibcugraph==25.2.*
-          - pylibcugraphops==25.2.*
-          - pylibwholegraph==25.2.*
+          - libcugraph==25.2.*,>=0.0.0a0
+          - libcugraph_etl==25.2.*,>=0.0.0a0
+          - pylibcugraph==25.2.*,>=0.0.0a0
+          - pylibcugraphops==25.2.*,>=0.0.0a0
+          - pylibwholegraph==25.2.*,>=0.0.0a0
