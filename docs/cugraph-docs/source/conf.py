@@ -217,7 +217,6 @@ linkcode_resolve = make_linkcode_resolve(
 
 breathe_projects = {
     'libcugraph': os.environ['XML_DIR_LIBCUGRAPH'],
-    'libcugraphops': os.environ['XML_DIR_LIBCUGRAPHOPS'],
     'libwholegraph': os.environ['XML_DIR_LIBWHOLEGRAPH']
 }
 

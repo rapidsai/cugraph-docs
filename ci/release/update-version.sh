@@ -52,10 +52,8 @@ DEPENDENCIES=(
   cugraph-pyg
   libcugraph
   libcugraph_etl
-  libcugraphops
   nx-cugraph
   pylibcugraph
-  pylibcugraphops
   pylibwholegraph
 )
 for DEP in "${DEPENDENCIES[@]}"; do
