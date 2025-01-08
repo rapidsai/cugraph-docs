@@ -22,7 +22,7 @@ Note: Multi-GPU, or MG, includes support for Multi-Node Multi-GPU (also called M
 
 | Category          | Notebooks                          | Scale               | Notes                                                           |
 | ----------------- | ---------------------------------- | ------------------- | --------------------------------------------------------------- |
-| [Centrality](./algorithms/Centrality.html )        | [Centrality](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/centrality/Centrality.ipynb)          |           |        |
+| [Centrality](./Centrality.html )        | [Centrality](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/centrality/Centrality.ipynb)          |           |        |
 |                   | [Katz](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/centrality/Katz.ipynb)                                    | __Multi-GPU__  |                  |
 |                   | [Betweenness Centrality](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/centrality/Betweenness.ipynb)           | __Multi-GPU__  | MG as of 23.06   |
 |                   | [Edge Betweenness Centrality](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/centrality/Betweenness.ipynb)      | __Multi-GPU__  | MG as of 23.08   |
@@ -50,10 +50,10 @@ Note: Multi-GPU, or MG, includes support for Multi-Node Multi-GPU (also called M
 | Layout            |                                    |                     |                                                                 |
 |                   | [Force Atlas 2](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/layout/Force-Atlas2.ipynb)              | Single-GPU          |        |
 | Linear Assignment |                                    |                     |                                                                 |
-|                   | [Hungarian]()                      | Single-GPU          | [README](./algorithms/cpp_algorithms/linear_cpp.html)         |
+|                   | [Hungarian]()                      | Single-GPU          | [README](./cpp_algorithms/linear_cpp.html)         |
 | Link Analysis     |                                    |                     |                                                                 |
-|                   | [Pagerank](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/link_analysis/Pagerank.ipynb)                | __Multi-GPU__ | [C++ README](./algorithms/cpp_algorithms/centrality_cpp.html#Pagerank)                |
-|                   | [Personal Pagerank]()                  | __Multi-GPU__ | [C++ README](./algorithms/cpp_algorithms/centrality_cpp.html#Personalized-Pagerank)   |
+|                   | [Pagerank](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/link_analysis/Pagerank.ipynb)                | __Multi-GPU__ | [C++ README](./cpp_algorithms/centrality_cpp.html#Pagerank)                |
+|                   | [Personal Pagerank]()                  | __Multi-GPU__ | [C++ README](./cpp_algorithms/centrality_cpp.html#Personalized-Pagerank)   |
 |                   | [HITS](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/link_analysis/HITS.ipynb)        | __Multi-GPU__ |                |
 | [Link Prediction](algorithms/Similarity.html)   |                                    |                     |                                                                 |
 |                   | [Jaccard Similarity](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/link_prediction/Jaccard-Similarity.ipynb)                 | __Multi-GPU__      | Directed graph only                         |
@@ -68,8 +68,8 @@ Note: Multi-GPU, or MG, includes support for Multi-Node Multi-GPU (also called M
 |                   | Node2Vec                           | __Multi-GPU__       |                                             |
 |                   | Neighborhood sampling      | __Multi-GPU__ |                                                                 |
 | Traversal         |                                    |                     |                                                                 |
-|                   | Breadth First Search (BFS)         | __Multi-GPU__ | with cutoff support [C++ README](./algorithms/cpp_algorithms/traversal_cpp.html#BFS) |
-|                   | Single Source Shortest Path (SSSP) | __Multi-GPU__ | [C++ README](./algorithms/cpp_algorithms/traversal_cpp.html#SSSP)                     |
+|                   | Breadth First Search (BFS)         | __Multi-GPU__ | with cutoff support [C++ README](./cpp_algorithms/traversal_cpp.html#BFS) |
+|                   | Single Source Shortest Path (SSSP) | __Multi-GPU__ | [C++ README](./cpp_algorithms/traversal_cpp.html#SSSP)                     |
 |                   | _ASSP / APSP_                    | ---                 |                                                                 |
 | Tree              |                                    |                     |                                                                 |
 |                   | Minimum Spanning Tree              | Single-GPU          |                                                                 |

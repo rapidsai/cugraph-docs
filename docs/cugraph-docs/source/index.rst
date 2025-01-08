@@ -13,6 +13,17 @@ RAPIDS data science ecosystem and allows data scientists to easily call
 graph algorithms using data stored in cuDF/Pandas DataFrames or CuPy/SciPy
 sparse matrices.
 
+~~~~~~~~~~~
+Latest News
+~~~~~~~~~~~
+We have reorganized the cuGraph repository to make it more efficient to build, maintain and use.
+
+cuGraph code supporting GNNs is now located in the `cugraph-gnn repository <https://github.com/rapidsai/cugraph-gnn>`_.
+
+Code for cuGraph as a NetworkX backend is now located in the `RAPIDS nx-cugraph repository <https://github.com/rapidsai/nx-cugraph>`_.
+
+cuGraph code supporting overall documentaion is now located in the `cugraph-docs repository <https://github.com/rapidsai/cugraph-docs>`_.
+
 ---------------------------
 cuGraph Using NetworkX Code
 ---------------------------
