@@ -13,22 +13,30 @@ Below is the list of algorithms that are currently supported in nx-cugraph.
 Algorithms
 ----------
 
++--------------------------+
+| **Bipartite**            |
++==========================+
+| betweenness_centrality   |
++--------------------------+
+| complete_bipartite_graph |
++--------------------------+
+
 +-----------------------------+
 | **Centrality**              |
 +=============================+
 | betweenness_centrality      |
 +-----------------------------+
-| edge_betweenness_centrality |
-+-----------------------------+
 | degree_centrality           |
 +-----------------------------+
-| in_degree_centrality        |
-+-----------------------------+
-| out_degree_centrality       |
+| edge_betweenness_centrality |
 +-----------------------------+
 | eigenvector_centrality      |
 +-----------------------------+
+| in_degree_centrality        |
++-----------------------------+
 | katz_centrality             |
++-----------------------------+
+| out_degree_centrality       |
 +-----------------------------+
 
 +---------------------+
@@ -49,13 +57,6 @@ Algorithms
 | louvain_communities      |
 +--------------------------+
 
-+--------------------------+
-| **Bipartite**            |
-+==========================+
-| betweenness_centrality   |
-| complete_bipartite_graph |
-+--------------------------+
-
 +------------------------------------+
 | **Components**                     |
 +====================================+
@@ -63,13 +64,11 @@ Algorithms
 +------------------------------------+
 | is_connected                       |
 +------------------------------------+
+| is_weakly_connected                |
++------------------------------------+
 | node_connected_component           |
 +------------------------------------+
 | number_connected_components        |
-+------------------------------------+
-| weakly_connected                   |
-+------------------------------------+
-| is_weakly_connected                |
 +------------------------------------+
 | number_weakly_connected_components |
 +------------------------------------+
@@ -352,5 +351,4 @@ Generators
 +-------------------------------+
 
 
-To request nx-cugraph backend support for a NetworkX API that is not listed
-above, visit the `nx-cugraph GitHub repo <https://github.com/rapidsai/nx-cugraph>`_.
+To request nx-cugraph backend support for a NetworkX API that is not listed above, visit the `nx-cugraph GitHub repo <https://github.com/rapidsai/nx-cugraph>`_.
