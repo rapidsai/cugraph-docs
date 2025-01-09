@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Copyright (c) 2019-2024, NVIDIA CORPORATION.
+# Copyright (c) 2019-2025, NVIDIA CORPORATION.
 
 # cugraph build script
 
@@ -94,7 +94,7 @@ fi
 # Build the docs
 # C/C++?CUDA libraries
 if hasArg docs || buildDefault; then
-    PROJ_LIST=("libcugraph libcugraphops libwholegraph")
+    PROJ_LIST=("libcugraph libwholegraph")
     for PROJECT in ${PROJ_LIST}; do
         echo "PROJECT IS ${PROJECT}"
         XML_DIR="${REPODIR}/docs/cugraph-docs/${PROJECT}"

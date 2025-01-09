@@ -24,7 +24,6 @@ dependencies:
 - pre-commit
 - pydata-sphinx-theme
 - pylibcugraph==25.2.*,>=0.0.0a0
-- pylibcugraphops==25.2.*,>=0.0.0a0
 - pylibwholegraph==25.2.*,>=0.0.0a0
 - recommonmark
 - sphinx-copybutton
