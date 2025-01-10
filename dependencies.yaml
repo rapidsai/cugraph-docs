@@ -10,12 +10,7 @@ files:
       - checks
       - cuda_version
       - docs
-      - depends_on_cugraph
-      - depends_on_dgl
-      - depends_on_cugraph_dgl
-      - depends_on_cugraph_pyg
-      - depends_on_pylibcugraphops
-      - depends_on_pylibwholegraph
+      - run
   checks:
     output: none
     includes:
@@ -25,12 +20,7 @@ files:
     includes:
       - cuda_version
       - docs
-      - depends_on_cugraph
-      - depends_on_dgl
-      - depends_on_cugraph_dgl
-      - depends_on_cugraph_pyg
-      - depends_on_pylibcugraphops
-      - depends_on_pylibwholegraph
+      - run
 
 channels:
   - pyg
@@ -42,29 +32,13 @@ channels:
 dependencies:
   checks:
     common:
-      - output_types: [conda, requirements]
+      - output_types: [conda]
         packages:
           - pre-commit
   cuda_version:
     specific:
-      - output_types: conda
+      - output_types: [conda]
         matrices:
-          - matrix:
-              cuda: "11.2"
-            packages:
-              - cuda-version=11.2
-          - matrix:
-              cuda: "11.4"
-            packages:
-              - cuda-version=11.4
-          - matrix:
-              cuda: "11.5"
-            packages:
-              - cuda-version=11.5
-          - matrix:
-              cuda: "11.8"
-            packages:
-              - cuda-version=11.8
           - matrix:
               cuda: "12.0"
             packages:
@@ -82,7 +56,7 @@ dependencies:
     common:
       - output_types: [conda]
         packages:
-          - breathe
+          - breathe>=4.35
           - doxygen
           - graphviz
           - ipython
@@ -92,143 +66,20 @@ dependencies:
           - recommonmark
           - sphinx-copybutton
           - sphinx-markdown-tables
-          - sphinx<6
+          - sphinx>=8
           - sphinxcontrib-websupport
 
-  depends_on_pylibwholegraph:
+  # this repo only uses conda and 1 major version of CUDA, so
+  # all dependencies are intentionally grouped together
+  run:
     common:
-      - output_types: conda
-        packages:
-          - &pylibwholegraph_conda pylibwholegraph==25.2.*
-      - output_types: requirements
-        packages:
-          # pip recognizes the index as a global option for the requirements.txt file
-          - --extra-index-url=https://pypi.nvidia.com
-          - --extra-index-url=https://pypi.anaconda.org/rapidsai-wheels-nightly/simple
-    specific:
-      - output_types: [requirements]
-        matrices:
-          - matrix: {cuda: "12.*"}
-            packages:
-              - pylibwholegraph-cu12==25.2.*
-          - matrix: {cuda: "11.*"}
-            packages:
-              - pylibwholegraph-cu11==25.2.*
-          - {matrix: null, packages: [*pylibwholegraph_conda]}
-
-  depends_on_cugraph:
-    common:
-      - output_types: conda
-        packages:
-          - &cugraph_conda cugraph==25.2.*
-      - output_types: requirements
-        packages:
-          # pip recognizes the index as a global option for the requirements.txt file
-          - --extra-index-url=https://pypi.nvidia.com
-          - --extra-index-url=https://pypi.anaconda.org/rapidsai-wheels-nightly/simple
-    specific:
-      - output_types: [requirements]
-        matrices:
-          - matrix: {cuda: "12.*"}
-            packages:
-              - cugraph-cu12==25.2.*
-          - matrix: {cuda: "11.*"}
-            packages:
-              - cugraph-cu11==25.2.*
-          - {matrix: null, packages: [*cugraph_conda]}
-
-  depends_on_cugraph_dgl:
-    common:
-      - output_types: conda
-        packages:
-          - &cugraph_dgl_conda cugraph-dgl==25.2.*
-      - output_types: requirements
-        packages:
-          # pip recognizes the index as a global option for the requirements.txt file
-          - --extra-index-url=https://pypi.nvidia.com
-          - --extra-index-url=https://pypi.anaconda.org/rapidsai-wheels-nightly/simple
-    specific:
-      - output_types: [requirements]
-        matrices:
-          - matrix: {cuda: "12.*"}
-            packages:
-              - cugraph-dgl-cu12==25.2.*
-          - matrix: {cuda: "11.*"}
-            packages:
-              - cugraph-dgl-cu11==25.2.*
-          - {matrix: null, packages: [*cugraph_dgl_conda]}
-
-  depends_on_cugraph_pyg:
-    common:
-      - output_types: conda
-        packages:
-          - &cugraph_pyg_unsuffixed cugraph-pyg==25.2.*
-      - output_types: requirements
-        packages:
-          # pip recognizes the index as a global option for the requirements.txt file
-          - --extra-index-url=https://pypi.nvidia.com
-          - --extra-index-url=https://pypi.anaconda.org/rapidsai-wheels-nightly/simple
-    specific:
-      - output_types: [requirements]
-        matrices:
-          - matrix: {cuda: "12.*"}
-            packages:
-              - cugraph-pyg-cu12==25.2.*
-          - matrix: {cuda: "11.*"}
-            packages:
-              - cugraph-pyg-cu11==25.2.*
-          - {matrix: null, packages: [*cugraph_pyg_unsuffixed]}
-
-  depends_on_dgl:
-    specific:
       - output_types: [conda]
-        matrices:
-          - matrix: {cuda: "12.*"}
-            packages:
-              - 'dglteam/label/th23_cu121::dgl'
-          - matrix: {cuda: "11.*"}
-            packages:
-              - 'dglteam/label/th23_cu118::dgl'
-          - {matrix: null, packages: ['dglteam/label/th23_cu121::dgl']}
-
-  depends_on_pylibcugraph:
-    common:
-      - output_types: conda
         packages:
-          - &pylibcugraph_conda pylibcugraph==25.2.*
-      - output_types: requirements
-        packages:
-          # pip recognizes the index as a global option for the requirements.txt file
-          - --extra-index-url=https://pypi.nvidia.com
-          - --extra-index-url=https://pypi.anaconda.org/rapidsai-wheels-nightly/simple
-    specific:
-      - output_types: [requirements]
-        matrices:
-          - matrix: {cuda: "12.*"}
-            packages:
-              - pylibcugraph-cu12==25.2.*
-          - matrix: {cuda: "11.*"}
-            packages:
-              - pylibcugraph-cu11==25.2.*
-          - {matrix: null, packages: [*pylibcugraph_conda]}
-
-  depends_on_pylibcugraphops:
-    common:
-      - output_types: conda
-        packages:
-          - &pylibcugraphops_conda pylibcugraphops==25.2.*
-      - output_types: requirements
-        packages:
-          # pip recognizes the index as a global option for the requirements.txt file
-          - --extra-index-url=https://pypi.nvidia.com
-          - --extra-index-url=https://pypi.anaconda.org/rapidsai-wheels-nightly/simple
-    specific:
-      - output_types: [requirements]
-        matrices:
-          - matrix: {cuda: "12.*"}
-            packages:
-              - pylibcugraphops-cu12==25.2.*
-          - matrix: {cuda: "11.*"}
-            packages:
-              - pylibcugraphops-cu11==25.2.*
-          - {matrix: null, packages: [*pylibcugraphops_conda]}
+          - cugraph==25.2.*,>=0.0.0a0
+          - cugraph-dgl==25.2.*,>=0.0.0a0
+          - cugraph-pyg==25.2.*,>=0.0.0a0
+          - 'dglteam/label/th23_cu121::dgl'
+          - libcugraph==25.2.*,>=0.0.0a0
+          - libcugraph_etl==25.2.*,>=0.0.0a0
+          - pylibcugraph==25.2.*,>=0.0.0a0
+          - pylibwholegraph==25.2.*,>=0.0.0a0

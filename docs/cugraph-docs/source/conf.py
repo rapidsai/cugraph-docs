@@ -1,4 +1,4 @@
-# Copyright (c) 2018-2024, NVIDIA CORPORATION.
+# Copyright (c) 2018-2025, NVIDIA CORPORATION.
 #
 # pygdf documentation build configuration file, created by
 # sphinx-quickstart on Wed May  3 10:59:22 2017.
@@ -193,8 +193,9 @@ texinfo_documents = [
 ]
 
 # Example configuration for intersphinx: refer to the Python standard library.
-intersphinx_mapping = {'https://docs.python.org/': None}
-
+intersphinx_mapping = {
+    "python": ("https://docs.python.org/", None),
+}
 
 # Config numpydoc
 numpydoc_show_inherited_class_members = False
@@ -216,7 +217,6 @@ linkcode_resolve = make_linkcode_resolve(
 
 breathe_projects = {
     'libcugraph': os.environ['XML_DIR_LIBCUGRAPH'],
-    'libcugraphops': os.environ['XML_DIR_LIBCUGRAPHOPS'],
     'libwholegraph': os.environ['XML_DIR_LIBWHOLEGRAPH']
 }
 
