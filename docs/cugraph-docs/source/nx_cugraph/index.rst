@@ -63,5 +63,4 @@ Quick Start <https://rapids.ai/#quick-start>`_ to get up-and-running with ``nx-c
     how-it-works
     installation
     supported-algorithms
-    performance
     benchmarks
