@@ -1,12 +1,11 @@
 #!/bin/bash
-# Copyright (c) 2023-2024, NVIDIA CORPORATION.
+# Copyright (c) 2023-2025, NVIDIA CORPORATION.
 
 set -euo pipefail
 
 rapids-logger "Create test conda environment"
 . /opt/conda/etc/profile.d/conda.sh
 
-RAPIDS_VERSION="$(rapids-version)"
 RAPIDS_VERSION_MAJOR_MINOR="$(rapids-version-major-minor)"
 
 rapids-dependency-file-generator \
@@ -21,29 +20,7 @@ export RAPIDS_DOCS_DIR="$(mktemp -d)"
 
 rapids-print-env
 
-if [[ "${RAPIDS_CUDA_VERSION}" == "11.8.0" ]]; then
-  DGL_CHANNEL="dglteam/label/cu118"
-else
-  DGL_CHANNEL="dglteam/label/cu121"
-fi
-
-rapids-mamba-retry install \
-  --channel conda-forge \
-  --channel pyg \
-  --channel nvidia \
-  --channel "${DGL_CHANNEL}" \
-  "libcugraph==${RAPIDS_VERSION}.*" \
-  "pylibcugraph=${RAPIDS_VERSION}.*" \
-  "cugraph=${RAPIDS_VERSION}.*" \
-  "cugraph-pyg=${RAPIDS_VERSION}.*" \
-  "cugraph-dgl=${RAPIDS_VERSION}.*" \
-  "libcugraph_etl=${RAPIDS_VERSION}.*" \
-  "pylibcugraphops=${RAPIDS_VERSION}.*" \
-  "pylibwholegraph=${RAPIDS_VERSION}.*" \
-  pytorch \
-  "cuda-version=${RAPIDS_CUDA_VERSION%.*}"
-
-PROJ_LIST=("libcugraph libcugraphops libwholegraph")
+PROJ_LIST=("libcugraph libwholegraph")
 
 for PROJECT in ${PROJ_LIST}; do
   rapids-logger "Download ${PROJECT} xml_tar"
