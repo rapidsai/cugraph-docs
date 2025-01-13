@@ -248,8 +248,8 @@ Users can refer to this table to see what kind of performance increase they can 
         <td>core_number</td>
         <td class="red">0.223<span class="tooltip">nx: 2.372ms<br>nxcg: 10.652ms<br>delta: -8.280ms</span></td>
         <td class="green">22.456<span class="tooltip">nx: 1.520s<br>nxcg: 67.706ms<br>delta: 1.453s</span></td>
-        <td></td>
-        <td></td>
+        <td>--</td>
+        <td>--</td>
       </tr>
       <tr>
         <td>degree_centrality</td>
@@ -332,8 +332,8 @@ Users can refer to this table to see what kind of performance increase they can 
         <td>k_truss</td>
         <td class="green">8.31<span class="tooltip">nx: 12.342ms<br>nxcg: 1.485ms<br>delta: 10.857ms</span></td>
         <td class="green">539.652<span class="tooltip">nx: 6.103s<br>nxcg: 11.309ms<br>delta: 6.092s</span></td>
-        <td></td>
-        <td></td>
+        <td>--</td>
+        <td>--</td>
       </tr>
       <tr>
         <td>katz_centrality</td>
