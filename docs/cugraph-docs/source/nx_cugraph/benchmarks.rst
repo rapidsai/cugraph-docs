@@ -3,7 +3,7 @@ Benchmarks
 
 This page presents the performance of algorithms currently supported by ``nx-cugraph`` across four graphs of varying sizes. 
 
-The goal is to provide a clear comparison of how dispatching to a GPU-accelerated backend compares against the default, CPU-based implementation of NetworkX. This allows users to get an idea of potential speedups that they might gain from leveraging dispatching to a GPU with ``nx-cugraph``. 
+The goal is to provide a clear comparison of how dispatching to a GPU-accelerated backend compares against the default, CPU-based implementation of NetworkX. This allows users to get an idea of potential speedups that they might see by leveraging dispatching to a GPU with ``nx-cugraph``. 
 
 As datasets grow larger, the GPU-accelerated backend begins to show increasingly faster speedups over the CPU. This trend demonstrates how the GPU's parallel processing capabilities allow it to handle large-scale graph analytics much more efficiently than the CPU.
 
