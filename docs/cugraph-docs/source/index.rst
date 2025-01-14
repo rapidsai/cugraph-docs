@@ -1,9 +1,26 @@
+
+*** NOTICE ***
+==============
+
+The cuGraph repository has been refactored to make it more efficient to build, maintain and use.
+
+Libraries supporting GNNs are now located in the `cugraph-gnn repository <https://github.com/rapidsai/cugraph-gnn>`_
+
+* `pylibwholegraph <https://github.com/rapidsai/cugraph-gnn/tree/main/python/>`_ - the `Wholegraph <https://docs.rapids.ai/api/cugraph/nightly/wholegraph/>`_ library for client memory management supporting both cuGraph-DGL and cuGraph-PyG for even greater scalability
+* `cugraph_dgl <https://github.com/rapidsai/cugraph-gnn/blob/main/readme_pages/cugraph_dgl.md>`_ enables the ability to use cugraph Property Graphs with Deep Graph Library (DGL)
+* `cugraph_pyg <https://github.com/rapidsai/cugraph-gnn/blob/main/readme_pages/cugraph_pyg.md>`_ enables the ability to use cugraph Property Graphs with PyTorch Geometric (PyG).
+
+`RAPIDS nx-cugraph <https://rapids.ai/nx-cugraph/>`_ is now located in the `nx-cugraph repository <https://github.com/rapidsai/nx-cugraph>`_ containing a backend to NetworkX for running supported algorithms with GPU acceleration.
+
+The `cugraph-docs repository <https://github.com/rapidsai/cugraph-docs>`_ contains code to generate cuGraph documentation.
+
+---
+
 RAPIDS Graph documentation
 ==========================
 
 .. image:: images/cugraph_logo_2.png
    :width: 600
-
 
 ~~~~~~~~~~~~
 Introduction
@@ -13,16 +30,6 @@ RAPIDS data science ecosystem and allows data scientists to easily call
 graph algorithms using data stored in cuDF/Pandas DataFrames or CuPy/SciPy
 sparse matrices.
 
-~~~~~~~~~~~
-Latest News
-~~~~~~~~~~~
-We have reorganized the cuGraph repository to make it more efficient to build, maintain and use.
-
-cuGraph code supporting GNNs is now located in the `cugraph-gnn repository <https://github.com/rapidsai/cugraph-gnn>`_.
-
-Code for cuGraph as a NetworkX backend is now located in the `RAPIDS nx-cugraph repository <https://github.com/rapidsai/nx-cugraph>`_.
-
-cuGraph code supporting overall documentaion is now located in the `cugraph-docs repository <https://github.com/rapidsai/cugraph-docs>`_.
 
 ---------------------------
 cuGraph Using NetworkX Code
