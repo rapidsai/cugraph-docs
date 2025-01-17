@@ -1,6 +1,6 @@
-====================
-Full cuGraph C++ API
-====================
+=========================
+Low Level cuGraph C++ API
+=========================
 
 .. doxygennamespace:: cugraph
    :members:

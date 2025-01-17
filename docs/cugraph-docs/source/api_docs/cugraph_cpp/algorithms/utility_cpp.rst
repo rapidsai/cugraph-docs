@@ -1,5 +1,5 @@
-Centrality
-==========
+Utility Functions
+=================
 
  .. doxygengroup:: utility_cpp
      :project: libcugraph
