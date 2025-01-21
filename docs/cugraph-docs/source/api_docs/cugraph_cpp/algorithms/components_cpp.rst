@@ -1,7 +1,7 @@
-Component
-=========
+Components
+==========
 
- .. doxygengroup:: component_cpp
+ .. doxygengroup:: components_cpp
      :project: libcugraph
      :members:
      :content-only:

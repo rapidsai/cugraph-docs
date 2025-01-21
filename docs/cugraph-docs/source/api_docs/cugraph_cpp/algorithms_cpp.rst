@@ -12,7 +12,6 @@ Algorithmns
     algorithms/sampling_cpp.rst
     algorithms/similarity_cpp.rst
     algorithms/traversal_cpp.rst
-    algorithms/labeling_cpp.rst
     algorithms/linear_cpp.rst
     algorithms/link_analysis_cpp.rst
     algorithms/layout_cpp.rst
