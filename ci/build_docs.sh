@@ -21,7 +21,7 @@ export RAPIDS_DOCS_DIR
 
 rapids-print-env
 
-PROJ_LIST=("libcugraph libwholegraph")
+PROJ_LIST=("libcugraph" "libwholegraph")
 
 for PROJECT in "${PROJ_LIST[@]}"; do
   rapids-logger "Download ${PROJECT} xml_tar"
