@@ -94,7 +94,7 @@ Each cell displays the speedup factor achieved when running the algorithm on a `
 - Yellow for moderate (``1.1 - 5.0``)
 - Red for suboptimal (``0 - 1.0``)
 
-Also, by hovering over the table, users can see the time it took for NetworkX and nx-cugraph respectively, as well as the delta between both runs. We encourage users to refer to this table to see what kind of performance increase they can expect from their workflows.
+Also, by hovering over the table, users can see the time it took for NetworkX and nx-cugraph respectively, as well as the delta between both runs. We encourage users to refer to this table to see an approximation of the performance increase they can expect from their workflows.
 
 .. raw:: html
 
