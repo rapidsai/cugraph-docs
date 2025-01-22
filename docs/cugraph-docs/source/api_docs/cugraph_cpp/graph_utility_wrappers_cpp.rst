@@ -1,4 +1,4 @@
-Graph Utility
+Graph Utility Wrappers
 ======================
 
  .. doxygengroup:: utility_wrappers_cpp
