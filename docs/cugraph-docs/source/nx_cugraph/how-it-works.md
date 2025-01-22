@@ -97,14 +97,14 @@ Wall time: 5.32 s
 ```
 This run will be much faster, typically around 5 seconds depending on your GPU.
 
-<div style="color: black;">
+<div style="font-size: 12px; line-height: 1.1; color: #666;">
 
 *Note, the examples above were run using the following specs*:
 
-&nbsp;&nbsp;&nbsp;&nbsp;*NetworkX 3.4* <br>
-&nbsp;&nbsp;&nbsp;&nbsp;*nx-cugraph 24.10* <br>
-&nbsp;&nbsp;&nbsp;&nbsp;*CPU: Intel(R) Xeon(R) Gold 6128 CPU @ 3.40GHz 45GB RAM* <br>
-&nbsp;&nbsp;&nbsp;&nbsp;*GPU: NVIDIA Quadro RTX 8000 80GB RAM* <br>
+&nbsp;&nbsp;&nbsp;&nbsp;**NetworkX Version**: 3.4 <br>
+&nbsp;&nbsp;&nbsp;&nbsp;**nx-cugraph Version**: 24.10 <br>
+&nbsp;&nbsp;&nbsp;&nbsp;**CPU**: Intel(R) Xeon(R) Gold 6128 CPU @ 3.40GHz 45GB RAM <br>
+&nbsp;&nbsp;&nbsp;&nbsp;**GPU**: NVIDIA Quadro RTX 8000 80GB RAM <br>
 
 </div>
 
