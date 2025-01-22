@@ -13,4 +13,5 @@ cuGraph C++ API
     graph_legacy_cpp.rst
     graph_sampling_cpp.rst
     collect_comm_wrapper_cpp.rst
+    graph_utility_wrapers_cpp.rst
     full_api.rst
