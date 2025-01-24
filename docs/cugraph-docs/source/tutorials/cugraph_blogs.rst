@@ -22,6 +22,7 @@ Coming Soon
   * `Accelerated, Production-Ready Graph Analytics for NetworkX Users <https://developer.nvidia.com/blog/accelerated-production-ready-graph-analytics-for-networkx-users/>`_
   * `NetworkX Introduces Zero Code Change Acceleration Using NVIDIA cuGraph <https://developer.nvidia.com/blog/networkx-introduces-zero-code-change-acceleration-using-nvidia-cugraph/>`_
   * `NVIDIA cuGraph: Accelerate Graph Analytics with GPUs <https://medium.com/data-science-in-your-pocket/nvidia-cugraph-accelerate-graph-analytics-with-gpus-4d809345040f>`_
+  * `Enhanced Data Analytics: Integrating NVIDIA Rapids cuGraph with TigerGraph <https://www.tigergraph.com/blog/tigergraph-copilot-enters-public-alpha-release-copy/>`_
 2023
 ------
   * `Intro to Graph Neural Networks with cuGraph-DGL <https://medium.com/rapids-ai/introduction-to-graph-neural-networks-with-cugraph-dgl-64c632e9cc52>`_
