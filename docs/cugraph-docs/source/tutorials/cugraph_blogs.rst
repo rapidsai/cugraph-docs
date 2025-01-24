@@ -16,8 +16,6 @@ Coming Soon
 2024
 ------
   * `NVIDIA cuGraph: 500x faster alternate for NetworkX for Graphs <https://medium.com/data-science-in-your-pocket/nvidia-cugraph-500x-faster-alternate-for-networkx-for-graphs-ef7e2ad9fbda>`_
-  * `Optimizing Memory and Retrieval for Graph Neural Networks with WholeGraph, Part 1 <https://developer.nvidia.com/blog/optimizing-memory-and-retrieval-for-graph-neural-networks-with-wholegraph-part-1/>`_
-  * `Getting Started with Large-Scale GNNs using cuGraph Packages for DGL and PyG <https://www.nvidia.com/en-us/on-demand/session/gtc24-dlit61291/?playlistId=playList-108242b0-35ac-4765-9796-d6961cb026c4>`_
   * `Revolutionizing Graph Analytics: Next-Gen Architecture with NVIDIA cuGraph Acceleration <https://developer.nvidia.com/blog/revolutionizing-graph-analytics-next-gen-architecture-with-nvidia-cugraph-acceleration/>`_
   * `Accelerated, Production-Ready Graph Analytics for NetworkX Users <https://developer.nvidia.com/blog/accelerated-production-ready-graph-analytics-for-networkx-users/>`_
   * `NetworkX Introduces Zero Code Change Acceleration Using NVIDIA cuGraph <https://developer.nvidia.com/blog/networkx-introduces-zero-code-change-acceleration-using-nvidia-cugraph/>`_
@@ -66,6 +64,9 @@ Coming Soon
 
 Media
 ===============
+  * `NetworkX GPU Acceleration with cuGraph in Python <https://www.youtube.com/watch?v=92OxVC-1aiE>`
+  * `NVIDIA RAPIDS cuGraph : GPU acceleration for NetworkX, Graph Analytics <https://www.youtube.com/watch?v=FBxAIoH49Xc>`
+  * `Accelerating Graph Analysis on GPUs <https://www.youtube.com/watch?v=piNP2LbfMFk>`
   * `Nvidia Rapids cuGraph: Making graph analysis ubiquitous <https://www.zdnet.com/article/nvidia-rapids-cugraph-making-graph-analysis-ubiquitous/>`_
   * `RAPIDS cuGraph – Accelerating all your Graph needs <https://www.youtube.com/watch?v=kAw7-IGH9N4>`_
 
