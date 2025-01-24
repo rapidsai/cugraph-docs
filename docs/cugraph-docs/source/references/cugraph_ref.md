@@ -41,5 +41,9 @@
 ## Other Papers
 - Hricik, T., Bader, D., & Green, O. (2020, September). *Using RAPIDS AI to Accelerate Graph Data Science Workflows*. In 2020 IEEE High Performance Extreme Computing Conference (HPEC) (pp. 1-4). IEEE.
 
+- Tang, Jiawei & Gao, Min & Xiao, Yu & Li, Cong & Chen, Yang. (2024). EGGPU: Enabling Efficient Large-Scale Network Analysis with Consumer-Grade GPUs. 10.1145/3698387.3699997. 
+https://www.researchgate.net/publication/384925237_EGGPU_Enabling_Efficient_Large-Scale_Network_Analysis_with_Consumer-Grade_GPUs
 
-</br></br>
+- N. Keskes1. GPU Acceleration of Graph Algorithms in NextVision: A Seismic Data Interpretation Tool
+Eighth EAGE High Performance Computing Workshop, Sep 2024, Volume 2024, p.1 - 3
+https://www.earthdoc.org/content/papers/10.3997/2214-4609.2024636024
