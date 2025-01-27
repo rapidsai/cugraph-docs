@@ -2,7 +2,7 @@
 
 ## Description
 
-[RAPIDS](https://rapids.ai) cugraph_dgl provides a duck-typed version of the [DGLGraph](https://docs.dgl.ai/api/python/dgl.DGLGraph.html#dgl.DGLGraph) class, which uses cugraph for storing graph structure and node/edge feature data.  Using cugraph as the backend allows DGL users to access a collection of GPU accelerated algorithms for graph analytics, such as centrality computation and community detection.
+[RAPIDS cugraph_dgl](https://github.com/rapidsai/cugraph-gnn/blob/branch-25.02/python/cugraph-dgl/README.md) provides a duck-typed version of the [DGLGraph](https://docs.dgl.ai/api/python/dgl.DGLGraph.html#dgl.DGLGraph) class, which uses cugraph for storing graph structure and node/edge feature data.  Using cugraph as the backend allows DGL users to access a collection of GPU accelerated algorithms for graph analytics, such as centrality computation and community detection.
 
 ## Conda
 
@@ -53,7 +53,7 @@ num_workers=0)
 ```
 
 ___
-Copyright (c) 2023, NVIDIA CORPORATION.
+Copyright (c) 2023-2025, NVIDIA CORPORATION.
 
 Licensed under the Apache License, Version 2.0 (the "License");  you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
 

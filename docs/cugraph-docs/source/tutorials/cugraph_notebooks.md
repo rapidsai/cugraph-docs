@@ -40,8 +40,8 @@ Layout            |                                                             
 |                 | [BFS](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/traversal/BFS.ipynb)                                   | Compute the Breadth First Search path from a starting vertex to every other vertex in a graph |
 |                 | [SSSP](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/traversal/SSSP.ipynb)                                 | Single Source Shortest Path  - compute the shortest path from a starting vertex to every other vertex |
 | Structure       |                                                              |                                                              |
-|                 | [Renumbering](algorithms/structure/Renumber.ipynb) <br> [Renumbering 2](algorithms/structure/Renumber-2.ipynb) | Renumber the vertex IDs in a graph (two sample notebooks)    |
-|                 | [Symmetrize](algorithms/structure/Symmetrize.ipynb)                     | Symmetrize the edges in a graph                              |
+|                 | [Renumbering](algorithms/structure/Renumber.ipynb) <br> [Renumbering 2](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/structure/Renumber-2.ipynb) | Renumber the vertex IDs in a graph (two sample notebooks)    |
+|                 | [Symmetrize](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/structure/Symmetrize.ipynb)                     | Symmetrize the edges in a graph                              |
 
 
 ## RAPIDS notebooks
@@ -61,7 +61,7 @@ Running the example in these notebooks requires:
 
 ## Copyright
 
-Copyright (c) 2019-2023, NVIDIA CORPORATION.  All rights reserved.
+Copyright (c) 2019-2025, NVIDIA CORPORATION.  All rights reserved.
 
 Licensed under the Apache License, Version 2.0 (the "License");  you may not use this file except in compliance with the License.  You may obtain a copy of the License at
 
