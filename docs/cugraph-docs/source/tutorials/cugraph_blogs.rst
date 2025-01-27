@@ -9,17 +9,26 @@ Here, we've selected just a few that are of particular interest to cuGraph users
 
 Blogs & Conferences
 ====================
-2024
-------
+2025
+----
 Coming Soon
 
-2023
+2024
+------
+  * `NVIDIA cuGraph: 500x faster alternate for NetworkX for Graphs <https://medium.com/data-science-in-your-pocket/nvidia-cugraph-500x-faster-alternate-for-networkx-for-graphs-ef7e2ad9fbda>`_
+  * `Revolutionizing Graph Analytics: Next-Gen Architecture with NVIDIA cuGraph Acceleration <https://developer.nvidia.com/blog/revolutionizing-graph-analytics-next-gen-architecture-with-nvidia-cugraph-acceleration/>`_
+  * `Accelerated, Production-Ready Graph Analytics for NetworkX Users <https://developer.nvidia.com/blog/accelerated-production-ready-graph-analytics-for-networkx-users/>`_
+  * `NetworkX Introduces Zero Code Change Acceleration Using NVIDIA cuGraph <https://developer.nvidia.com/blog/networkx-introduces-zero-code-change-acceleration-using-nvidia-cugraph/>`_
+  * `NVIDIA cuGraph: Accelerate Graph Analytics with GPUs <https://medium.com/data-science-in-your-pocket/nvidia-cugraph-accelerate-graph-analytics-with-gpus-4d809345040f>`_
+  * `Enhanced Data Analytics: Integrating NVIDIA Rapids cuGraph with TigerGraph <https://www.tigergraph.com/blog/tigergraph-copilot-enters-public-alpha-release-copy/>`_
+  * `Insights, Techniques, and Evaluation for LLM-Driven Knowledge Graphs <https://developer.nvidia.com/blog/insights-techniques-and-evaluation-for-llm-driven-knowledge-graphs/>`_
 ------
   * `Intro to Graph Neural Networks with cuGraph-DGL <https://medium.com/rapids-ai/introduction-to-graph-neural-networks-with-cugraph-dgl-64c632e9cc52>`_
   * `GTC 2023 Ask the Experts Q&A <https://forums.developer.nvidia.com/c/blogs-events/connect-with-experts/ama-cugraph/652?ncid=em-even-260150-vt33#cid=dev03_em-even_en-us>`_
   * `Accelerating NetworkX on NVIDIA GPUs for High Performance Graph Analytics <https://developer.nvidia.com/blog/accelerating-networkx-on-nvidia-gpus-for-high-performance-graph-analytics/>`_
   * `Introduction to Graph Neural Networks with NVIDIA cuGraph-DGL <https://developer.nvidia.com/blog/introduction-to-graph-neural-networks-with-nvidia-cugraph-dgl/>`_
   * `Supercharge Graph Analytics at Scale with GPU-CPU Fusion for 100x Performance <https://developer.nvidia.com/blog/supercharge-graph-analytics-at-scale-with-gpu-cpu-fusion-for-100x-performance/>`_
+  * `Introduction to Graph Analysis using cuGraph <https://medium.com/rapids-ai/introduction-to-graph-analysis-using-cugraph-a9dc2fbc3c5e>`_
 2022
 ------
   * `GTC: State of cuGraph  (video & slides) <https://www.nvidia.com/gtc/session-catalog/?search=cuGraph&tab.scheduledorondemand=1583520458947001NJiE&search=cuGraph#/session/1635793340204001n4p2>`_
@@ -55,6 +64,9 @@ Coming Soon
 
 Media
 ===============
+  * `NetworkX GPU Acceleration with cuGraph in Python <https://www.youtube.com/watch?v=92OxVC-1aiE>`
+  * `NVIDIA RAPIDS cuGraph : GPU acceleration for NetworkX, Graph Analytics <https://www.youtube.com/watch?v=FBxAIoH49Xc>`
+  * `Accelerating Graph Analysis on GPUs <https://www.youtube.com/watch?v=piNP2LbfMFk>`
   * `Nvidia Rapids cuGraph: Making graph analysis ubiquitous <https://www.zdnet.com/article/nvidia-rapids-cugraph-making-graph-analysis-ubiquitous/>`_
   * `RAPIDS cuGraph – Accelerating all your Graph needs <https://www.youtube.com/watch?v=kAw7-IGH9N4>`_
 
