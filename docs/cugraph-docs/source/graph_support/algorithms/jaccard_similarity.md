@@ -4,7 +4,12 @@ The Jaccard similarity between two sets is defined as the ratio of the volume of
 
 The Jaccard Similarity can then be defined as
 
-Jaccard similarity coefficient = $\frac{|A \cap B|}{|A \cup B|}$
+
+<div class="math">
+\[
+S_j = \frac{|A \cap B|}{|A \cup B|}
+\]
+</div>
 
 In graphs, the sets refer to the set of connected nodes or neighborhood of nodes A and B.
 
@@ -26,7 +31,7 @@ While cuGraph's parallelism mitigates run cost, [Big O notation](https://en.wiki
 The cost of calculating the Jaccard Similarity for a graph is  O(d * n) where d is the average degree of the nodes and n is the number of nodes.
 
 ___
-Copyright (c) 2023, NVIDIA CORPORATION.
+Copyright (c) 2023-2025, NVIDIA CORPORATION.
 
 Licensed under the Apache License, Version 2.0 (the "License");  you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
 

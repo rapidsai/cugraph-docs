@@ -6,8 +6,12 @@ See [Betweenness on Wikipedia](https://en.wikipedia.org/wiki/Betweenness_central
 
 Betweenness centrality of a node 𝑣 is the sum of the fraction of all-pairs shortest paths that pass through 𝑣
 
-$c_B(v) =\sum_{s,t \in V} \frac{\sigma(s, t|v)}{\sigma(s, t)}$
 
+<div class="math">
+\[
+c_B(v) =\sum_{s,t \in V} \frac{\sigma(s, t|v)}{\sigma(s, t)}
+\]
+</div>
 
 ## When to use BC
 Betweenness centrality is often used to answer questions like:
@@ -34,7 +38,7 @@ While cuGraph's parallelism migigates run time, [Big O notation](https://en.wiki
 Coming Soon
 
 ___
-Copyright (c) 2023, NVIDIA CORPORATION.
+Copyright (c) 2023-2025, NVIDIA CORPORATION.
 
 Licensed under the Apache License, Version 2.0 (the "License");  you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
 

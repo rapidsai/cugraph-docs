@@ -5,7 +5,12 @@ See [Degree Centrality on Wikipedia](https://en.wikipedia.org/wiki/Degree_centra
 
 Degree centrality of a vertex 𝑣 is the sum of the edges incident on that node.
 
-<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/62c50cbf5f6cbe0842fe58fca63deb0f0772a829" />
+
+<div class="math">
+\[
+C_d(v) = \\frac{{\\text{degree of vertex } \\ v}}{{\\text{number of vertices in graph} - 1}}
+\]
+</div>
 
 ## When to use Degree Centrality
 * When you need a really quick identifcation of important nodes on very simply structured data.
@@ -24,7 +29,7 @@ While cuGraph's parallelism migigates run time, [Big O notation](https://en.wiki
 
 The cost of Degree Centrality is O(n) where n is the number of nodes.
 ___
-Copyright (c) 2023, NVIDIA CORPORATION.
+Copyright (c) 2023-2025, NVIDIA CORPORATION.
 
 Licensed under the Apache License, Version 2.0 (the "License");  you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
 
