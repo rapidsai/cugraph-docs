@@ -9,7 +9,12 @@ See [Eigenvector Centrality on Wikipedia](https://en.wikipedia.org/wiki/Eigenvec
 The eigenvector centrality for node i is the
 i-th element of the vector x defined by the eigenvector equation.
 
-<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/51c506ef0f23db1086b00ff6e5da847ff53cf5e9" />
+<div class="math">
+\[
+x_v = \\frac{1}{\\lambda}{\\sum_{t \\in M(v)}}x_t = \\frac{1}{\\lambda}{\\sum_{t \\in V}{a_v,x_t}
+\]
+</div>
+
 
 
 Where M(v) is the adjacency list for the set of vertices(v) and λ is a constant.

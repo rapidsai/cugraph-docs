@@ -3,7 +3,11 @@
 The Overlap Coefficient, also known as th Szymkiewicz–Simpson coefficient, between two sets is defined as the ratio of the volume of their intersection divided by the volume of the smaller set.
 The Overlap Coefficient can be defined as
 
-$overlap(A,B) = \frac{|A \cap B|}{min(|A|,|B|)}$
+<div class="math">
+\[
+overlap(A,B) = \frac{|A \cap B|}{min(|A|,|B|)}$\
+\]
+</div>
 
 [Learn more about Overlap Similarity](https://en.wikipedia.org/wiki/Overlap_coefficient)
 

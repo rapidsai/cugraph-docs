@@ -4,8 +4,14 @@ The Sørensen Coefficient, also called the Sørensen-Dice similarity coefficient
 
 It is defined as two times the size of the set intersection divided by the sum of the size of the two sets. The value ranges from 0 to 1.
 
-Sørensen coefficient = $\left(2 * |A \cap B| \right) \over \left(|A| + |B| \right)$
+Sørensen coefficient 
 
+<div class="math">
+\[
+\left(2 * |A \cap B| \right) \over \left(|A| + |B| \right)
+
+\]
+</div>
 
 In graphs, the sets refer to the set of connected nodes or neighborhood of nodes A and B.
 

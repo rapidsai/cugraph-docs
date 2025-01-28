@@ -8,6 +8,11 @@ Betweenness centrality of a node 𝑣 is the sum of the fraction of all-pairs sh
 
 $c_B(v) =\sum_{s,t \in V} \frac{\sigma(s, t|v)}{\sigma(s, t)}$
 
+<div class="math">
+\[
+c_B(v) =\sum_{s,t \in V} \frac{\sigma(s, t|v)}{\sigma(s, t)}
+\]
+</div>
 
 ## When to use BC
 Betweenness centrality is often used to answer questions like:
