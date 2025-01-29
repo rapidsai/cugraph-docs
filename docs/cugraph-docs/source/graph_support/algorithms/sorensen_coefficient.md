@@ -4,8 +4,13 @@ The Sørensen Coefficient, also called the Sørensen-Dice similarity coefficient
 
 It is defined as two times the size of the set intersection divided by the sum of the size of the two sets. The value ranges from 0 to 1.
 
-Sørensen coefficient = $\left(2 * |A \cap B| \right) \over \left(|A| + |B| \right)$
+Sørensen coefficient 
 
+<div class="math">
+\[
+\left(2 * |A \cap B| \right) \over \left(|A| + |B| \right)
+\]
+</div>
 
 In graphs, the sets refer to the set of connected nodes or neighborhood of nodes A and B.
 
@@ -26,7 +31,7 @@ While cuGraph's parallelism mitigates run cost, [Big O notation](https://en.wiki
 The cost to run O(n * m) where n is the number of nodes in the graph and m is the number of groups to test.
 
 ___
-Copyright (c) 2023, NVIDIA CORPORATION.
+Copyright (c) 2023-2025, NVIDIA CORPORATION.
 
 Licensed under the Apache License, Version 2.0 (the "License");  you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
 

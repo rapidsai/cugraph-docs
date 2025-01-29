@@ -3,7 +3,11 @@
 The Overlap Coefficient, also known as th Szymkiewicz–Simpson coefficient, between two sets is defined as the ratio of the volume of their intersection divided by the volume of the smaller set.
 The Overlap Coefficient can be defined as
 
-$overlap(A,B) = \frac{|A \cap B|}{min(|A|,|B|)}$
+<div class="math">
+\[
+overlap(A,B) = \frac{|A \cap B|}{min(|A|,|B|)}$\
+\]
+</div>
 
 [Learn more about Overlap Similarity](https://en.wikipedia.org/wiki/Overlap_coefficient)
 
@@ -24,7 +28,7 @@ While cuGraph's parallelism migigates run time, [Big O notation](https://en.wiki
 The cost to compute overlap similarity is O(n*d) where n is the number of nodes and d is the average degree of the nodes.
 
 ___
-Copyright (c) 2023, NVIDIA CORPORATION.
+Copyright (c) 2023-2025, NVIDIA CORPORATION.
 
 Licensed under the Apache License, Version 2.0 (the "License");  you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
 
