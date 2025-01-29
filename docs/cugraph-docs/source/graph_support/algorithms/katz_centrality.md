@@ -2,7 +2,11 @@
 
 Katz centrality is a measure of the relative importance of a vertex within the graph based on measuring the influence across the total number of walks between vertex pairs. Katz is similar to Eigenvector centrality. The main difference is that Katz also takes into account indirect relationships. The Katz calculation includes a user-controlled attenuation variable that controls the weight of indirect relationships. Otherwise it shares many of the advantages and disadvantages of Eigenvector centrality.
 
-$C_{katz}(i) = \sum_{k=1}^{\infty} \sum_{j=1}^{n} \alpha ^k(A^k)_{ji}$
+<div class="math">
+\[
+C_{katz}(i) = \sum_{k=1}^{\infty} \sum_{j=1}^{n} \alpha ^k(A^k)_{ji}
+\]
+</div>
 
 See [Katz on Wikipedia](https://en.wikipedia.org/wiki/Katz_centrality) for more details on the algorithm.
 
@@ -20,7 +24,7 @@ See [Katz on Wikipedia](https://en.wikipedia.org/wiki/Katz_centrality) for more 
 Katz centraility has several stages with costs that add up as the graph gets larger. The overall cost is often O(n<sup>2</sup>) to O(n<sup>3</sup>) where n is the number of nodes.
 
 ___
-Copyright (c) 2023, NVIDIA CORPORATION.
+Copyright (c) 2023-2025, NVIDIA CORPORATION.
 
 Licensed under the Apache License, Version 2.0 (the "License");  you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
 
