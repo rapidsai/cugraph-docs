@@ -16,16 +16,17 @@ rapids-dependency-file-generator \
 rapids-mamba-retry env create --yes -f env.yaml -n docs
 conda activate docs
 
-export RAPIDS_DOCS_DIR="$(mktemp -d)"
+RAPIDS_DOCS_DIR="$(mktemp -d)"
+export RAPIDS_DOCS_DIR
 
 rapids-print-env
 
-PROJ_LIST=("libcugraph libwholegraph")
+PROJ_LIST=("libcugraph" "libwholegraph")
 
-for PROJECT in ${PROJ_LIST}; do
+for PROJECT in "${PROJ_LIST[@]}"; do
   rapids-logger "Download ${PROJECT} xml_tar"
   TMP_DIR=$(mktemp -d)
-  export XML_DIR_${PROJECT^^}="$TMP_DIR"
+  export "XML_DIR_${PROJECT^^}"="$TMP_DIR"
 
   curl "https://d1664dvumjb44w.cloudfront.net/${PROJECT}/xml_tar/${RAPIDS_VERSION_MAJOR_MINOR}/xml.tar.gz" | tar -xzf - -C "${TMP_DIR}"
 done
