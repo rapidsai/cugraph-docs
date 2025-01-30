@@ -108,6 +108,7 @@ Table of Contents
    graph_support/index
    wholegraph/index
    references/index
+   dev_resources/index
    api_docs/index
 
 ~~~~~~~~~~~~~~~~~~
