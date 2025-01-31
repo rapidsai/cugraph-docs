@@ -45,10 +45,8 @@ Check out `zero code change accelerated NetworkX <nx_cugraph/index.rst>`_. If yo
 Getting started with cuGraph
 ----------------------------
 
-Required hardware/software for cuGraph and `RAPIDS <https://docs.rapids.ai/user-guide>`_
- * NVIDIA GPU, Volta architecture or later, with `compute capability 7.0+ <https://developer.nvidia.com/cuda-gpus>`_
- * CUDA 11.2-11.8, 12.0-12.5
- * Python version 3.10, 3.11, or 3.12
+Required hardware/software for `cuGraph and RAPIDS <https://docs.rapids.ai/install/#system-req>`_
+
 
 ++++++++++++
 Installation

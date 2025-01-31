@@ -43,11 +43,13 @@ from github_link import make_linkcode_resolve # noqa
 extensions = [
     "breathe",
     "sphinx.ext.intersphinx",
+    "sphinxcontrib.jsmath",
     "sphinx.ext.autodoc",
     "sphinx.ext.autosummary",
     "numpydoc",
     "sphinx_markdown_tables",
     'sphinx.ext.doctest',
+    "sphinx.ext.mathjax",
     'sphinx.ext.linkcode',
     "IPython.sphinxext.ipython_console_highlighting",
     "IPython.sphinxext.ipython_directive",
@@ -55,6 +57,8 @@ extensions = [
     "recommonmark",
     "sphinx_copybutton",
 ]
+
+jsmath_path = "https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS_HTML"
 
 
 ipython_mplbackend = 'str'

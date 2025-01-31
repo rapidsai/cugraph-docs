@@ -9,7 +9,12 @@ See [Eigenvector Centrality on Wikipedia](https://en.wikipedia.org/wiki/Eigenvec
 The eigenvector centrality for node i is the
 i-th element of the vector x defined by the eigenvector equation.
 
-<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/51c506ef0f23db1086b00ff6e5da847ff53cf5e9" />
+<div class="math">
+\[
+x_v = \\frac{1}{\\lambda}{\\sum_{t \\in M(v)}}x_t = \\frac{1}{\\lambda}{\\sum_{t \\in V}{a_v,x_t}
+\]
+</div>
+
 
 
 Where M(v) is the adjacency list for the set of vertices(v) and λ is a constant.
@@ -33,7 +38,7 @@ While cuGraph's parallelism migigates run time, [Big O notation](https://en.wiki
 O(VE) where V is the number of vertices(nodes) and Eis the number of edges.
 
 ___
-Copyright (c) 2023, NVIDIA CORPORATION.
+Copyright (c) 2023-2025, NVIDIA CORPORATION.
 
 Licensed under the Apache License, Version 2.0 (the "License");  you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
 
