@@ -13,6 +13,7 @@ If you are ready to contribute, jump right to the [Contribute Code](https://docs
 __Style Formatting Tools:__
 * `clang-format`  version 16.0+
 * `flake8`        version 6.0.0+
+* `black`         version 21+
 
 
 
@@ -74,12 +75,11 @@ If you need more context on a particular issue, please ask.
 4. Fork the cuGraph [repo](#fork) and Code (make sure to add unit tests)!
 5. All RAPIDS projects are released under the Apache-2.0 license, so also make sure all source files that support comments include a copyright and the Apache-2.0 license text.
 6. When done, and code passes local CI, create your pull request (PR)
-   1. Update the CHANGELOG.md with PR number - see [Changelog formatting](https://docs.rapids.ai/resources/changelog/)
-   2. Ensure that the PR has the proper [tags](https://docs.rapids.ai/resources/label-checker/)
-   3. Ensure the code matches out [style guide](https://docs.rapids.ai/resources/style/)
+   1. Ensure the code matches the [style guide](https://docs.rapids.ai/resources/style/)
 7. Verify that cuGraph CI passes all [status checks](https://help.github.com/articles/about-status-checks/). Fix if needed
 8. Wait for other developers to review your code and update code as needed
-9. Once reviewed and approved, a RAPIDS developer will merge your pull request
+9. PR will require the proper [tags](https://docs.rapids.ai/resources/label-checker/) be added by someone with repository permission.
+10. Once reviewed and approved, a RAPIDS developer will merge your pull request
 
 Remember, if you are unsure about anything, don't hesitate to comment on issues
 and ask for clarifications!
@@ -111,6 +111,7 @@ cuGraph only allows contribution to the current branch and not main or a future 
 
 4. Code .....
 5. Once your code works and passes tests
+   1. Run pre-commit to verify and correct come style convension ```pre-commit run --all-files```
    1. commit your code
     ```git push```
 6. From the GitHub web page, open a Pull Request
@@ -122,7 +123,7 @@ There is no recommended or preferred development environment.  There are a few *
 
 **Hardware**
 
-* You need to have accesses to an NVIDIA GPU that is Pascal or later.
+* You need to have accesses to a NVIDIA GPU, currently Volta or later. Look here for [latest RAPIDS system requirements](https://docs.rapids.ai/install/).
 
 
 **IDEs**
