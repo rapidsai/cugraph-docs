@@ -1,5 +1,5 @@
 # Contributing to cuGraph
-cuGraph, for the most part, is an open-source project where we encourage community involvement.
+cuGraph is an open-source project where we encourage community involvement.
 
 There are multiple ways to be involved and contribute to the cuGraph community, the top paths are listed below:
 
