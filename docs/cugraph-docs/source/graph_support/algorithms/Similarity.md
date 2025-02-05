@@ -15,22 +15,15 @@ Manipulation of the data before or after the graph analytic is not covered here.
 
 |Algorithm          |Notebooks Containing                                                     |Description                                                  |
 | --------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-|[Jaccard Smiliarity](./jaccard_similarity.html)| [Jaccard Similarity](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/link_prediction/Jaccard-Similarity.ipynb)                 ||
-|[Overlap Similarity](./overlap_similarity.html)| [Overlap Similarity](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/link_prediction/Overlap-Similarity.ipynb)                    ||
-|[Sorensen](./sorensen_coefficient.html)|[Sorensen Similarity](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/link_prediction/Sorensen_coefficient.ipynb)||
+|[Jaccard Smiliarity](../jaccard_similarity.html)| [Jaccard Similarity](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/link_prediction/Jaccard-Similarity.ipynb)                 ||
+|[Overlap Similarity](../overlap_similarity.html)| [Overlap Similarity](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/link_prediction/Overlap-Similarity.ipynb)                    ||
+|[Sorensen](../sorensen_coefficient.html)|[Sorensen Similarity](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/link_prediction/Sorensen_coefficient.ipynb)||
 |Personal Pagerank|[Pagerank](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/link_analysis/Pagerank.ipynb)                 ||
 
 
-[System Requirements](../../README.md#requirements)
-
-| Author Credit |    Date    |  Update          | cuGraph Version |  Test Hardware |
-| --------------|------------|------------------|-----------------|----------------|
-| Brad Rees     | 04/19/2021 | created          | 0.19            | GV100, CUDA 11.0
-| Don Acosta    | 07/05/2022 | tested / updated | 22.08 nightly   | DGX Tesla V100 CUDA 11.5
-
 ## Copyright
 
-Copyright (c) 2019 - 2023, NVIDIA CORPORATION.
+Copyright (c) 2019 - 2025, NVIDIA CORPORATION.
 
 Licensed under the Apache License, Version 2.0 (the "License");  you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
 
