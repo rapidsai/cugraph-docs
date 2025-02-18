@@ -34,7 +34,7 @@ Note: Multi-GPU, or MG, includes support for Multi-Node Multi-GPU (also called M
 |                   | [Ensemble Clustering for Graphs](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/community/ECG.ipynb)            | Single-GPU     |  MG planned for 24.02 |
 |                   | [Spectral-Clustering - Balanced Cut](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/community/Spectral-Clustering.ipynb) | Single-GPU     |      |
 |                   | [Spectral-Clustering - Modularity](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/community/Spectral-Clustering.ipynb)   | Single-GPU          |        |
-|                   | [Subgraph Extraction](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/community/Subgraph-Extraction.ipyn)                | Single-GPU          |        |
+|                   | [Subgraph Extraction](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/community/Subgraph-Extraction.ipynb)                | Single-GPU          |        |
 |                   | [Triangle Counting](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/community/Triangle-Counting.ipynb)           | __Multi-GPU__ |           |
 |                   | [K-Truss](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/community/ktruss.ipynb)                                | Single-GPU    |  MG planned for 2024  |
 | Components        |          |                |          |

@@ -8,7 +8,7 @@ Degree centrality of a vertex 𝑣 is the sum of the edges incident on that node
 
 <div class="math">
 \[
-C_d(v) = \\frac{{\\text{degree of vertex } \\ v}}{{\\text{number of vertices in graph} - 1}}
+C_d(v) = \frac{{\text{degree of vertex } \ v}}{{\text{number of vertices in graph} - 1}}
 \]
 </div>
 
