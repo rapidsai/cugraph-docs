@@ -70,7 +70,8 @@ dependencies:
           - recommonmark
           - sphinx-copybutton
           - sphinx-markdown-tables
-          - sphinx>=8
+          # the ceiling on sphinx can be removed when https://github.com/spatialaudio/nbsphinx/issues/825 is resolved
+          - sphinx>=8,<8.2.0
           - sphinxcontrib-websupport
 
   # this repo only uses conda and 1 major version of CUDA, so
