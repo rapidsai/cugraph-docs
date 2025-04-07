@@ -11,7 +11,6 @@ Graph Storage
 .. autosummary::
    :toctree: ../api/cugraph-pyg/
 
-   cugraph_pyg.data.dask_graph_store.DaskGraphStore
    cugraph_pyg.data.graph_store.GraphStore
 
 Feature Storage
@@ -27,8 +26,6 @@ Data Loaders
 .. autosummary::
    :toctree: ../api/cugraph-pyg/
 
-   cugraph_pyg.loader.dask_node_loader.DaskNeighborLoader
-   cugraph_pyg.loader.dask_node_loader.BulkSampleLoader
    cugraph_pyg.loader.node_loader.NodeLoader
    cugraph_pyg.loader.neighbor_loader.NeighborLoader
 
