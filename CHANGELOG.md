@@ -1,3 +1,14 @@
+# cugraph-docs 25.04.00 (9 Apr 2025)
+
+## 🐛 Bug Fixes
+
+- changed the version of dgl dependency ([#103](https://github.com/rapidsai/cugraph-docs/pull/103)) [@acostadon](https://github.com/acostadon)
+
+## 🛠️ Improvements
+
+- require sphinx&lt;8.2.0, update CODEOWNERS ([#100](https://github.com/rapidsai/cugraph-docs/pull/100)) [@jameslamb](https://github.com/jameslamb)
+- merge branch-25.02 into branch-25.04 ([#99](https://github.com/rapidsai/cugraph-docs/pull/99)) [@jameslamb](https://github.com/jameslamb)
+
 # cugraph-docs 25.02.00 (13 Feb 2025)
 
 ## 📖 Documentation
