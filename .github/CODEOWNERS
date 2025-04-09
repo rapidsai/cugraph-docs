@@ -11,4 +11,9 @@ docs/              @rapidsai/cugraph-doc-codeowners
 # CI code owners
 /.github/                @rapidsai/ci-codeowners
 /ci/                     @rapidsai/ci-codeowners
-/.pre-commit-config.yaml @rapidsai/ci-codeowners
+
+# packaging code owners
+/.pre-commit-config.yaml @rapidsai/packaging-codeowners
+/conda/                  @rapidsai/packaging-codeowners
+dependencies.yaml        @rapidsai/packaging-codeowners
+/build.sh                @rapidsai/packaging-codeowners

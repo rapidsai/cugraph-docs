@@ -70,7 +70,8 @@ dependencies:
           - recommonmark
           - sphinx-copybutton
           - sphinx-markdown-tables
-          - sphinx>=8
+          # the ceiling on sphinx can be removed when https://github.com/spatialaudio/nbsphinx/issues/825 is resolved
+          - sphinx>=8,<8.2.0
           - sphinxcontrib-websupport
 
   # this repo only uses conda and 1 major version of CUDA, so
@@ -79,11 +80,11 @@ dependencies:
     common:
       - output_types: [conda]
         packages:
-          - cugraph==25.2.*,>=0.0.0a0
-          - cugraph-dgl==25.2.*,>=0.0.0a0
-          - cugraph-pyg==25.2.*,>=0.0.0a0
-          - 'dglteam/label/th23_cu121::dgl'
-          - libcugraph==25.2.*,>=0.0.0a0
-          - libcugraph_etl==25.2.*,>=0.0.0a0
-          - pylibcugraph==25.2.*,>=0.0.0a0
-          - pylibwholegraph==25.2.*,>=0.0.0a0
+          - cugraph==25.4.*,>=0.0.0a0
+          - cugraph-dgl==25.4.*,>=0.0.0a0
+          - cugraph-pyg==25.4.*,>=0.0.0a0
+          - 'dglteam/label/th24_cu124::dgl'
+          - libcugraph==25.4.*,>=0.0.0a0
+          - libcugraph_etl==25.4.*,>=0.0.0a0
+          - pylibcugraph==25.4.*,>=0.0.0a0
+          - pylibwholegraph==25.4.*,>=0.0.0a0
