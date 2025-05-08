@@ -42,7 +42,7 @@ files](https://github.com/rapidsai/cugraph/blob/main/conda/environments).
 conda env create --name cugraph_dev --file $CUGRAPH_HOME/conda/environments/all_cuda-118_arch-x86_64.yaml
 
 # for CUDA 12.x
-conda env create --name cugraph_dev --file $CUGRAPH_HOME/conda/environments/all_cuda-125_arch-x86_64.yaml
+conda env create --name cugraph_dev --file $CUGRAPH_HOME/conda/environments/all_cuda-129_arch-x86_64.yaml
 
 
 # activate the environment
@@ -60,7 +60,7 @@ conda env update --name cugraph_dev --file $CUGRAPH_HOME/conda/environments/all_
 conda activate cugraph_dev
 
 # for CUDA 12.x
-conda env update --name cugraph_dev --file $CUGRAPH_HOME/conda/environments/all_cuda-125_arch-x86_64.yaml
+conda env update --name cugraph_dev --file $CUGRAPH_HOME/conda/environments/all_cuda-129_arch-x86_64.yaml
 conda activate cugraph_dev
 
 
