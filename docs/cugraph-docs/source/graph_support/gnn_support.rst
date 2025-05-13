@@ -9,7 +9,6 @@ Here is a talk that explains `Training GNNs at Internet Scale using cuGraph and 
    :maxdepth: 2
 
    PyG_support.md
-   DGL_support.md
    wholegraph_support.md
 
 Blogs to explain how RAPIDS cuGraph supports GNN'S

@@ -77,7 +77,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'cugraph-docs'
-copyright = '2024, NVIDIA Corporation'
+copyright = '2025, NVIDIA Corporation'
 author = 'NVIDIA Corporation'
 
 # The version info for the project you're documenting, acts as replacement for
