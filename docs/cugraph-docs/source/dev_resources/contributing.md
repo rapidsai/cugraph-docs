@@ -5,7 +5,7 @@ There are multiple ways to be involved and contribute to the cuGraph community, 
 
 * [File an Issue](https://github.com/rapidsai/docs/issues/new)
 * [Implement a New Feature](https://docs.rapids.ai/contributing/code/#your-first-issue)
-* [Work on an Existing Issue](#F)
+* [Work on an Existing Issue](https://github.com/rapidsai/cugraph/issues)
 
 If you are ready to contribute, jump right to the [Contribute Code](https://docs.rapids.ai/contributing/issues/) section.
 
@@ -69,17 +69,15 @@ If you need more context on a particular issue, please ask.
 ## So you want to contribute code
 
 **TL;DR General Development Process**
-1. Read the documentation on [building from source](https://docs.rapids.ai/api/cugraph/nightly/installation/source_build/) to learn how to setup, and validate, the development environment
-2. Read the RAPIDS [Code of Conduct](https://docs.rapids.ai/resources/conduct/)
-3. Find or submit an issue to work on (include a comment that you are working issue)
-4. Fork the cuGraph [repo](#fork) and Code (make sure to add unit tests)!
+1. Read the project's README to learn how to setup the development environment
+2. Find an issue to work on. The best way is to look for the <span class="label" style="background: #7057ff; color: #ffffff; text-transform: none">good first issue</span> or <span class="label" style="background: #008672; color: #ffffff; text-transform: none">help wanted</span> labels
+3. Comment on the issue saying you are going to work on it
+4. Code! Make sure to update unit tests!
 5. All RAPIDS projects are released under the Apache-2.0 license, so also make sure all source files that support comments include a copyright and the Apache-2.0 license text.
-6. When done, and code passes local CI, create your pull request (PR)
-   1. Ensure the code matches the [style guide](https://docs.rapids.ai/resources/style/)
-7. Verify that cuGraph CI passes all [status checks](https://help.github.com/articles/about-status-checks/). Fix if needed
+6. When done, [create your pull request]({% link contributing/prs.md %})
+7. Verify that CI passes all [status checks](https://help.github.com/articles/about-status-checks/). Fix if needed
 8. Wait for other developers to review your code and update code as needed
-9. PR will require the proper [tags](https://docs.rapids.ai/resources/label-checker/) be added by someone with repository permission.
-10. Once reviewed and approved, a RAPIDS developer will merge your pull request
+9. Once reviewed and approved, a RAPIDS developer will merge your pull request
 
 Remember, if you are unsure about anything, don't hesitate to comment on issues
 and ask for clarifications!
