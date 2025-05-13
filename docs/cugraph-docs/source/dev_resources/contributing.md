@@ -113,7 +113,7 @@ cuGraph only allows contribution to the current branch and not main or a future 
    1. commit your code
     ```git push```
 6. From the GitHub web page, open a Pull Request
-   1. follow the Pull Request [tagging policy](./PRTAGS.md)
+   1. follow the Pull Request in the repository: https://github.com/rapidsai/```<REPO NAME>```/pulls
 
 ### Development Environment
 
