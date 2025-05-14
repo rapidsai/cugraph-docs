@@ -2,6 +2,10 @@
 *** NOTICE ***
 ==============
 
+**cuGraph-DGL has been removed as of release 25.06.** We recommend migrating to 
+cuGraph-PyG, which offers the same functionality along with additional features like support for heterogeneous sampling and a unified API. 
+The cuGraph team is not planning any further work in the DGL ecosystem going forward.
+
 The cuGraph repository has been refactored to make it more efficient to build, maintain and use.
 
 Libraries supporting GNNs are now located in the `cugraph-gnn repository <https://github.com/rapidsai/cugraph-gnn>`_
