@@ -77,7 +77,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'cugraph-docs'
-copyright = '2025, NVIDIA Corporation'
+copyright = '2024-2025, NVIDIA Corporation'
 author = 'NVIDIA Corporation'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -101,6 +101,9 @@ language = 'en'
 # directories to ignore when looking for source files.
 # This patterns also effect to html_static_path and html_extra_path
 exclude_patterns = []
+
+suppress_warnings = ['duplicate_declaration.cpp']
+
 
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = 'sphinx'
