@@ -22,7 +22,6 @@ Graph Neural Networks API Documentation
     :maxdepth: 3
     :caption: Graph Neural Networks API Documentation
 
-    cugraph-dgl/cugraph_dgl.rst
     cugraph-pyg/cugraph_pyg.rst
     .. wholegraph/index.rst
 

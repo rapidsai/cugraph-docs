@@ -40,7 +40,7 @@ Replace the package name in the example below to the one you want to install.
 Install and update cuGraph using the conda command:
 
 ```bash
-conda install -c rapidsai -c conda-forge -c nvidia cugraph cuda-version=12.0
+conda install -c rapidsai -c conda-forge -c nvidia cugraph cuda-version=12.8
 ```
 
 Alternatively, use `cuda-version=11.8` for packages supporting CUDA 11.

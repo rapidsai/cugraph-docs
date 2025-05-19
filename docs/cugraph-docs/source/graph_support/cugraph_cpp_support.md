@@ -84,8 +84,6 @@ and we try to follow his rules: "No raw loops. No raw pointers. No raw synchroni
  * Prefer algorithms from STL and Thrust to raw loops.
  * Prefer cugraph and RMM to raw pointers and raw memory allocation.
 
-Documentation is discussed in the [Documentation Guide](TODO).
-
 ### Includes
 
 The following guidelines apply to organizing `#include` lines.

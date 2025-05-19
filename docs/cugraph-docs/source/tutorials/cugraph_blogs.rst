@@ -10,8 +10,10 @@ Here, we've selected just a few that are of particular interest to cuGraph users
 Blogs & Conferences
 ====================
 2025
-----
-Coming Soon
+------
+  * `Using NetworkX, Jaccard Similarity, and cuGraph to Predict Your Next Favorite Movie <https://developer.nvidia.com/blog/using-networkx-jaccard-similarity-and-cugraph-to-predict-your-next-favorite-movie/>`_
+  * `Get Started with GPU Acceleration for Data Science <https://developer.nvidia.com/blog/get-started-with-gpu-acceleration-for-data-science/>`_
+  * `ArangoDB Building the Next-Gen Agentic App with GraphRAG & NVIDIA cuGraph, Hackathon projects <https://arangodbhackathon.devpost.com/project-gallery>`_
 
 2024
 ------
