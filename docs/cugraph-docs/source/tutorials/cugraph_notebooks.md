@@ -1,6 +1,5 @@
 # cuGraph Notebooks
 
-![GraphAnalyticsFigure](https://github.com/rapidsai/cugraph/tree/main/img/GraphAnalyticsFigure.jpg)
 
 This repository contains a collection of Jupyter Notebooks that outline how to run various cuGraph analytics.   The notebooks do not address a complete data science problem.  The notebooks are simply examples of how to run the graph analytics.  Manipulation of the data before or after the graph analytic is not covered here.   Extended, more problem focused, notebooks are being created and available https://github.com/rapidsai/notebooks-extended
 
