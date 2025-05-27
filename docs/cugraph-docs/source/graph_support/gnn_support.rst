@@ -2,6 +2,21 @@
 Graph Neural Network Support
 ============================
 
+**cuGraph-DGL has been removed from cuGraph GNN as of release 25.06.** We recommend migrating to 
+cuGraph-PyG, which offers the same functionality along with additional features like support for heterogeneous sampling and a unified API. 
+The cuGraph team is not planning any further work in the DGL ecosystem going forward.
+
+----
+
+The cuGraph GNN stack
+
+.. image:: cugraph-pyg-stack.png
+   :alt: The cuGraph PyG Stack
+   :width: 400px
+   :align: center
+
+----
+
 Here is a talk that explains `Training GNNs at Internet Scale using cuGraph and WholeGraph <https://www.youtube.com/watch?v=rS-bcWm3jQo&t=2762s>`_
 
 
@@ -9,7 +24,6 @@ Here is a talk that explains `Training GNNs at Internet Scale using cuGraph and 
    :maxdepth: 2
 
    PyG_support.md
-   DGL_support.md
    wholegraph_support.md
 
 Blogs to explain how RAPIDS cuGraph supports GNN'S
