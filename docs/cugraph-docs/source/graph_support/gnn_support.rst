@@ -10,8 +10,8 @@ The cuGraph team is not planning any further work in the DGL ecosystem going for
 
 The cuGraph GNN stack
 
-.. image:: ../../_static/cugraph-pyg-stack.png
-   :alt: The cuGraph-
+.. image:: cugraph-pyg-stack.png
+   :alt: The cuGraph PyG Stack
    :width: 400px
    :align: center
 
