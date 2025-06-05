@@ -1,3 +1,25 @@
+# cugraph-docs 25.06.00 (5 Jun 2025)
+
+## 🐛 Bug Fixes
+
+- removed classes in rst that had been removed from cugraph-gnn ([#107](https://github.com/rapidsai/cugraph-docs/pull/107)) [@acostadon](https://github.com/acostadon)
+- Branch 25.06 merge 25.04 ([#106](https://github.com/rapidsai/cugraph-docs/pull/106)) [@acostadon](https://github.com/acostadon)
+
+## 📖 Documentation
+
+- Add `to_numpy_array` to list of Supported Algorithms ([#125](https://github.com/rapidsai/cugraph-docs/pull/125)) [@nv-rliu](https://github.com/nv-rliu)
+- fixed image location and link ([#118](https://github.com/rapidsai/cugraph-docs/pull/118)) [@acostadon](https://github.com/acostadon)
+- remove dgl from docs ([#116](https://github.com/rapidsai/cugraph-docs/pull/116)) [@acostadon](https://github.com/acostadon)
+- Add `to_scipy_sparse_array` (and others) to nx-cugraph docs ([#112](https://github.com/rapidsai/cugraph-docs/pull/112)) [@eriknw](https://github.com/eriknw)
+- Add FA2 to Table ([#109](https://github.com/rapidsai/cugraph-docs/pull/109)) [@nv-rliu](https://github.com/nv-rliu)
+
+## 🛠️ Improvements
+
+- switch from &#39;run_script&#39; to &#39;script&#39; in GitHub Actions workflows ([#121](https://github.com/rapidsai/cugraph-docs/pull/121)) [@jameslamb](https://github.com/jameslamb)
+- Finish CUDA 12.9 migration and use branch-25.06 workflows ([#117](https://github.com/rapidsai/cugraph-docs/pull/117)) [@bdice](https://github.com/bdice)
+- Build and test with CUDA 12.9.0 ([#114](https://github.com/rapidsai/cugraph-docs/pull/114)) [@bdice](https://github.com/bdice)
+- Add support for Python 3.13 ([#113](https://github.com/rapidsai/cugraph-docs/pull/113)) [@gforsyth](https://github.com/gforsyth)
+
 # cugraph-docs 25.04.00 (9 Apr 2025)
 
 ## 🐛 Bug Fixes
