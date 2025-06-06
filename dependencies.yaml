@@ -4,7 +4,7 @@ files:
     output: [conda]
     matrix:
       # docs are only built on the latest CUDA version RAPIDS supports
-      cuda: ["12.8"]
+      cuda: ["12.9"]
       arch: [x86_64]
     includes:
       - checks
@@ -55,6 +55,10 @@ dependencies:
               cuda: "12.8"
             packages:
               - cuda-version=12.8
+          - matrix:
+              cuda: "12.9"
+            packages:
+              - cuda-version=12.9
 
   docs:
     common:
@@ -80,11 +84,11 @@ dependencies:
     common:
       - output_types: [conda]
         packages:
-          - cugraph==25.4.*,>=0.0.0a0
-          - cugraph-dgl==25.4.*,>=0.0.0a0
-          - cugraph-pyg==25.4.*,>=0.0.0a0
+          - cugraph==25.6.*,>=0.0.0a0
+          - cugraph-dgl==25.6.*,>=0.0.0a0
+          - cugraph-pyg==25.6.*,>=0.0.0a0
           - 'dglteam/label/th24_cu124::dgl'
-          - libcugraph==25.4.*,>=0.0.0a0
-          - libcugraph_etl==25.4.*,>=0.0.0a0
-          - pylibcugraph==25.4.*,>=0.0.0a0
-          - pylibwholegraph==25.4.*,>=0.0.0a0
+          - libcugraph==25.6.*,>=0.0.0a0
+          - libcugraph_etl==25.6.*,>=0.0.0a0
+          - pylibcugraph==25.6.*,>=0.0.0a0
+          - pylibwholegraph==25.6.*,>=0.0.0a0
