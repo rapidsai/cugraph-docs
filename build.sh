@@ -16,7 +16,7 @@ ARGS=$*
 
 # NOTE: ensure all dir changes are relative to the location of this
 # script, and that this script resides in the repo dir!
-REPODIR=$(cd $(dirname $0); pwd)
+REPODIR=$(cd "$(dirname "$0")"; pwd)
 
 RAPIDS_VERSION="$(sed -E -e 's/^([0-9]{2})\.([0-9]{2})\.([0-9]{2}).*$/\1.\2/' VERSION)"
 
@@ -37,7 +37,6 @@ HELP="$0 [<target> ...] [<flag> ...]
    clean                      - remove all existing build artifacts and configuration (start over)
    docs                       - build the docs (default)
  and <flag> is:
-   -v                         - verbose build mode
    --clean                    - clean
    -h                         - print this text
 
@@ -46,15 +45,12 @@ HELP="$0 [<target> ...] [<flag> ...]
 "
 
 
-# Set defaults for vars modified by flags to this script
-VERBOSE_FLAG=""
-
 function hasArg {
-    (( ${NUMARGS} != 0 )) && (echo " ${ARGS} " | grep -q " $1 ")
+    (( NUMARGS != 0 )) && (echo " ${ARGS} " | grep -q " $1 ")
 }
 
 function buildDefault {
-    (( ${NUMARGS} == 0 )) || !(echo " ${ARGS} " | grep -q " [^-][a-zA-Z0-9\_\-]\+ ")
+    (( NUMARGS == 0 )) || ! (echo " ${ARGS} " | grep -q " [^-][a-zA-Z0-9\_\-]\+ ")
 }
 
 
@@ -64,7 +60,7 @@ if hasArg -h || hasArg --help; then
 fi
 
 # Check for valid usage
-if (( ${NUMARGS} != 0 )); then
+if (( NUMARGS != 0 )); then
     for a in ${ARGS}; do
         if ! (echo "${VALIDARGS}" | grep -q "^[[:blank:]]*${a}$"); then
             echo "Invalid option: ${a}"
@@ -73,19 +69,12 @@ if (( ${NUMARGS} != 0 )); then
     done
 fi
 
-# Process flags
-if hasArg -v; then
-    VERBOSE_FLAG="-v"
-fi
-
-
-
 if hasArg clean; then
     # Ignore errors for clean since missing files, etc. are not failures
     set +e
 
     # Clean up the docs
-    cd ${REPODIR}/docs/cugraph-docs
+    cd "${REPODIR}"/docs/cugraph-docs
     make clean
     # Go back to failing on first error for all other operations
     set -e
@@ -94,13 +83,13 @@ fi
 # Build the docs
 # C/C++?CUDA libraries
 if hasArg docs || buildDefault; then
-    PROJ_LIST=("libcugraph libwholegraph")
-    for PROJECT in ${PROJ_LIST}; do
+    PROJ_LIST=("libcugraph" "libwholegraph")
+    for PROJECT in "${PROJ_LIST[@]}"; do
         echo "PROJECT IS ${PROJECT}"
         XML_DIR="${REPODIR}/docs/cugraph-docs/${PROJECT}"
         rm -rf "${XML_DIR}"
         mkdir -p "${XML_DIR}"
-        export XML_DIR_${PROJECT^^}="$XML_DIR"
+        export XML_DIR_"${PROJECT^^}"="$XML_DIR"
         echo "Pulling https://d1664dvumjb44w.cloudfront.net/${PROJECT}/xml_tar/${RAPIDS_VERSION}/xml.tar.gz"
         curl -O "https://d1664dvumjb44w.cloudfront.net/${PROJECT}/xml_tar/${RAPIDS_VERSION}/xml.tar.gz"
 
@@ -114,6 +103,6 @@ if hasArg docs || buildDefault; then
 
     #export XML_DIR_LIBCUGRAPH="${REPODIR}/cpp/doxygen/xml"
 
-    cd ${REPODIR}/docs/cugraph-docs
+    cd "${REPODIR}"/docs/cugraph-docs
     make html
 fi
