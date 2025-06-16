@@ -6,11 +6,9 @@ It is defined as two times the size of the set intersection divided by the sum o
 
 Sørensen coefficient 
 
-<div class="math">
-\[
+$$
 \left(2 * |A \cap B| \right) \over \left(|A| + |B| \right)
-\]
-</div>
+$$
 
 In graphs, the sets refer to the set of connected nodes or neighborhood of nodes A and B.
 

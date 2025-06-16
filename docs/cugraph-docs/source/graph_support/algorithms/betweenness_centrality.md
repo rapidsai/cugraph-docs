@@ -7,11 +7,11 @@ See [Betweenness on Wikipedia](https://en.wikipedia.org/wiki/Betweenness_central
 Betweenness centrality of a node 𝑣 is the sum of the fraction of all-pairs shortest paths that pass through 𝑣
 
 
-<div class="math">
-\[
+$$
 c_B(v) =\sum_{s,t \in V} \frac{\sigma(s, t|v)}{\sigma(s, t)}
-\]
-</div>
+$$
+
+
 
 ## When to use BC
 Betweenness centrality is often used to answer questions like:

@@ -6,11 +6,9 @@ See [Degree Centrality on Wikipedia](https://en.wikipedia.org/wiki/Degree_centra
 Degree centrality of a vertex 𝑣 is the sum of the edges incident on that node.
 
 
-<div class="math">
-\[
+$$
 C_d(v) = \frac{{\text{degree of vertex } \ v}}{{\text{number of vertices in graph} - 1}}
-\]
-</div>
+$$
 
 ## When to use Degree Centrality
 * When you need a really quick identifcation of important nodes on very simply structured data.

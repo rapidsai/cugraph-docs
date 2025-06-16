@@ -68,10 +68,10 @@ dependencies:
           - doxygen
           - graphviz
           - ipython
+          - myst-parser
           - nbsphinx
           - numpydoc
           - pydata-sphinx-theme
-          - recommonmark
           - sphinx-copybutton
           - sphinx-markdown-tables
           # the ceiling on sphinx can be removed when https://github.com/spatialaudio/nbsphinx/issues/825 is resolved
