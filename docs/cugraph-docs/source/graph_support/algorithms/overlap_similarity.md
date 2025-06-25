@@ -4,7 +4,7 @@ The Overlap Coefficient, also known as th Szymkiewicz–Simpson coefficient, bet
 The Overlap Coefficient can be defined as
 
 $$
-overlap(A,B) = \frac{|A \cap B|}{min(|A|,|B|)}$\
+overlap(A,B) = \frac{|A \cap B|}{min(|A|,|B|)}
 $$
 
 [Learn more about Overlap Similarity](https://en.wikipedia.org/wiki/Overlap_coefficient)

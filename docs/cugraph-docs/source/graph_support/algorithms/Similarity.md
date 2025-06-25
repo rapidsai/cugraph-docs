@@ -1,6 +1,16 @@
 
 # cuGraph Similarity Algorithms
 
+```{toctree}
+:maxdepth: 1
+:hidden:
+
+jaccard_similarity
+overlap_similarity
+sorensen_coefficient
+```
+
+
 The RAPIDS cuGraph Similarity folder contain a collection of Jupyter Notebooks that demonstrate algorithms to quantify the similarity between pairs of vertices in the graph.
 Results of Similarity algorithms are often used to answer questions like:
 * Could two vertices be duplicates or aliases of the same actor?
@@ -15,9 +25,9 @@ Manipulation of the data before or after the graph analytic is not covered here.
 
 |Algorithm          |Notebooks Containing                                                     |Description                                                  |
 | --------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-|[Jaccard Smiliarity](../jaccard_similarity.html)| [Jaccard Similarity](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/link_prediction/Jaccard-Similarity.ipynb)                 ||
-|[Overlap Similarity](../overlap_similarity.html)| [Overlap Similarity](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/link_prediction/Overlap-Similarity.ipynb)                    ||
-|[Sorensen](../sorensen_coefficient.html)|[Sorensen Similarity](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/link_prediction/Sorensen_coefficient.ipynb)||
+|[Jaccard Smiliarity](jaccard_similarity.html)| [Jaccard Similarity](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/link_prediction/Jaccard-Similarity.ipynb)                 ||
+|[Overlap Similarity](overlap_similarity.html)| [Overlap Similarity](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/link_prediction/Overlap-Similarity.ipynb)                    ||
+|[Sorensen](sorensen_coefficient.html)|[Sorensen Similarity](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/link_prediction/Sorensen_coefficient.ipynb)||
 |Personal Pagerank|[Pagerank](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/link_analysis/Pagerank.ipynb)                 ||
 
 

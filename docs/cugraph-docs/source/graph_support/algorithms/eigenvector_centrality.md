@@ -10,7 +10,7 @@ The eigenvector centrality for node i is the
 i-th element of the vector x defined by the eigenvector equation.
 
 $$
-x_v = \frac{1}{\lambda}{\sum_{t \in M(v)}}x_t = \frac{1}{\lambda}{\sum_{t \in V}{a_v,x_t}
+x_v = \frac{1}{\lambda}{\sum_{t \in M(v)}}x_t = \frac{1}{\lambda}{\sum_{t \in V}{a_v,x_t}}
 $$
 
 
