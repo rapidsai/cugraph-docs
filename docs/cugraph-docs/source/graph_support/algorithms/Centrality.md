@@ -20,7 +20,7 @@ The RAPIDS cuGraph Centrality folder contains a collection of Jupyter Notebooks 
 * Which vertices are on the most efficient paths through the graph?
 * Which vertices connect the most important vertices to each other?
 
-But which vertices are most important? The answer depends on which measure/algorithm is run.  Manipulation of the data before or after the graph analytic is not covered here.   Extended, more problem focused, notebooks are being created and available https://github.com/rapidsai/notebooks-extended
+But which vertices are most important? The answer depends on which measure/algorithm is run.  Manipulation of the data before or after the graph analytic is not covered here. Extended, more problem-focused, notebooks are being created and available https://github.com/rapidsai/notebooks-extended
 
 ## Summary
 
