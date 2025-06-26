@@ -64,8 +64,6 @@ nx.betweenness_centrality(nxcg_G, k=1000)  # nxcg Graph type causes cugraph back
 
 ## Command Line Example
 
----
-
 Create `bc_demo.ipy` and paste the code below.
 
 ```python

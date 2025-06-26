@@ -19,13 +19,13 @@ dependencies:
 - ipython
 - libcugraph==25.8.*,>=0.0.0a0
 - libcugraph_etl==25.8.*,>=0.0.0a0
+- myst-parser
 - nbsphinx
 - numpydoc
 - pre-commit
 - pydata-sphinx-theme
 - pylibcugraph==25.8.*,>=0.0.0a0
 - pylibwholegraph==25.8.*,>=0.0.0a0
-- recommonmark
 - sphinx-copybutton
 - sphinx-markdown-tables
 - sphinx>=8,<8.2.0

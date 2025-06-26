@@ -42,6 +42,7 @@ from github_link import make_linkcode_resolve # noqa
 # ones.
 extensions = [
     "breathe",
+    "myst_parser",
     "sphinx.ext.intersphinx",
     "sphinxcontrib.jsmath",
     "sphinx.ext.autodoc",
@@ -54,7 +55,6 @@ extensions = [
     "IPython.sphinxext.ipython_console_highlighting",
     "IPython.sphinxext.ipython_directive",
     "nbsphinx",
-    "recommonmark",
     "sphinx_copybutton",
 ]
 
@@ -69,8 +69,6 @@ templates_path = ['_templates']
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
 #
-# source_suffix = ['.rst', '.md']
-source_suffix = {".rst": "restructuredtext", ".md": "markdown"}
 
 # The master toctree document.
 master_doc = 'index'
@@ -214,8 +212,6 @@ def setup(app):
     app.add_js_file("https://docs.rapids.ai/assets/js/custom.js", loading_method="defer")
     app.add_css_file("references.css")
 
-
-source_suffix = ['.rst', '.md']
 
 # The following is used by sphinx.ext.linkcode to provide links to github
 linkcode_resolve = make_linkcode_resolve(
