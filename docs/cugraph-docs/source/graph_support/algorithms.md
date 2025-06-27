@@ -1,5 +1,14 @@
 # List of Supported and Planned Algorithms
 
+```{toctree}
+:maxdepth: 1
+:hidden:
+
+
+algorithms/Centrality
+algorithms/Similarity
+```
+
 
 ## Supported Graph Types
 
@@ -23,7 +32,7 @@ Note: Multi-GPU, or MG, includes support for Multi-Node Multi-GPU (also called M
 
 | Category          | Notebooks                          | Scale               | Notes                                                           |
 | ----------------- | ---------------------------------- | ------------------- | --------------------------------------------------------------- |
-| [Centrality](./algorithms/Centrality.html)        | [Centrality](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/centrality/Centrality.ipynb)          |           |        |
+| [Centrality](algorithms/Centrality.html)        | [Centrality](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/centrality/Centrality.ipynb)          |           |        |
 |                   | [Katz](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/centrality/Katz.ipynb)                                    | __Multi-GPU__  |                  |
 |                   | [Betweenness Centrality](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/centrality/Betweenness.ipynb)           | __Multi-GPU__  | MG as of 23.06   |
 |                   | [Edge Betweenness Centrality](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/centrality/Betweenness.ipynb)      | __Multi-GPU__  | MG as of 23.08   |
