@@ -5,4 +5,4 @@ Algorithms
 .. toctree::
    :maxdepth: 1
 
-   algorithms.md
+   algorithms/algorithms_top
