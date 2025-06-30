@@ -65,7 +65,7 @@ Note: Multi-GPU, or MG, includes support for Multi-Node Multi-GPU (also called M
 |                   | [Pagerank](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/link_analysis/Pagerank.ipynb)                | __Multi-GPU__ | [C++ README](./cpp_algorithms/centrality_cpp.html#Pagerank)                |
 |                   | [Personal Pagerank]()                  | __Multi-GPU__ | [C++ README](./cpp_algorithms/centrality_cpp.html#Personalized-Pagerank)   |
 |                   | [HITS](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/link_analysis/HITS.ipynb)        | __Multi-GPU__ |                |
-| [Link Prediction](./Similarity/Similarity/)   |                                    |                     |                                                                 |
+| [Link Prediction](./Similarity/)   |                                    |                     |                                                                 |
 |                   | [Jaccard Similarity](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/link_prediction/Jaccard-Similarity.ipynb)                 | __Multi-GPU__      | Directed graph only                         |
 |                   | [Weighted Jaccard Similarity](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/link_prediction/Jaccard-Similarity.ipynb)        | Single-GPU          |                                                                 |
 |                   | [Overlap Similarity](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/link_prediction/Overlap-Similarity.ipynb)                 | **Multi-GPU** |                                                   |
