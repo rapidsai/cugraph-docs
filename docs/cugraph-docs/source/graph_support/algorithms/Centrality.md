@@ -11,7 +11,7 @@
 ./katz_centrality
 ```
 
-<img src="../../_static/zachary_graph_centrality.png" width="35%"/>
+<img src="../_static/zachary_graph_centrality.png" width="35%"/>
 
 The RAPIDS cuGraph Centrality folder contains a collection of Jupyter Notebooks that demonstrate algorithms to identify and quantify the importance of vertices to the structure of the graph.  In the diagram above, the highlighted vertices are highly important and are likely answers to questions like:
 
