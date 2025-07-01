@@ -2,9 +2,10 @@
 
 ```{toctree}
 :maxdepth: 1
+:hidden:
 
-Centrality
-Similarity
+algorithms/Centrality
+algorithms/Similarity
 ```
 
 

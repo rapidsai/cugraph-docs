@@ -3,12 +3,12 @@
 
 ```{toctree}
 :maxdepth: 1
+:hidden:
 
-
-degree_centrality
-betweenness_centrality
-eigenvector_centrality
-katz_centrality
+./degree_centrality
+./betweenness_centrality
+./eigenvector_centrality
+./katz_centrality
 ```
 
 <img src="../../_static/zachary_graph_centrality.png" width="35%"/>

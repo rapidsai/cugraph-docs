@@ -3,10 +3,10 @@
 
 ```{toctree}
 :maxdepth: 1
-
-jaccard_similarity
-overlap_similarity
-sorensen_coefficient
+:hidden:
+./jaccard_similarity
+./overlap_similarity
+./sorensen_coefficient
 ```
 
 
