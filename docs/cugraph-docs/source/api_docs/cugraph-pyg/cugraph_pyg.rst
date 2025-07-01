@@ -17,6 +17,7 @@ Feature Storage
 ---------------
 .. autosummary::
    :toctree: ../api/cugraph-pyg/
+   cugraph_pyg.data.feature_store.FeatureStore
 
 
 Data Loaders
