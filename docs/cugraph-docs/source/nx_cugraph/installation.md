@@ -8,7 +8,7 @@ This guide describes how to install ``nx-cugraph`` and use it in your workflows.
 `nx-cugraph` requires the following:
 
  - **Volta architecture or later NVIDIA GPU, with [compute capability](https://developer.nvidia.com/cuda-gpus) 7.0+**
- - **[CUDA](https://docs.nvidia.com/cuda/index.html) 11.2, 11.4, 11.5, 11.8, 12.0, 12.2, 12.5, or 12.8**
+ - **[CUDA](https://docs.nvidia.com/cuda/index.html) 11.2, 11.4, 11.5, 11.8, 12.0, 12.2, 12.5, or 12.9**
  - **Python >= 3.10**
  - **[NetworkX](https://networkx.org/documentation/stable/install.html#) >= 3.2 (version 3.4 or higher recommended)**
 
