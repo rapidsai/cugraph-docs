@@ -4,10 +4,9 @@
 ```{toctree}
 :maxdepth: 1
 :hidden:
-
-jaccard_similarity
-overlap_similarity
-sorensen_coefficient
+./jaccard_similarity
+./overlap_similarity
+./sorensen_coefficient
 ```
 
 
@@ -25,9 +24,9 @@ Manipulation of the data before or after the graph analytic is not covered here.
 
 |Algorithm          |Notebooks Containing                                                     |Description                                                  |
 | --------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-|[Jaccard Smiliarity](jaccard_similarity.html)| [Jaccard Similarity](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/link_prediction/Jaccard-Similarity.ipynb)                 ||
-|[Overlap Similarity](overlap_similarity.html)| [Overlap Similarity](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/link_prediction/Overlap-Similarity.ipynb)                    ||
-|[Sorensen](sorensen_coefficient.html)|[Sorensen Similarity](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/link_prediction/Sorensen_coefficient.ipynb)||
+|Jaccard Smiliarity| [Jaccard Similarity](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/link_prediction/Jaccard-Similarity.ipynb)                 ||
+|Overlap Similarity| [Overlap Similarity](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/link_prediction/Overlap-Similarity.ipynb)                    ||
+|Sorensen|[Sorensen Similarity](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/link_prediction/Sorensen_coefficient.ipynb)||
 |Personal Pagerank|[Pagerank](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/link_analysis/Pagerank.ipynb)                 ||
 
 

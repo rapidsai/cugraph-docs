@@ -17,9 +17,9 @@ Feature Storage
 ---------------
 .. autosummary::
    :toctree: ../api/cugraph-pyg/
+   
+   cugraph_pyg.data.feature_store.FeatureStore
 
-   cugraph_pyg.data.feature_store.TensorDictFeatureStore
-   cugraph_pyg.data.feature_store.WholeFeatureStore
 
 Data Loaders
 ------------

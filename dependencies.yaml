@@ -72,8 +72,7 @@ dependencies:
           - pydata-sphinx-theme
           - sphinx-copybutton
           - sphinx-markdown-tables
-          # the ceiling on sphinx can be removed when https://github.com/spatialaudio/nbsphinx/issues/825 is resolved
-          - sphinx>=8,<8.2.0
+          - sphinx
           - sphinxcontrib-websupport
 
   # this repo only uses conda and 1 major version of CUDA, so
