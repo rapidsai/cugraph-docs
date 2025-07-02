@@ -4,9 +4,7 @@ channels:
 - pyg
 - rapidsai
 - rapidsai-nightly
-- dask/label/dev
 - conda-forge
-- nvidia
 dependencies:
 - breathe>=4.35
 - cuda-version=12.9
