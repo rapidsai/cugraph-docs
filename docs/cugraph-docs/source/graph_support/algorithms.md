@@ -6,6 +6,7 @@
 
 algorithms/Centrality
 algorithms/Similarity
+algorithms/Community
 ```
 
 
