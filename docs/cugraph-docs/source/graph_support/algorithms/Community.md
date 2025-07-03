@@ -1,5 +1,5 @@
 
-# cuGraph Centrality Algorithms
+# cuGraph Community Algorithms
 
 ```{toctree}
 :maxdepth: 1
@@ -25,7 +25,6 @@ But which vertices are most important? The answer depends on which measure/algor
 | --------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
 |Louvain Community| [Louvain and Leiden](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/community/Louvain.ipynb)                  |Measure based on counting direct connections for each vertex|
 |Leiden Community|[Louvain and Leiden](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/community/Louvain.ipynb)                    |Number of shortest paths through the vertex|
-|Spectral Clustering|[Spectral Clustering](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/community/Spectral-Clustering.ipynb)|Explanation|
 |Spectral Clustering|[Spectral Clustering](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/community/Spectral-Clustering.ipynb)|Explanation|
 |Subgraph Extraction|[Subgraph-Extraction](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/community/Subgraph-Extraction.ipynb)|Explanation|
 |Triangle Counting|[Triangle Counting](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/community/Triangle-Counting.ipynb)|Explanation|
