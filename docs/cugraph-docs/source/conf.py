@@ -58,11 +58,6 @@ extensions = [
     "sphinx_copybutton",
 ]
 
-myst_enable_extensions = [
-    "dollarmath",
-    "amsmath",
-]
-
 
 jsmath_path = "https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS_HTML"
 
