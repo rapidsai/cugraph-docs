@@ -37,6 +37,19 @@ In addition to the inverse of the helpful characteristics listed above, several 
 While cuGraph's parallelism migigates run time, [Big O notation](https://en.wikipedia.org/wiki/Big_O_notation) is still the standard to compare algorithm costs.
 
 Louvain cost
+Louvain is a very efficient algorithm.
+
+Where:
+
+* $n$ - Number of nodes
+* $m$ - number of edges
+* $d$ - average degree of the nodes
+
+The cost is $O(m\:log\:n)$
+
+Louvain is especially efficient with GPU-acceleration becausle it lends itself to parallelization.
+
+
 ___
 Copyright (c) 2023-2025, NVIDIA CORPORATION.
 
