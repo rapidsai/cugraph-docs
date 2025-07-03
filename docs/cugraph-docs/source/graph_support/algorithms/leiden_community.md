@@ -1,11 +1,40 @@
-# Louvain Community
+# Leiden Community
 
-Louvain community detection seeks to maximize modularity which measures, in quantitative terms, how effectively the graph has been partitioned. It actually compares the paritioning to a random partitioning. Modularity is caculated as follows.
+Leidin coummunity detection is very similar to [Louvain community detection](./leiden_community). Both seek to maximize modularity which measures, in quantitative terms, how effectively the graph has been partitioned. Both compare a proposed partioning to random partitioning. Modularity is caculated as follows.
 
-See [Louvain community on Wikipedia](https://en.wikipedia.org/wiki/Louvain_method) for more details on the algorithm.
+The base modularity calcution is identical to Louvain:
 
 $$
 Q = \frac{1}{2m} \sum_{i,j} \left[ A_{ij} - \frac{k_i k_j}{2m} \right] \delta(c_i, c_j)
+$$
+
+$A_{ij}$ - Does an edge exist between nodes i and j. if the edge exists, $A_{ij} = 1$ if not, it is 0.
+
+$\frac{k_i k_j}{2m}$ - the number of edges in the case of a random graph
+
+$delta(c_i, c_j)$ - Are the two nodes in the same community? (0 for No. 1 for Yes)
+
+However, in the cuGraph implementation of Leiden, two optimizations are made:
+1. Leiden utilizes improved convergence criteria for efficiency
+2. It does an additional step to prevent isolated nodes in a community-cluster
+
+A full explanation of the cuGraph improvements came from thoe paper, [From Louvain to Leiden: guaranteeing well-connected communities](https://www.nature.com/articles/s41598-019-41695-z).
+
+
+
+It improves on Louvain in that it:
+
+* produces connected communities ( no isolated node )
+* Run faster
+* can be run on weighted and directed graphs
+
+
+See [Louvain community on Wikipedia](https://en.wikipedia.org/wiki/Louvain_method) for more details on the algorithm.
+
+The formula for Louvain community detection is:
+
+$$
+
 $$
 
 $A_{ij}$ - Does an edge exist between nodes i and j. if the edge exists, $A_{ij} = 1$ if not, it is 0.

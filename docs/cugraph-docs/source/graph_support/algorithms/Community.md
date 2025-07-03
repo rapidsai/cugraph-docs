@@ -6,7 +6,7 @@
 :hidden:
 
 ./louvain_community
-
+./leiden_community
 ```
 
 ![Zachary Karate Centrality Graph](../../_static/zachary_graph_clusters.png)
