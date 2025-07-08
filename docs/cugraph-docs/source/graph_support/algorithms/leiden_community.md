@@ -1,6 +1,6 @@
 # Leiden Community
 
-Leiden coummunity detection is very similar to [Louvain community detection](./leiden_community) in that both seek to maximize modularity. Modularity, in quantitative terms, measures how effectively the graph has been partitioned. Both compare a proposed partitioning to random partitioning. Modularity is calculated as follows.
+Leiden coummunity detection is very similar to [Louvain community detection](./louvain_community) in that both seek to maximize modularity. Modularity, in quantitative terms, measures how effectively the graph has been partitioned. Both compare a proposed partitioning to random partitioning. Modularity is calculated as follows.
 
 The base modularity calcution is identical to Louvain:
 
