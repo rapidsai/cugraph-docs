@@ -44,7 +44,6 @@ extensions = [
     "breathe",
     "myst_parser",
     "sphinx.ext.intersphinx",
-    "sphinxcontrib.jsmath",
     "sphinx.ext.autodoc",
     "sphinx.ext.autosummary",
     "numpydoc",
@@ -57,6 +56,11 @@ extensions = [
     "nbsphinx",
     "sphinx_copybutton",
 ]
+
+myst_enable_extensions = [
+    "dollarmath",
+]
+myst_dmath_double_inline = True
 
 
 jsmath_path = "https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS_HTML"
