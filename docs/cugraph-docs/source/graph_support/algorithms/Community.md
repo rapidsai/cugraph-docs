@@ -9,15 +9,16 @@
 ./leiden_community
 ```
 
-![Zachary Karate Centrality Graph](../../_static/zachary_graph_clusters.png)
+![Zachary Karate community Graph](../../_static/zachary_graph_clusters.png)
 
-The RAPIDS cuGraph Centrality folder contains a collection of Jupyter Notebooks that demonstrate algorithms to identify and quantify the importance of vertices to the structure of the graph.  In the diagram above, the highlighted vertices are highly important and are likely answers to questions like:
+The RAPIDS cuGraph Community folder contains a collection of Jupyter Notebooks that demonstrate algorithms to identify clusters or communities that are tightly related within the structure of the graph.  In the diagram above, the color-encodd communities are determined my maximizing [modularity](https://en.wikipedia.org/wiki/Modularity_(networks)) and are likely answers to questions like:
 
-* Which vertices have the highest degree (most direct links) ?
-* Which vertices are on the most efficient paths through the graph?
-* Which vertices connect the most important vertices to each other?
+* What communities(clustters) within the graph  have the most internal interaction but less external interaction?
+* How many and what size are the communities within the graph?
+* How strongly are they connected?
+* Are there overlapping communities?
 
-But which vertices are most important? The answer depends on which measure/algorithm is run.  Manipulation of the data before or after the graph analytic is not covered here. Extended, more problem-focused, notebooks are being created and available https://github.com/rapidsai/notebooks-extended
+Different algorithms work faster and better on different graphs (directed, weighted, sparse)? New notebooks are being created and available https://github.com/rapidsai/notebooks-extended
 
 ## Summary
 
