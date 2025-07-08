@@ -9,7 +9,7 @@
 ./leiden_community
 ```
 
-![Zachary Karate community Graph](../../_static/zachary_graph_clusters.png)
+![Zachary Karate Community Graph](../../_static/zachary_graph_clusters.png)
 
 The RAPIDS cuGraph Community folder contains a collection of Jupyter Notebooks that demonstrate algorithms to identify clusters or communities that are tightly related within the structure of the graph.  In the diagram above, the color-encodd communities are determined my maximizing [modularity](https://en.wikipedia.org/wiki/Modularity_(networks)) and are likely answers to questions like:
 
