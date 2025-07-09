@@ -7,6 +7,7 @@
 
 ./louvain_community
 ./leiden_community
+./spectral_clustering
 ```
 
 ![Zachary Karate Community Graph](../../_static/zachary_graph_clusters.png)
