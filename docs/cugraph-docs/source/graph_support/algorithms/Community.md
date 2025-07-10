@@ -8,6 +8,9 @@
 ./louvain_community
 ./leiden_community
 ./spectral_clustering
+./subgraph_extraction
+./triangle_counting
+./k_truss
 ```
 
 ![Zachary Karate Community Graph](../../_static/zachary_graph_clusters.png)

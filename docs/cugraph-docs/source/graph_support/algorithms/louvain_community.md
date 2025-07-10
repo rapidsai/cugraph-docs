@@ -33,20 +33,16 @@ In addition to the inverse of the helpful characteristics listed above, several 
 * Sparse graphs since low modularity can make the algorithm results useless.
 
 ## How computationally expensive is it?
-While cuGraph's parallelism migigates run time, [Big O notation](https://en.wikipedia.org/wiki/Big_O_notation) is still the standard to compare algorithm costs.
+While cuGraph's parallelism mitigates run time, [Big O notation](https://en.wikipedia.org/wiki/Big_O_notation) is still the standard to compare algorithm costs.
 
-Louvain cost
-Louvain is a very efficient algorithm.
 
 Where:
 
-* $n$ - Number of nodes
 * $m$ - number of edges
-* $d$ - average degree of the nodes
 
-The cost is $O(m\:log\:n)$
+The cost is $O(m)$
 
-Louvain is especially efficient with GPU-acceleration becausle it lends itself to parallelization.
+Louvain is especially efficient with GPU-acceleration because it lends itself to parallelization.
 
 
 ___
