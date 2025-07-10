@@ -1,4 +1,4 @@
-# Subgraph Extraction
+# Triangle Counting
 
 
 

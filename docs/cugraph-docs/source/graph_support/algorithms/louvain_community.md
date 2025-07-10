@@ -44,7 +44,6 @@ The cost is $O(m)$
 
 Louvain is especially efficient with GPU-acceleration because it lends itself to parallelization.
 
-
 ___
 Copyright (c) 2023-2025, NVIDIA CORPORATION.
 

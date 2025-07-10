@@ -28,12 +28,12 @@ Different algorithms work faster and better on different graphs (directed, weigh
 
 |Algorithm          |Notebooks Containing                                                     |Description                                                  |
 | --------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-|Louvain Community| [Louvain and Leiden](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/community/Louvain.ipynb)                  |Measure based on counting direct connections for each vertex|
-|Leiden Community|[Louvain and Leiden](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/community/Louvain.ipynb)                    |Number of shortest paths through the vertex|
-|Spectral Clustering|[Spectral Clustering](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/community/Spectral-Clustering.ipynb)|Explanation|
-|Subgraph Extraction|[Subgraph-Extraction](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/community/Subgraph-Extraction.ipynb)|Explanation|
-|Triangle Counting|[Triangle Counting](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/community/Triangle-Counting.ipynb)|Explanation|
-|K Truss|[K Truss](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/community/ktruss.ipynb)|Explanation|
+|Louvain Community| [Louvain and Leiden](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/community/Louvain.ipynb)                  |Extracts clusters based on comparing existing edges to a random distribution|
+|Leiden Community|[Louvain and Leiden](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/community/Louvain.ipynb)                    |Efficiency improvement over Louvain that creates connected clusters only|
+|Spectral Clustering|[Spectral Clustering](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/community/Spectral-Clustering.ipynb)|Uses Eigenvectors and Laplacian to cluster graph|
+|Subgraph Extraction|[Subgraph-Extraction](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/community/Subgraph-Extraction.ipynb)|Creates a subgraph including all edges of the supplied nodelist|
+|Triangle Counting|[Triangle Counting](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/community/Triangle-Counting.ipynb)|Counts the number of fully connected triples in the graph|
+|K Truss|[K Truss](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/community/ktruss.ipynb)|Returns the largest relaxed clique (k-truss) in the graph|
 
 
 
