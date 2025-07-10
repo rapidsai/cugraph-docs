@@ -14,7 +14,7 @@ $A_{ij}$ - Does an edge exist between nodes i and j. if the edge exists, $A_{ij}
 
 $\frac{k_i k_j}{2m}$ - the number of edges in the case of a random graph
 
-$delta(c_i, c_j)$ - Are the two nodes in the same community? (0 for No. 1 for Yes)
+$\delta(c_i, c_j)$ - Are the two nodes in the same community? (0 for No. 1 for Yes)
 
 However, in the cuGraph implementation of Leiden, two optimizations are made:
 1. Leiden utilizes improved convergence criteria for efficiency
