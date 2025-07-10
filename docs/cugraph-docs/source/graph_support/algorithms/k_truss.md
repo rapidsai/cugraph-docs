@@ -25,7 +25,8 @@ K-Truss is most commonly compared to k-clique in terms of cost. This is mostly b
 
 The Big-O cost for k-truss is $\mathcal{O}(m^{1.5})$ where m is the number of edges.
 
-By comparison, finding the largest clique in the graph has a Big-O cost of $\mathcal{O}(2^n)$
+By comparison, finding all the $k$-sized cliques in a graph with $n$ nodes has a Big-O cost of $\mathcal{O}(n^k)$ which can quickly become prohibitive.
+
 
 ___
 Copyright (c) 2023-2025, NVIDIA CORPORATION.
