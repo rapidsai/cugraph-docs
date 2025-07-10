@@ -26,9 +26,9 @@ A full explanation of the cuGraph improvements came from thoe paper, [From Louva
 
 Leiden improves on Louvain in that it:
 
-* produces connected communities ( no isolated nodes )
-* Run faster 
-* can be run on weighted and directed graphs
+* Produces connected communities ( no isolated nodes )
+* Runs faster
+* Can be run on weighted and directed graphs
 
 
 See [Leiden community on Wikipedia](https://en.wikipedia.org/wiki/Louvain_method) for more details on the algorithm.
@@ -52,7 +52,7 @@ Leiden is a very efficient algorithm.
 The cost of Leiden is $O(m)
 Where:
 
-* $m$ - number of edges
+* $m$ - number of edges in the graph
 
 The cost is $O(m)$
 

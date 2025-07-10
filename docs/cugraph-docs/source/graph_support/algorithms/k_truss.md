@@ -1,4 +1,4 @@
-# K Truss
+# K-Truss
 
 The k-truss of a graph is the subgraph where each edge is part of at least (k−2) [triangles](https://en.wikipedia.org/wiki/Triangle_graph). K-trusses are used for finding tightly knit groups of vertices in a graph. A k-truss is a relaxation of [k-clique discovery](https://en.wikipedia.org/wiki/Clique_(graph_theory)) in the graph.
 
