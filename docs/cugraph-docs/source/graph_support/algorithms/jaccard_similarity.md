@@ -26,7 +26,7 @@ In graphs, the sets refer to the set of connected nodes or neighborhood of nodes
 ## How computationally expensive is it?
 While cuGraph's parallelism mitigates run cost, [Big O notation](https://en.wikipedia.org/wiki/Big_O_notation) is still the standard to compare algorithm costs.
 
-The cost of calculating the Jaccard Similarity for a graph is  O(d * n) where d is the average degree of the nodes and n is the number of nodes.
+The cost of calculating the Jaccard Similarity for a graph is  $O(d * n)$ where $d$ is the average degree of the nodes and $n$ is the number of nodes.
 
 ___
 Copyright (c) 2023-2025, NVIDIA CORPORATION.
