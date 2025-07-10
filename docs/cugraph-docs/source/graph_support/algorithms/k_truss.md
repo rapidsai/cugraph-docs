@@ -17,6 +17,8 @@ The k-truss in a graph is the largest subgraph of size k nodes, where there are 
 * Sparse graphs which don't contain many triangles
 * When searching for overlapping communities
 * When you are looking for paths in the graph rather than communities
+* bi-partite graphs (like product-customer graphs)
+* graph representation of tree structures
 
 ## How computationally expensive is it?
 K-Truss is most commonly compared to k-clique in terms of cost. This is mostly because k-clique becomes quickly unusable at scale.

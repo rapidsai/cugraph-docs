@@ -13,8 +13,10 @@ $$
 ## When to use Subgraph Extraction
 
 
-## When not to use Subgraph Extraction
-
+## When not to use Triangle Counting
+* Sparse graphs which don't contain many triangles since it might eliminate edges
+* When searching for overlapping communities
+* When you are looking for paths in the graph rather than communities
 
 ## How computationally expensive is it?
 
