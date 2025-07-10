@@ -12,14 +12,14 @@
 
 ![Zachary Karate Community Graph](../../_static/zachary_graph_clusters.png)
 
-The RAPIDS cuGraph Community folder contains a collection of Jupyter Notebooks that demonstrate algorithms to identify clusters or communities that are tightly related within the structure of the graph.  In the diagram above, the color-encodd communities are determined my maximizing [modularity](https://en.wikipedia.org/wiki/Modularity_(networks)) and are likely answers to questions like:
+The RAPIDS cuGraph Community folder contains a collection of Jupyter Notebooks that demonstrate algorithms to identify clusters or communities that are tightly related within the structure of the graph.  In the diagram above, the color-encoded communities are determined my maximizing [modularity](https://en.wikipedia.org/wiki/Modularity_(networks)) and are likely answers to questions like:
 
-* What communities(clustters) within the graph  have the most internal interaction but less external interaction?
+* What communities(clusters) within the graph have the most internal interaction but less external interaction?
 * How many and what size are the communities within the graph?
 * How strongly are they connected?
 * Are there overlapping communities?
 
-Different algorithms work faster and better on different graphs (directed, weighted, sparse)? New notebooks are being created and available https://github.com/rapidsai/notebooks-extended
+Different algorithms work faster and better on different graphs (directed, weighted, sparse)? New notebooks are being created and available [here](https://github.com/rapidsai/notebooks-extended)
 
 ## Summary
 
@@ -30,7 +30,7 @@ Different algorithms work faster and better on different graphs (directed, weigh
 |Spectral Clustering|[Spectral Clustering](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/community/Spectral-Clustering.ipynb)|Explanation|
 |Subgraph Extraction|[Subgraph-Extraction](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/community/Subgraph-Extraction.ipynb)|Explanation|
 |Triangle Counting|[Triangle Counting](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/community/Triangle-Counting.ipynb)|Explanation|
-||[K Truss](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/community/ktruss.ipynb)|Explanation|
+|K Truss|[K Truss](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/community/ktruss.ipynb)|Explanation|
 
 
 
