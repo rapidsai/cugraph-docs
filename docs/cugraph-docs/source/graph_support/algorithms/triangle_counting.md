@@ -1,16 +1,21 @@
 # Triangle Counting
 
+![Zachary Karate Community Graph](../../_static/zachary_graph_triangles.png)
 
-
+Triangle Counting, as the name implies, finds the number of triangles in a graph. Each triangle is a set of three nodes that are connected to each other. They are important in computing the [Clustering Coefficient](https://en.wikipedia.org/wiki/Clustering_coefficient) and can be used for clustering. In the visualization of the [Zachary Karate Club data](http://www.communicationcache.com/uploads/1/0/8/8/10887248/an_information_flow_model_for_conflict_and_fission_in_small_groups.pdf) above, several of the triangles are highlighted in purple.
 
 $$
-
+    \text{Triangle Count} = \frac{1}{3} \sum_{(u,v) \in E} |N(u) \cap N(v)|
 $$
 
+* $N(u)$ - set of node $u$
+* $|N(u) \cap N(v)$ - intersection of the neigbors of nodes $u$ and $v$  that contain an edge $(u,v)$
+* Divide by three to remove triple counting
 
 
 
-## When to use Subgraph Extraction
+## When to use Triangle Counting
+* 
 
 
 ## When not to use Triangle Counting
