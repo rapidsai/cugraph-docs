@@ -8,8 +8,9 @@ $$
     \text{Triangle Count} = \frac{1}{3} \sum_{(u,v) \in E} |N(u) \cap N(v)|
 $$
 
-* $N(u)$ - set of node $u$
-* $|N(u) \cap N(v)$ - intersection of the neigbors of nodes $u$ and $v$  that contain an edge $(u,v)$
+* $N(u)$ - set of neigbors of node $u$
+* $N(v)$ - set of neigbors of node $v$
+* $|N(u) \cap N(v)$ - intersection of the neigbors of nodes $u$ and $v$ that contain an edge $(u,v)$
 * Divide by three to remove triple counting
 
 
