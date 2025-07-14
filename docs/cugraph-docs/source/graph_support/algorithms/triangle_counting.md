@@ -10,22 +10,35 @@ $$
 
 * $N(u)$ - set of neigbors of node $u$
 * $N(v)$ - set of neigbors of node $v$
-* $|N(u) \cap N(v)$ - intersection of the neigbors of nodes $u$ and $v$ that contain an edge $(u,v)$
+* $N(u) \cap N(v)$ - intersection of the neigbors of nodes $u$ and $v$ that contain an edge $(u,v)$
 * Divide by three to remove triple counting
 
 
 
 ## When to use Triangle Counting
-* 
+* To detect anomalies. When compared to the graph triangle density, local sparsity or access can indicate outliers
+* Ranking importance, nodes in many triangles are a useful place to start in network analysis
+* Quantifying clustering by calculating the [Clustering Coefficient](https://en.wikipedia.org/wiki/Clustering_coefficient) which is an important network characteristic measuring density.
+
 
 
 ## When not to use Triangle Counting
 * Sparse graphs which don't contain many triangles since it might eliminate edges
 * When searching for overlapping communities
-* When you are looking for paths in the graph rather than communities
+* When you are interested in paths in the graph rather than communities
 
 ## How computationally expensive is it?
+In cuGraph, the set intersection algorithm is used to count triangles.
+The cost of that algorithm is in terms of Big O:
 
+$$
+O\left( \sum_{(u,v) \in E} \min\left( d(u),\ d(v) \right) \right)
+$$
+
+* $E$ - edges in the graph
+* $d(u)$ - the degree of node $u$
+* $d(v)$ - degree of node $v$
+* $\min\left( d(u),\ d(v) \right)$ - chooses the smaller degree node for efficiency
 
 ___
 Copyright (c) 2023-2025, NVIDIA CORPORATION.
