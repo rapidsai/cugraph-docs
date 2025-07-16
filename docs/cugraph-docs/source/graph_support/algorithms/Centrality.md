@@ -11,9 +11,7 @@
 ./katz_centrality
 ```
 
-![Zachary Karate Centrality Graph](../../_static/zachary_graph_centrality.png)
-
-The RAPIDS cuGraph Centrality folder contains a collection of Jupyter Notebooks that demonstrate algorithms to identify and quantify the importance of vertices to the structure of the graph.  In the diagram above, the highlighted vertices are highly important and are likely answers to questions like:
+The RAPIDS cuGraph Community folder contains a collection of Jupyter Notebooks that demonstrate algorithms to identify communities within the graph. 
 
 * Which vertices have the highest degree (most direct links) ?
 * Which vertices are on the most efficient paths through the graph?

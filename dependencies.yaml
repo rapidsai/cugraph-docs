@@ -66,7 +66,7 @@ dependencies:
           - doxygen
           - graphviz
           - ipython
-          - myst-parser
+          - myst-parser>=0.13
           - nbsphinx
           - numpydoc
           - pydata-sphinx-theme
