@@ -63,7 +63,7 @@ myst_enable_extensions = [
 myst_dmath_double_inline = True
 
 
-jsmath_path = "https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS_HTML"
+# jsmath_path = "https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS_HTML"
 
 
 ipython_mplbackend = 'str'
