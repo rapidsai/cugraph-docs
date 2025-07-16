@@ -15,7 +15,7 @@ __Compiler__:
 * `cmake`       version 3.26.4+
 
 __CUDA__:
-* CUDA 11.8+
+* 12.0+
 * Volta architecture or better
 
 You can obtain CUDA from [https://developer.nvidia.com/cuda-downloads](https://developer.nvidia.com/cuda-downloads).
@@ -29,8 +29,8 @@ __Other Packages__:
 * scikit-build-core
 * nanobind>=0.2.0
 
-## Building wholegraph
-To install wholegraph from source, ensure the dependencies are met.
+## Building gnn
+To install gnn from source, ensure the dependencies are met.
 
 ### Clone Repo and Configure Conda Environment
 __GIT clone a version of the repository__
@@ -40,9 +40,9 @@ __GIT clone a version of the repository__
   export WHOLEGRAPH_HOME=$(pwd)/wholegraph
 
   # Download the wholegraph repo - if you have a forked version, use that path here instead
-  git clone https://github.com/rapidsai/wholegraph.git $WHOLEGRAPH_HOME
+  git clone https://github.com/rapidsai/cugraph-gnn.git $CUGRAPH_GNN_HOME
 
-  cd $WHOLEGRAPH_HOME
+  cd $CUGRAPH_GNN_HOME
   ```
 
 __Create the conda development environment__
@@ -50,11 +50,11 @@ __Create the conda development environment__
 ```bash
 # create the conda environment (assuming in base `wholegraph` directory)
 
-# for CUDA 11.x
-conda env create --name wholegraph_dev --file conda/environments/all_cuda-118_arch-x86_64.yaml
+# for CUDA 12.x
+conda env create --name cugraph_gnn_dev --file conda/environments/all_cuda-118_arch-x86_64.yaml
 
 # activate the environment
-conda activate wholegraph_dev
+conda activate cugraph_gnn_dev
 
 # to deactivate an environment
 conda deactivate
@@ -68,7 +68,7 @@ conda deactivate
 # Where XXX is the CUDA version
 conda env update --name wholegraph_dev --file conda/environments/all_cuda-XXX_arch-x86_64.yaml
 
-conda activate wholegraph_dev
+conda activate cugraph_gnn_dev
 ```
 
 
@@ -77,7 +77,7 @@ Using the `build.sh` script make compiling and installing wholegraph a
 breeze. To build and install, simply do:
 
 ```bash
-$ cd $WHOLEGRAPH_HOME
+$ cd $CUGRAPH_GNN_HOME
 $ ./build.sh clean
 $ ./build.sh libwholegraph
 $ ./build.sh pylibwholegraph
@@ -88,23 +88,24 @@ There are several other options available on the build script for advanced users
 ```bash
 build.sh [<target> ...] [<flag> ...]
  where <target> is:
-   clean                    - remove all existing build artifacts and configuration (start over).
-   uninstall                - uninstall libwholegraph and pylibwholegraph from a prior build/install (see also -n)
-   libwholegraph            - build the libwholegraph C++ library.
-   pylibwholegraph          - build the pylibwholegraph Python package.
-   tests                    - build the C++ (OPG) tests.
-   benchmarks               - build benchmarks.
-   docs                     - build the docs
+   clean                      - remove all existing build artifacts and configuration (start over)
+   uninstall                  - uninstall libwholegraph and GNN Python packages from a prior build/install (see also -n)
+   cugraph-pyg                - build the cugraph-pyg Python package
+   pylibwholegraph            - build the pylibwholegraph Python package
+   libwholegraph              - build the libwholegraph library
+   tests                      - build the C++ tests
+   benchmarks                 - build benchmarks
+   all                        - build everything
  and <flag> is:
-   -v                          - verbose build mode
-   -g                          - build for debug
-   -n                          - no install step
+   -v                         - verbose build mode
+   -g                         - build for debug
+   -n                         - do not install after a successful build (does not affect Python packages)
+   --pydevelop                - install the Python packages in editable mode
    --allgpuarch               - build for all supported GPU architectures
-   --cmake-args=\\\"<args>\\\" - add arbitrary CMake arguments to any cmake call
+   --enable-nvshmem            - build with nvshmem support (beta).
    --compile-cmd               - only output compile commands (invoke CMake without build)
    --clean                    - clean an individual target (note: to do a complete rebuild, use the clean target described above)
-   -h | --h[elp]               - print this text
-
+   -h                         - print this text
  default action (no args) is to build and install 'libwholegraph' then 'pylibwholegraph' targets
 
 examples:
@@ -125,10 +126,10 @@ CMake depends on the `nvcc` executable being on your path or defined in `$CUDACX
 This project uses cmake for building the C/C++ library. To configure cmake, run:
 
   ```bash
-  # Set the location to wholegraph in an environment variable WHOLEGRAPH_HOME
-  export WHOLEGRAPH_HOME=$(pwd)/wholegraph
+  # Set the location to wholegraph in an environment variable CUGRAPH_GNN_HOME
+  export CUGRAPH_GNN_HOME=$(pwd)/cugraph_gnn
 
-  cd $WHOLEGRAPH_HOME
+  cd $CUGRAPH_GNN_HOME
   cd cpp                                        # enter cpp directory
   mkdir build                                   # create build directory
   cd build                                      # enter the build directory
@@ -145,7 +146,7 @@ The default installation locations are `$CMAKE_INSTALL_PREFIX/lib` and `$CMAKE_I
 Build and Install the Python packages to your Python path:
 
 ```bash
-cd $WHOLEGRAPH_HOME
+cd $CUGRAPH_GNN_HOME
 cd python
 cd pylibwholegraph
 python setup.py build_ext --inplace
@@ -159,7 +160,7 @@ Run either the C++ or the Python tests with datasets
   - **Python tests with datasets**
 
     ```bash
-    cd $WHOLEGRAPH_HOME
+    cd $CUGRAPH_GNN_HOME
     cd python
     pytest
     ```
@@ -170,7 +171,7 @@ Run either the C++ or the Python tests with datasets
 
     ```bash
     # Run the tests
-    cd $WHOLEGRAPH_HOME
+    cd $CUGRAPH_GNN_HOME
     cd cpp/build
     gtests/PARALLEL_UTILS_TESTS		# this is an executable file
     ```
@@ -178,9 +179,6 @@ Run either the C++ or the Python tests with datasets
 
 Note: This conda installation only applies to Linux and Python versions 3.10, 3.11, 3.12, and 3.13.
 
-## Creating documentation
-
-Python API documentation can be generated from _./docs/wholegraph directory_. Or through using "./build.sh docs"
 
 ## Attribution
 Portions adopted from https://github.com/pytorch/pytorch/blob/master/CONTRIBUTING.md
