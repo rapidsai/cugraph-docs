@@ -34,7 +34,7 @@ Replace the package name in the example below to the one you want to install.
 Install and update WholeGraph using the conda command:
 
 ```bash
-conda install -c rapidsai -c conda-forge -c nvidia wholegraph cudatoolkit=11.8
+conda install -c rapidsai -c conda-forge -c nvidia wholegraph cudatoolkit=12.9
 ```
 
 <br>
@@ -43,7 +43,7 @@ conda install -c rapidsai -c conda-forge -c nvidia wholegraph cudatoolkit=11.8
 wholegraph, and all of RAPIDS, is available via pip.
 
 ```
-pip install wholegraph-cu11 --extra-index-url=https://pypi.nvidia.com
+pip install wholegraph-cu12 --extra-index-url=https://pypi.nvidia.com
 ```
 
 <br>
