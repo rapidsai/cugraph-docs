@@ -4,7 +4,7 @@
 
 cuGraph is part of [RAPIDS](https://docs.rapids.ai/user-guide/) and has the following system requirements:
  * NVIDIA GPU, Volta architecture or later, with [compute capability](https://developer.nvidia.com/cuda-gpus) 7.0+
- * CUDA 12.0, 12.2, 12.5, or 12.9
+ * CUDA 12.0+
  * Python version 3.10, 3.11, 3.12, or 3.13
  * NetworkX >= version 3.3 or newer in order to use use [NetworkX Configs](https://networkx.org/documentation/stable/reference/backends.html#module-networkx.utils.configs) **This is required for use of nx-cuGraph, [see below](#cugraph-using-networkx-code).**
 
