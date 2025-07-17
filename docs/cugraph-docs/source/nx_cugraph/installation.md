@@ -8,7 +8,7 @@ This guide describes how to install ``nx-cugraph`` and use it in your workflows.
 `nx-cugraph` requires the following:
 
  - **Volta architecture or later NVIDIA GPU, with [compute capability](https://developer.nvidia.com/cuda-gpus) 7.0+**
- - **[CUDA](https://docs.nvidia.com/cuda/index.html) 11.2, 11.4, 11.5, 11.8, 12.0, 12.2, 12.5, or 12.9**
+ - **[CUDA](https://docs.nvidia.com/cuda/index.html) 12.0, 12.2, 12.5, or 12.9**
  - **Python >= 3.10**
  - **[NetworkX](https://networkx.org/documentation/stable/install.html#) >= 3.2 (version 3.4 or higher recommended)**
 
@@ -34,17 +34,14 @@ conda install -c rapidsai -c conda-forge -c nvidia nx-cugraph
 ### pip
 **Nightly version**
 ```bash
-pip install nx-cugraph-cu11 --extra-index-url https://pypi.anaconda.org/rapidsai-wheels-nightly/simple
+pip install nx-cugraph-cu12 --extra-index-url https://pypi.anaconda.org/rapidsai-wheels-nightly/simple
 ```
 
 **Stable version**
 ```bash
-pip install nx-cugraph-cu11 --extra-index-url https://pypi.nvidia.com
+pip install nx-cugraph-cu12 --extra-index-url https://pypi.nvidia.com
 ```
 
 <div style="border: 1px solid #ccc; background-color: #f9f9f9; padding: 10px; border-radius: 5px;">
-
-**Note:**
- - The `pip install` examples above are for CUDA 11. To install for CUDA 12, replace `-cu11` with `-cu12`
 
 </div>
