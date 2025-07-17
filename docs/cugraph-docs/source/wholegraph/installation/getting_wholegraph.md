@@ -43,7 +43,7 @@ conda install -c rapidsai -c conda-forge -c nvidia wholegraph cudatoolkit=12.9
 wholegraph, and all of RAPIDS, is available via pip.
 
 ```
-pip install wholegraph-cu11 --extra-index-url=https://pypi.nvidia.com
+pip install wholegraph-cu12 --extra-index-url=https://pypi.nvidia.com
 ```
 
 <br>
