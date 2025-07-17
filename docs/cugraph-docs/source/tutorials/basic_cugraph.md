@@ -2,7 +2,7 @@
 
 ## Required hardware/software
 
-CuGraph is part of [Rapids](https://docs.rapids.ai/user-guide) and has the following system requirements:
+cuGraph is part of [RAPIDS](https://docs.rapids.ai/user-guide/) and has the following system requirements:
  * NVIDIA GPU, Volta architecture or later, with [compute capability](https://developer.nvidia.com/cuda-gpus) 7.0+
  * CUDA 12.0, 12.2, 12.5, or 12.9
  * Python version 3.10, 3.11, 3.12, or 3.13
