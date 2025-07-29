@@ -1,4 +1,4 @@
-# Copyright (c) 2019-2023, NVIDIA CORPORATION.
+# Copyright (c) 2019-2025, NVIDIA CORPORATION.
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
@@ -94,7 +94,6 @@ def _linkcode_resolve(domain, info, url_fmt, revision):
     module_name = obj_module.__name__.split('.')[0]
 
     module_dir_dict = {
-        "cugraph_dgl": "cugraph-dgl",
         "cugraph_pyg": "cugraph-pyg",
         "cugraph_service_client": "cugraph-service/client",
         "cugraph_service_server": "cugraph-service/server",
