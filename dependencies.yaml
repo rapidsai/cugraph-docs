@@ -82,9 +82,7 @@ dependencies:
       - output_types: [conda]
         packages:
           - cugraph==25.10.*,>=0.0.0a0
-          - cugraph-dgl==25.10.*,>=0.0.0a0
           - cugraph-pyg==25.10.*,>=0.0.0a0
-          - 'dglteam/label/th24_cu124::dgl'
           - libcugraph==25.10.*,>=0.0.0a0
           - libcugraph_etl==25.10.*,>=0.0.0a0
           - pylibcugraph==25.10.*,>=0.0.0a0

@@ -30,7 +30,6 @@ cuGraph Conda packages
    * libcugraph
  * cugraph-service-client
  * cugraph-service-server
- * cugraph-dgl
  * cugraph-pyg
  * nx-cugraph
 
@@ -55,7 +54,6 @@ pip install cugraph-cu12 --extra-index-url=https://pypi.nvidia.com
 ```
 
 Also available:
- * cugraph-dgl-cu12
  * cugraph-pyg-cu12
  * nx-cugraph-cu12
 

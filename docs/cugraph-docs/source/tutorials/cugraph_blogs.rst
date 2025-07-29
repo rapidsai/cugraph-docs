@@ -11,6 +11,8 @@ Blogs & Conferences
 ====================
 2025
 ------
+  * `RAPIDS Adds GPU Polars Streaming, a Unified GNN API, and Zero-Code ML Speedups <https://developer.nvidia.com/blog/rapids-adds-gpu-polars-streaming-a-unified-gnn-api-and-zero-code-ml-speedups/>`_
+  * `Bring Receipts: New NVIDIA AI Blueprint Detects Fraudulent Credit Card Transactions With Precision <https://blogs.nvidia.com/blog/ai-blueprint-fraud-detection/>`_
   * `Using NetworkX, Jaccard Similarity, and cuGraph to Predict Your Next Favorite Movie <https://developer.nvidia.com/blog/using-networkx-jaccard-similarity-and-cugraph-to-predict-your-next-favorite-movie/>`_
   * `Get Started with GPU Acceleration for Data Science <https://developer.nvidia.com/blog/get-started-with-gpu-acceleration-for-data-science/>`_
   * `ArangoDB Building the Next-Gen Agentic App with GraphRAG & NVIDIA cuGraph, Hackathon projects <https://arangodbhackathon.devpost.com/project-gallery>`_
