@@ -3,7 +3,7 @@ WholeGraph helps train large-scale Graph Neural Networks(GNN).
 WholeGraph provides underlying storage structure called WholeMemory.
 WholeMemory is a Tensor like storage and provides multi-GPU support.
 It is optimized for NVLink systems like DGX A100 servers.
-By working together with cuGraph, cuGraph-DGL, cuGraph-PyG, and upstream DGL and PyG,
+By working together with cuGraph, cuGraph-PyG, and PyG,
 it will be easy to build GNN applications.
 
 ## WholeMemory

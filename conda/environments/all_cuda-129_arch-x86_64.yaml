@@ -8,10 +8,8 @@ channels:
 dependencies:
 - breathe>=4.35
 - cuda-version=12.9
-- cugraph-dgl==25.8.*,>=0.0.0a0
 - cugraph-pyg==25.8.*,>=0.0.0a0
 - cugraph==25.8.*,>=0.0.0a0
-- dglteam/label/th24_cu124::dgl
 - doxygen
 - graphviz
 - ipython
