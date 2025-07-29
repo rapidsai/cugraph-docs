@@ -44,7 +44,6 @@ NEXT_SHORT_TAG_PEP440=$(python -c "from packaging.version import Version; print(
 
 DEPENDENCIES=(
   cugraph
-  cugraph-dgl
   cugraph-pyg
   libcugraph
   libcugraph_etl
