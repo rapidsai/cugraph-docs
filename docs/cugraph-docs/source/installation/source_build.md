@@ -12,7 +12,7 @@ __Compilers:__
 * `nvcc`          version 11.5+
 
 __CUDA:__
-* CUDA 11.8+
+* CUDA 12.0+
 * NVIDIA GPU, Volta architecture or later, with [compute capability](https://developer.nvidia.com/cuda-gpus) 7.0+
 
 Further details and download links for these prerequisites are available on the
@@ -38,11 +38,9 @@ environment YAML
 files](https://github.com/rapidsai/cugraph/blob/main/conda/environments).
 
 ```bash
-# for CUDA 11.x
-conda env create --name cugraph_dev --file $CUGRAPH_HOME/conda/environments/all_cuda-118_arch-x86_64.yaml
 
 # for CUDA 12.x
-conda env create --name cugraph_dev --file $CUGRAPH_HOME/conda/environments/all_cuda-128_arch-x86_64.yaml
+conda env create --name cugraph_dev --file $CUGRAPH_HOME/conda/environments/all_cuda-129_arch-x86_64.yaml
 
 
 # activate the environment
@@ -55,12 +53,9 @@ conda deactivate
 The environment can be updated as cugraph adds/removes/updates its dependencies. To do so, run:
 
 ```bash
-# for CUDA 11.x
-conda env update --name cugraph_dev --file $CUGRAPH_HOME/conda/environments/all_cuda-118_arch-x86_64.yaml
-conda activate cugraph_dev
 
 # for CUDA 12.x
-conda env update --name cugraph_dev --file $CUGRAPH_HOME/conda/environments/all_cuda-128_arch-x86_64.yaml
+conda env update --name cugraph_dev --file $CUGRAPH_HOME/conda/environments/all_cuda-129_arch-x86_64.yaml
 conda activate cugraph_dev
 
 
@@ -201,8 +196,6 @@ Next the env_vars.sh file needs to be edited
 vi ./etc/conda/activate.d/env_vars.sh
 
 #!/bin/bash
-export PATH=/usr/local/cuda-11.0/bin:$PATH # or cuda-11.1 if using CUDA 11.1 and cuda-11.2 if using CUDA 11.2, respectively
-export LD_LIBRARY_PATH=/usr/local/cuda-11.0/lib64:$LD_LIBRARY_PATH # or cuda-11.1 if using CUDA 11.1 and cuda-11.2 if using CUDA 11.2, respectively
 ```
 
 ```

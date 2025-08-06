@@ -7,11 +7,11 @@ See [Betweenness on Wikipedia](https://en.wikipedia.org/wiki/Betweenness_central
 Betweenness centrality of a node 𝑣 is the sum of the fraction of all-pairs shortest paths that pass through 𝑣
 
 
-<div class="math">
-\[
+$$
 c_B(v) =\sum_{s,t \in V} \frac{\sigma(s, t|v)}{\sigma(s, t)}
-\]
-</div>
+$$
+
+
 
 ## When to use BC
 Betweenness centrality is often used to answer questions like:
@@ -43,4 +43,3 @@ Copyright (c) 2023-2025, NVIDIA CORPORATION.
 Licensed under the Apache License, Version 2.0 (the "License");  you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
-___

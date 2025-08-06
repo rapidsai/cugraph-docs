@@ -26,9 +26,7 @@ channels:
   - pyg
   - rapidsai
   - rapidsai-nightly
-  - dask/label/dev
   - conda-forge
-  - nvidia
 dependencies:
   checks:
     common:
@@ -68,14 +66,13 @@ dependencies:
           - doxygen
           - graphviz
           - ipython
+          - myst-parser>=0.13
           - nbsphinx
           - numpydoc
           - pydata-sphinx-theme
-          - recommonmark
           - sphinx-copybutton
           - sphinx-markdown-tables
-          # the ceiling on sphinx can be removed when https://github.com/spatialaudio/nbsphinx/issues/825 is resolved
-          - sphinx>=8,<8.2.0
+          - sphinx
           - sphinxcontrib-websupport
 
   # this repo only uses conda and 1 major version of CUDA, so
@@ -84,11 +81,9 @@ dependencies:
     common:
       - output_types: [conda]
         packages:
-          - cugraph==25.6.*,>=0.0.0a0
-          - cugraph-dgl==25.6.*,>=0.0.0a0
-          - cugraph-pyg==25.6.*,>=0.0.0a0
-          - 'dglteam/label/th24_cu124::dgl'
-          - libcugraph==25.6.*,>=0.0.0a0
-          - libcugraph_etl==25.6.*,>=0.0.0a0
-          - pylibcugraph==25.6.*,>=0.0.0a0
-          - pylibwholegraph==25.6.*,>=0.0.0a0
+          - cugraph==25.8.*,>=0.0.0a0
+          - cugraph-pyg==25.8.*,>=0.0.0a0
+          - libcugraph==25.8.*,>=0.0.0a0
+          - libcugraph_etl==25.8.*,>=0.0.0a0
+          - pylibcugraph==25.8.*,>=0.0.0a0
+          - pylibwholegraph==25.8.*,>=0.0.0a0
