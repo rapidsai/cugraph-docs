@@ -103,6 +103,7 @@ Table of Contents
    :maxdepth: 1
 
    basics/index
+   performance/index
    nx_cugraph/index
    installation/index
    tutorials/index
