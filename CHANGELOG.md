@@ -1,3 +1,31 @@
+# cugraph-docs 25.08.00 (6 Aug 2025)
+
+## 🚨 Breaking Changes
+
+- remove cugraph-dgl references ([#146](https://github.com/rapidsai/cugraph-docs/pull/146)) [@jameslamb](https://github.com/jameslamb)
+
+## 🐛 Bug Fixes
+
+- Update telemetry-summarize ([#136](https://github.com/rapidsai/cugraph-docs/pull/136)) [@msarahan](https://github.com/msarahan)
+
+## 📖 Documentation
+
+- added new blogs for 2025 and fixed cuda docs per review comment ([#143](https://github.com/rapidsai/cugraph-docs/pull/143)) [@acostadon](https://github.com/acostadon)
+- Removing CUDA 11 references and fixing outdated wholegraph info ([#141](https://github.com/rapidsai/cugraph-docs/pull/141)) [@acostadon](https://github.com/acostadon)
+- Adds Commmunity and Louvain landing pages ([#139](https://github.com/rapidsai/cugraph-docs/pull/139)) [@acostadon](https://github.com/acostadon)
+- add docs on CI workflow inputs ([#137](https://github.com/rapidsai/cugraph-docs/pull/137)) [@jameslamb](https://github.com/jameslamb)
+- Fixing links issues with Sphinx ([#134](https://github.com/rapidsai/cugraph-docs/pull/134)) [@acostadon](https://github.com/acostadon)
+- minimal path change and added hyphen to verify version ([#133](https://github.com/rapidsai/cugraph-docs/pull/133)) [@acostadon](https://github.com/acostadon)
+- changed the formulas to match myst-parser ([#132](https://github.com/rapidsai/cugraph-docs/pull/132)) [@acostadon](https://github.com/acostadon)
+
+## 🛠️ Improvements
+
+- remove cugraph-dgl references ([#146](https://github.com/rapidsai/cugraph-docs/pull/146)) [@jameslamb](https://github.com/jameslamb)
+- Remove channels ([#138](https://github.com/rapidsai/cugraph-docs/pull/138)) [@vyasr](https://github.com/vyasr)
+- Use CUDA 12.9 in Conda, Devcontainers, Spark, GHA, etc. ([#135](https://github.com/rapidsai/cugraph-docs/pull/135)) [@jakirkham](https://github.com/jakirkham)
+- refactor(shellcheck): fix all shellcheck warnings/errors ([#131](https://github.com/rapidsai/cugraph-docs/pull/131)) [@gforsyth](https://github.com/gforsyth)
+- Forward-merge branch-25.06 into branch-25.08 ([#119](https://github.com/rapidsai/cugraph-docs/pull/119)) [@gforsyth](https://github.com/gforsyth)
+
 # cugraph-docs 25.06.00 (5 Jun 2025)
 
 ## 🐛 Bug Fixes
