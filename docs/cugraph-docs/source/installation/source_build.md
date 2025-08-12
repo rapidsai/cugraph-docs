@@ -8,8 +8,9 @@ compatible, but are not currently tested.
 ## Prerequisites
 
 __Compilers:__
-* `gcc`           version 9.3+
-* `nvcc`          version 11.5+
+* `gcc` version 13.3+
+* `nvcc` version 12.0+
+* `cmake` version 3.29.6+
 
 __CUDA:__
 * CUDA 12.0+
