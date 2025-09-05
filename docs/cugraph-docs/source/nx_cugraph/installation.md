@@ -32,13 +32,24 @@ conda install -c rapidsai -c conda-forge -c nvidia nx-cugraph
 ```
 
 ### pip
+
 **Nightly version**
+
 ```bash
+# CUDA 13
+pip install nx-cugraph-cu13 --extra-index-url https://pypi.anaconda.org/rapidsai-wheels-nightly/simple
+
+# CUDA 12
 pip install nx-cugraph-cu12 --extra-index-url https://pypi.anaconda.org/rapidsai-wheels-nightly/simple
 ```
 
 **Stable version**
+
 ```bash
+# CUDA 13
+pip install nx-cugraph-cu13 --extra-index-url https://pypi.nvidia.com
+
+# CUDA 12
 pip install nx-cugraph-cu12 --extra-index-url https://pypi.nvidia.com
 ```
 

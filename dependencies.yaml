@@ -4,7 +4,7 @@ files:
     output: [conda]
     matrix:
       # docs are only built on the latest CUDA version RAPIDS supports
-      cuda: ["12.9"]
+      cuda: ["13.0"]
       arch: [x86_64]
     includes:
       - checks
@@ -57,6 +57,10 @@ dependencies:
               cuda: "12.9"
             packages:
               - cuda-version=12.9
+          - matrix:
+              cuda: "13.0"
+            packages:
+              - cuda-version=13.0
 
   docs:
     common:
