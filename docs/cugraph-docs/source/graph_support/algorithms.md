@@ -34,7 +34,7 @@ Note: Multi-GPU, or MG, includes support for Multi-Node Multi-GPU (also called M
 | ----------------- | ---------------------------------- | ------------------- | --------------------------------------------------------------- |
 | Centrality        | [Centrality](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/centrality/Centrality.ipynb)          |           |        |
 |                   | [Katz](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/centrality/Katz.ipynb)                                    | __Multi-GPU__  |                  |
-|                   | [Betweenness Centrality](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/centrality/Betweenness.ipynb)           | __Multi-GPU__  | MG as of 23.06   |
+|                   | [Betweenness Centrality](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/centrality/Betweenness.ipynb)           | __Multi-GPU__  | |
 |                   | [Edge Betweenness Centrality](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/centrality/Betweenness.ipynb)      | __Multi-GPU__  | MG as of 23.08   |
 |                   | [Eigenvector Centrality](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/centrality/Eigenvector.ipynb)           | __Multi-GPU__  |                  |
 |                   | [Degree Centrality](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/centrality/Degree.ipynb)                     | __Multi-GPU__  | Python only      |
@@ -46,7 +46,7 @@ Note: Multi-GPU, or MG, includes support for Multi-Node Multi-GPU (also called M
 |                   | [Spectral-Clustering - Modularity](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/community/Spectral-Clustering.ipynb)   | Single-GPU          |        |
 |                   | [Subgraph Extraction](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/community/Subgraph-Extraction.ipynb)                | Single-GPU          |        |
 |                   | [Triangle Counting](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/community/Triangle-Counting.ipynb)           | __Multi-GPU__ |           |
-|                   | [K-Truss](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/community/ktruss.ipynb)                                | Single-GPU    |  MG planned for 2024  |
+|                   | [K-Truss](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/community/ktruss.ipynb)                                | __Multi-GPU__     |  MG planned for 2024  |
 | Components        |          |                |          |
 |                   | [Weakly Connected Components](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/components/ConnectedComponents.ipynb)        | __Multi-GPU__ |        |
 |                   | [Strongly Connected Components](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/components/ConnectedComponents.ipynb)      | Single-GPU    |        |

@@ -20,7 +20,7 @@ multi-GPU
 .. autosummary::
    :toctree: ../api/cugraph/
 
-   cugraph.dask.centrality.betweenness_centrality
+   cugraph.dask.centrality.betweenness_centrality.betweenness_centrality
 
 
 
@@ -49,9 +49,6 @@ single-GPU
    :toctree: ../api/cugraph/
 
    cugraph.centrality.degree_centrality
-
-multi-GPU
-^^^^^^^^^^
 
 
 Eigenvector Centrality
