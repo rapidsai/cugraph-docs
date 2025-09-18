@@ -53,11 +53,7 @@ Note: Multi-GPU, or MG, includes support for Multi-Node Multi-GPU (also called M
 | Core              |                            |                 |           |
 |                   | [K-Core](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/cores/kcore.ipynb)                      | __Multi-GPU__ |                  |
 |                   | [Core Number](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/cores/core-number.ipynb)           | __Multi-GPU__ |                   |
-| _Flow_            |                                    |                     |                                                                 |
-|                   | _MaxFlow_                          | ---                 |                                                                 |
-| _Influence_       |                                    |                     |                                                                 |
-|                   | _Influence Maximization_           | ---                 |                                                                 |
-| Layout            |                                    |                     |                                                                 |
+|Layout            |                                    |                     |                                                                 |
 |                   | [Force Atlas 2](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/layout/Force-Atlas2.ipynb)              | Single-GPU          |        |
 | Linear Assignment |                                    |                     |                                                                 |
 |                   | [Hungarian]()                      | Single-GPU          | [README](./cpp_algorithms/linear_cpp.html)         |
@@ -79,7 +75,6 @@ Note: Multi-GPU, or MG, includes support for Multi-Node Multi-GPU (also called M
 | Traversal         |                                    |                     |                                                                 |
 |                   | Breadth First Search (BFS)         | __Multi-GPU__ | with cutoff support [C++ README](./cpp_algorithms/traversal_cpp.html#BFS) |
 |                   | Single Source Shortest Path (SSSP) | __Multi-GPU__ | [C++ README](./cpp_algorithms/traversal_cpp.html#SSSP)                     |
-|                   | _ASSP / APSP_                    | ---                 |                                                                 |
 | Tree              |                                    |                     |                                                                 |
 |                   | Minimum Spanning Tree              | Single-GPU          |                                                                 |
 |                   | Maximum Spanning Tree              | Single-GPU          |                                                                 |
@@ -90,8 +85,7 @@ Note: Multi-GPU, or MG, includes support for Multi-Node Multi-GPU (also called M
 |                   | Two Hop Neighbors                  | __Multi-GPU__ |                                                                 |
 | Data Generator    |                                    |                     |                                                                 |
 |                   | RMAT                               | __Multi-GPU__ |                                                                 |
-|                   | _Barabasi-Albert_                | ---                 |                                                                 |
-|                   |                                    |                     |                                                                 |
+
 
 </br></br>
 
