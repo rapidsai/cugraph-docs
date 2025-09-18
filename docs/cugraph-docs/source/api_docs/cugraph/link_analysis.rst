@@ -6,13 +6,15 @@ Link Analysis
 
 HITS
 ----
+single-GPU
+^^^^^^^^^^
 .. autosummary::
    :toctree: ../api/cugraph/
 
    cugraph.hits
 
-HITS (MG)
----------
+multi-GPU
+^^^^^^^^^
 .. autosummary::
    :toctree: ../api/cugraph/
 
@@ -21,13 +23,15 @@ HITS (MG)
 
 Pagerank
 --------
+single-GPU
+^^^^^^^^^^
 .. autosummary::
    :toctree: ../api/cugraph/
 
    cugraph.pagerank
 
-Pagerank (MG)
--------------
+multi-GPU
+^^^^^^^^^
 .. autosummary::
    :toctree: ../api/cugraph/
 
