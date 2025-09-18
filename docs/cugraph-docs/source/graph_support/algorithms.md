@@ -44,7 +44,7 @@ Note: Multi-GPU, or MG, includes support for Multi-Node Multi-GPU (also called M
 |                   | [Ensemble Clustering for Graphs](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/community/ECG.ipynb)            | __Multi-GPU__     |   |
 |                   | [Spectral-Clustering - Balanced Cut](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/community/Spectral-Clustering.ipynb) | Single-GPU     |      |
 |                   | [Spectral-Clustering - Modularity](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/community/Spectral-Clustering.ipynb)   | Single-GPU          |        |
-|                   | [Induced Subgraph](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/community/Induced-Subgraph)                |__Multi-GPU__    |        |
+|                   | [Induced Subgraph](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/community/Induced-Subgraph.ipynb)                |__Multi-GPU__    |        |
 |                   | [Triangle Counting](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/community/Triangle-Counting.ipynb)           | __Multi-GPU__ |           |
 |                   | [K-Truss](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/community/ktruss.ipynb)                                | __Multi-GPU__     |   |
 | Components        |          |                |          |
