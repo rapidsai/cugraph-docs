@@ -35,18 +35,18 @@ Note: Multi-GPU, or MG, includes support for Multi-Node Multi-GPU (also called M
 | Centrality        | [Centrality](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/centrality/Centrality.ipynb)          |           |        |
 |                   | [Katz](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/centrality/Katz.ipynb)                                    | __Multi-GPU__  |                  |
 |                   | [Betweenness Centrality](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/centrality/Betweenness.ipynb)           | __Multi-GPU__  | |
-|                   | [Edge Betweenness Centrality](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/centrality/Betweenness.ipynb)      | __Multi-GPU__  | MG as of 23.08   |
+|                   | [Edge Betweenness Centrality](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/centrality/Betweenness.ipynb)      | __Multi-GPU__  |  |
 |                   | [Eigenvector Centrality](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/centrality/Eigenvector.ipynb)           | __Multi-GPU__  |                  |
 |                   | [Degree Centrality](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/centrality/Degree.ipynb)                     | __Multi-GPU__  | Python only      |
 | Community         |                                    |                     |                                                                 |
-|                   | [Leiden](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/community/Louvain.ipynb)                                | __Multi-GPU__  | MG as of 23.06  |
+|                   | [Leiden](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/community/Louvain.ipynb)                                | __Multi-GPU__  |  |
 |                   | [Louvain](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/community/Louvain.ipynb)                               | __Multi-GPU__  |                 |
-|                   | [Ensemble Clustering for Graphs](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/community/ECG.ipynb)            | Single-GPU     |  MG planned for 24.02 |
+|                   | [Ensemble Clustering for Graphs](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/community/ECG.ipynb)            | __Multi-GPU__     |   |
 |                   | [Spectral-Clustering - Balanced Cut](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/community/Spectral-Clustering.ipynb) | Single-GPU     |      |
 |                   | [Spectral-Clustering - Modularity](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/community/Spectral-Clustering.ipynb)   | Single-GPU          |        |
-|                   | [Subgraph Extraction](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/community/Subgraph-Extraction.ipynb)                | Single-GPU          |        |
+|                   | [Induced Subgraph](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/community/Induced-Subgraph)                |__Multi-GPU__    |        |
 |                   | [Triangle Counting](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/community/Triangle-Counting.ipynb)           | __Multi-GPU__ |           |
-|                   | [K-Truss](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/community/ktruss.ipynb)                                | __Multi-GPU__     |  MG planned for 2024  |
+|                   | [K-Truss](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/community/ktruss.ipynb)                                | __Multi-GPU__     |   |
 | Components        |          |                |          |
 |                   | [Weakly Connected Components](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/components/ConnectedComponents.ipynb)        | __Multi-GPU__ |        |
 |                   | [Strongly Connected Components](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/components/ConnectedComponents.ipynb)      | Single-GPU    |        |
@@ -66,15 +66,14 @@ Note: Multi-GPU, or MG, includes support for Multi-Node Multi-GPU (also called M
 |                   | [Personal Pagerank]()                  | __Multi-GPU__ | [C++ README](./cpp_algorithms/centrality_cpp.html#Personalized-Pagerank)   |
 |                   | [HITS](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/link_analysis/HITS.ipynb)        | __Multi-GPU__ |                |
 | [Link Prediction](./Similarity/)   |                                    |                     |                                                                 |
-|                   | [Jaccard Similarity](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/link_prediction/Jaccard-Similarity.ipynb)                 | __Multi-GPU__      | Directed graph only                         |
-|                   | [Weighted Jaccard Similarity](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/link_prediction/Jaccard-Similarity.ipynb)        | Single-GPU          |                                                                 |
-|                   | [Overlap Similarity](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/link_prediction/Overlap-Similarity.ipynb)                 | **Multi-GPU** |                                                   |
+|                   |Cosine                 | __Multi-GPU__      |                         |
+|                   | [Weighted Jaccard Similarity](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/link_prediction/Jaccard-Similarity.ipynb)        | __Multi-GPU__        |                                                                 |
+|                   | [Overlap Similarity](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/link_prediction/Overlap-Similarity.ipynb)                 | __Multi-GPU__ |                                                   |
 |                   | [Sorensen Coefficient](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/link_prediction/Sorensen_coefficient.ipynb) | __Multi-GPU__ |   MG is unweighted only      |
 |                   | _Local Clustering Coefficient_   | ---                 |                                                                 |
 | Sampling          |                                    |                     |                                                                 |
 |                   | [Uniform Random Walks RW](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/sampling/RandomWalk.ipynb)          | __Multi-GPU__ |                                                                 |
 |                   | *Biased Random Walks (RW)*       | ---                 |                                                                 |
-|                   | Egonet                             | __Multi-GPU__ |                                                                 |
 |                   | Node2Vec                           | __Multi-GPU__       |                                             |
 |                   | Neighborhood sampling      | __Multi-GPU__ |                                                                 |
 | Traversal         |                                    |                     |                                                                 |

@@ -21,7 +21,7 @@ multi-GPU
    :toctree: ../api/cugraph/
 
    cugraph.dask.centrality.betweenness_centrality.betweenness_centrality
-
+   cugraph.dask.centrality.betweenness_centrality.edge_betweenness_centrality
 
 
 Katz Centrality
