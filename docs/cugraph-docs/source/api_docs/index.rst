@@ -26,7 +26,7 @@ Graph Neural Networks API Documentation
     .. wholegraph/index.rst
 
 Additional Graph Packages API Documentation
-----------------------------------
+-------------------------------------------
 
 .. toctree::
     :maxdepth: 3
