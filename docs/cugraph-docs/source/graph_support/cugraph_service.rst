@@ -1,9 +1,6 @@
-===============
-CuGraph Service
-===============
+=============================================
+CuGraph Service (Deprecated in version 25.10)
+=============================================
 
 
-.. toctree::
-   :maxdepth: 3
-
-Cugraph Service for remote access to a server-based cuGraph(https://github.com/rapidsai/cugraph/blob/branch-23.04/python/cugraph-service/README.md)
+**CuGraph Service is deprecated as of version 25.10 and will be removed in 26.02**
