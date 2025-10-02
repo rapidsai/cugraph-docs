@@ -191,6 +191,8 @@ Next the env_vars.sh file needs to be edited
 vi ./etc/conda/activate.d/env_vars.sh
 
 #!/bin/bash
+export PATH=/usr/local/cuda-13.0/bin:$PATH # or cuda-12.9 depending on the version you're using
+export LD_LIBRARY_PATH=/usr/local/cuda-13.0/lib64:$LD_LIBRARY_PATH # or cuda-12.9
 ```
 
 ```
