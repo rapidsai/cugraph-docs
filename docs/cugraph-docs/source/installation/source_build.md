@@ -8,8 +8,9 @@ compatible, but are not currently tested.
 ## Prerequisites
 
 __Compilers:__
-* `gcc`           version 9.3+
-* `nvcc`          version 11.5+
+* `gcc` version 13.3+
+* `nvcc` version 12.0+
+* `cmake` version 3.29.6+
 
 __CUDA:__
 * CUDA 12.0+
@@ -38,10 +39,8 @@ environment YAML
 files](https://github.com/rapidsai/cugraph/blob/main/conda/environments).
 
 ```bash
-
-# for CUDA 12.x
-conda env create --name cugraph_dev --file $CUGRAPH_HOME/conda/environments/all_cuda-129_arch-x86_64.yaml
-
+# for CUDA 13.x
+conda env create --name cugraph_dev --file $CUGRAPH_HOME/conda/environments/all_cuda-130_arch-x86_64.yaml
 
 # activate the environment
 conda activate cugraph_dev
@@ -53,13 +52,9 @@ conda deactivate
 The environment can be updated as cugraph adds/removes/updates its dependencies. To do so, run:
 
 ```bash
-
-# for CUDA 12.x
-conda env update --name cugraph_dev --file $CUGRAPH_HOME/conda/environments/all_cuda-129_arch-x86_64.yaml
+# for CUDA 13.x
+conda env update --name cugraph_dev --file $CUGRAPH_HOME/conda/environments/all_cuda-130_arch-x86_64.yaml
 conda activate cugraph_dev
-
-
-
 ```
 
 ### Build and Install
@@ -196,6 +191,9 @@ Next the env_vars.sh file needs to be edited
 vi ./etc/conda/activate.d/env_vars.sh
 
 #!/bin/bash
+# for CUDA 13.x
+export PATH=/usr/local/cuda-13.0/bin:$PATH
+export LD_LIBRARY_PATH=/usr/local/cuda-13.0/lib64:$LD_LIBRARY_PATH
 ```
 
 ```

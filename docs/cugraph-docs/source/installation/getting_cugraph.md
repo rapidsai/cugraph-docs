@@ -39,6 +39,10 @@ Replace the package name in the example below to the one you want to install.
 Install and update cuGraph using the conda command:
 
 ```bash
+# CUDA 13
+conda install -c rapidsai -c conda-forge -c nvidia cugraph cuda-version=13.0
+
+# CUDA 12
 conda install -c rapidsai -c conda-forge -c nvidia cugraph cuda-version=12.9
 ```
 
@@ -49,12 +53,17 @@ Note: This conda installation only applies to Linux and Python versions 3.10/3.1
 ## PIP
 cuGraph, and all of RAPIDS, is available via pip.
 
-```
+```shell
+# CUDA 13
+pip install cugraph-cu13 --extra-index-url=https://pypi.nvidia.com
+
+# CUDA 12
 pip install cugraph-cu12 --extra-index-url=https://pypi.nvidia.com
 ```
 
 Also available:
- * cugraph-pyg-cu12
- * nx-cugraph-cu12
+
+* `cugraph-pyg-cu{12,13}`
+* `nx-cugraph-cu{12, 13}`
 
 <br>

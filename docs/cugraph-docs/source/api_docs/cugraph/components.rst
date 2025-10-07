@@ -6,6 +6,8 @@ Components
 
 Connected Components
 --------------------
+single-GPU
+^^^^^^^^^^
 .. autosummary::
    :toctree: ../api/cugraph/
 
@@ -13,9 +15,8 @@ Connected Components
    cugraph.strongly_connected_components
    cugraph.weakly_connected_components
 
-
-Connected Components (MG)
--------------------------
+multi-GPU
+^^^^^^^^^
 .. autosummary::
    :toctree: ../api/cugraph/
 

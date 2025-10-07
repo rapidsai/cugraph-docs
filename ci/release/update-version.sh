@@ -61,3 +61,8 @@ done
 for FILE in .github/workflows/*.yaml; do
   sed_runner "/shared-workflows/ s/@.*/@branch-${NEXT_SHORT_TAG}/g" "${FILE}"
 done
+
+# Update container_image version in workflow files
+for FILE in .github/workflows/*.yaml; do
+  sed_runner "s/rapidsai\/ci-conda:[0-9][0-9].[0-9][0-9]-latest/rapidsai\/ci-conda:${NEXT_SHORT_TAG}-latest/g" "${FILE}"
+done
