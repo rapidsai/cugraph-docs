@@ -1,3 +1,23 @@
+# cugraph-docs 25.10.00 (8 Oct 2025)
+
+## 🐛 Bug Fixes
+
+- Restore CUDA environment script in documentation ([#162](https://github.com/rapidsai/cugraph-docs/pull/162)) [@MathisHammel](https://github.com/MathisHammel)
+
+## 📖 Documentation
+
+- Deprecating cuGraph service and fixing a header error ([#159](https://github.com/rapidsai/cugraph-docs/pull/159)) [@acostadon](https://github.com/acostadon)
+- updating algo pages for changes especially mg algos ([#157](https://github.com/rapidsai/cugraph-docs/pull/157)) [@acostadon](https://github.com/acostadon)
+- Adds Leiden MG to API ([#156](https://github.com/rapidsai/cugraph-docs/pull/156)) [@acostadon](https://github.com/acostadon)
+- Fixes compiler version on contributing page ([#152](https://github.com/rapidsai/cugraph-docs/pull/152)) [@acostadon](https://github.com/acostadon)
+
+## 🛠️ Improvements
+
+- Fix update version script ([#158](https://github.com/rapidsai/cugraph-docs/pull/158)) [@AyodeAwe](https://github.com/AyodeAwe)
+- Configure repo for automatic release notes generation ([#155](https://github.com/rapidsai/cugraph-docs/pull/155)) [@AyodeAwe](https://github.com/AyodeAwe)
+- build and test with CUDA 13.0.0 ([#154](https://github.com/rapidsai/cugraph-docs/pull/154)) [@jameslamb](https://github.com/jameslamb)
+- Merge branch-25.08 into branch-25.10 ([#147](https://github.com/rapidsai/cugraph-docs/pull/147)) [@jameslamb](https://github.com/jameslamb)
+
 # cugraph-docs 25.08.00 (6 Aug 2025)
 
 ## 🚨 Breaking Changes
