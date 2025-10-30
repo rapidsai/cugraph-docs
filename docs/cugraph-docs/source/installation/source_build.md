@@ -9,11 +9,11 @@ compatible, but are not currently tested.
 
 __Compilers:__
 * `gcc` version 13.3+
-* `nvcc` version 12.0+
+* `nvcc` version 12.2+
 * `cmake` version 3.29.6+
 
 __CUDA:__
-* CUDA 12.0+
+* CUDA 12.2+
 * NVIDIA GPU, Volta architecture or later, with [compute capability](https://developer.nvidia.com/cuda-gpus) 7.0+
 
 Further details and download links for these prerequisites are available on the

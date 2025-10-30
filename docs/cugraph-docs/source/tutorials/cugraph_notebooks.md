@@ -58,7 +58,7 @@ Running the example in these notebooks requires:
 * cuGraph is dependent on the latest version of cuDF.  Please install all components of RAPIDS
 * Python 3.10+
 * A system with an NVIDIA GPU: Volta architecture or newer
-* CUDA 12.0+
+* CUDA 12.2+
 
 ## Copyright
 

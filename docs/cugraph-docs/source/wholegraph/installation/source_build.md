@@ -15,7 +15,7 @@ __Compiler__:
 * `cmake`       version 3.26.4+
 
 __CUDA__:
-* 12.0+
+* 12.2+
 * Volta architecture or better
 
 You can obtain CUDA from [https://developer.nvidia.com/cuda-downloads](https://developer.nvidia.com/cuda-downloads).
