@@ -16,7 +16,6 @@ single-GPU
    cugraph.heterogeneous_neighbor_sample
    cugraph.homogeneous_neighbor_sample
    cugraph.random_walks
-   cugraph.uniform_neighbor_sample
 
 multi-GPU
 ^^^^^^^^^
@@ -25,7 +24,6 @@ multi-GPU
 
    cugraph.dask.sampling.biased_random_walks.biased_random_walks
    cugraph.dask.sampling.random_walks.random_walks
-   cugraph.dask.sampling.uniform_neighbor_sample.uniform_neighbor_sample
    cugraph.dask.sampling.uniform_random_walks.uniform_random_walks
 
 Node2Vec
