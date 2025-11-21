@@ -23,10 +23,10 @@ files:
       - run
 
 channels:
-  - pyg
-  - rapidsai
   - rapidsai-nightly
+  - rapidsai
   - conda-forge
+  - pyg
 dependencies:
   checks:
     common:
