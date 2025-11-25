@@ -28,8 +28,6 @@ cuGraph Conda packages
  * cugraph - this will also import:
    * pylibcugraph
    * libcugraph
- * cugraph-service-client
- * cugraph-service-server
  * cugraph-pyg
  * nx-cugraph
 

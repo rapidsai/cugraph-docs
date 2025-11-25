@@ -11,4 +11,3 @@ Graph Support
    cugraph_cpp.rst
    gnn_support.rst
    datastores.rst
-   cugraph_service.rst

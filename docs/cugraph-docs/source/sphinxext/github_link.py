@@ -95,8 +95,6 @@ def _linkcode_resolve(domain, info, url_fmt, revision):
 
     module_dir_dict = {
         "cugraph_pyg": "cugraph-pyg",
-        "cugraph_service_client": "cugraph-service/client",
-        "cugraph_service_server": "cugraph-service/server",
         "cugraph": "cugraph",
         "pylibcugraph": "pylibcugraph",
     }

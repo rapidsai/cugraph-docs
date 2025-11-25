@@ -24,12 +24,3 @@ Graph Neural Networks API Documentation
 
     cugraph-pyg/cugraph_pyg.rst
     .. wholegraph/index.rst
-
-Additional Graph Packages API Documentation
--------------------------------------------
-
-.. toctree::
-    :maxdepth: 3
-    :caption: Additional Graph Packages API Documentation
-
-    service/index.rst
