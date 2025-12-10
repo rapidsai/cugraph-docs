@@ -1,3 +1,23 @@
+# cugraph-docs 25.12.00 (10 Dec 2025)
+
+### 🚨 Breaking Changes
+* Require CUDA 12.2+ by @jakirkham in https://github.com/rapidsai/cugraph-docs/pull/169
+### 🐛 Bug Fixes
+* refactored update-version.sh to handle new branching strategy by @rockhowse in https://github.com/rapidsai/cugraph-docs/pull/170
+* removed reference to uniform_neighbor_sample by @rockhowse in https://github.com/rapidsai/cugraph-docs/pull/171
+### 📖 Documentation
+* Update docs tree for cuGraph-PyG by @alexbarghi-nv in https://github.com/rapidsai/cugraph-docs/pull/165
+* Remove cugraph-service docs by @jameslamb in https://github.com/rapidsai/cugraph-docs/pull/177
+### 🛠️ Improvements
+* Use main branch by @bdice in https://github.com/rapidsai/cugraph-docs/pull/167
+* Use main shared-workflows branch by @bdice in https://github.com/rapidsai/cugraph-docs/pull/168
+
+## New Contributors
+* @alexbarghi-nv made their first contribution in https://github.com/rapidsai/cugraph-docs/pull/165
+* @rockhowse made their first contribution in https://github.com/rapidsai/cugraph-docs/pull/170
+
+**Full Changelog**: https://github.com/rapidsai/cugraph-docs/compare/v25.12.00a...release/25.12
+
 # cugraph-docs 25.10.00 (8 Oct 2025)
 
 ## 🐛 Bug Fixes
