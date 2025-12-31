@@ -8,7 +8,6 @@ cugraph API Reference
 
     structure
     graph_implementation
-    property_graph
     centrality
     community
     components
