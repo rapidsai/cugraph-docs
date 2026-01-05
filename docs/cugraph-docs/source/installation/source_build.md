@@ -192,8 +192,8 @@ vi ./etc/conda/activate.d/env_vars.sh
 
 #!/bin/bash
 # for CUDA 13.x
-export PATH=/usr/local/cuda-13.0/bin:$PATH
-export LD_LIBRARY_PATH=/usr/local/cuda-13.0/lib64:$LD_LIBRARY_PATH
+export PATH=/usr/local/cuda-13.1/bin:$PATH
+export LD_LIBRARY_PATH=/usr/local/cuda-13.1/lib64:$LD_LIBRARY_PATH
 ```
 
 ```
