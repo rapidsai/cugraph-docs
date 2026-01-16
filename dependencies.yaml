@@ -85,9 +85,9 @@ dependencies:
     common:
       - output_types: [conda]
         packages:
-          - cugraph==26.2.*,>=0.0.0a0
-          - cugraph-pyg==26.2.*,>=0.0.0a0
-          - libcugraph==26.2.*,>=0.0.0a0
-          - libcugraph_etl==26.2.*,>=0.0.0a0
-          - pylibcugraph==26.2.*,>=0.0.0a0
-          - pylibwholegraph==26.2.*,>=0.0.0a0
+          - cugraph==26.4.*,>=0.0.0a0
+          - cugraph-pyg==26.4.*,>=0.0.0a0
+          - libcugraph==26.4.*,>=0.0.0a0
+          - libcugraph_etl==26.4.*,>=0.0.0a0
+          - pylibcugraph==26.4.*,>=0.0.0a0
+          - pylibwholegraph==26.4.*,>=0.0.0a0
