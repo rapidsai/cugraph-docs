@@ -1,3 +1,17 @@
+# cugraph-docs 26.02.00 (4 Feb 2026)
+
+### 📖 Documentation
+* remove references to Property Graph by @jameslamb in https://github.com/rapidsai/cugraph-docs/pull/181
+### 🛠️ Improvements
+* Use strict priority in CI conda tests by @bdice in https://github.com/rapidsai/cugraph-docs/pull/175
+* Use strict priority in CI conda tests by @bdice in https://github.com/rapidsai/cugraph-docs/pull/179
+* build and test against CUDA 13.1.0 by @jameslamb in https://github.com/rapidsai/cugraph-docs/pull/182
+* Use main shared-workflows branch by @jameslamb in https://github.com/rapidsai/cugraph-docs/pull/183
+* fix(build): build package on merge to `release/*` branch by @gforsyth in https://github.com/rapidsai/cugraph-docs/pull/185
+
+
+**Full Changelog**: https://github.com/rapidsai/cugraph-docs/compare/v26.02.00a...release/26.02
+
 # cugraph-docs 25.12.00 (10 Dec 2025)
 
 ### 🚨 Breaking Changes
