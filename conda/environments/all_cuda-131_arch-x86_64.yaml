@@ -11,7 +11,6 @@ dependencies:
 - cugraph-pyg==26.4.*,>=0.0.0a0
 - cugraph==26.4.*,>=0.0.0a0
 - doxygen
-- graphviz
 - ipython
 - libcugraph==26.4.*,>=0.0.0a0
 - libcugraph_etl==26.4.*,>=0.0.0a0

@@ -30,15 +30,14 @@ WholeGraph conda packages
 
 Replace the package name in the example below to the one you want to install.
 
-
 Install and update WholeGraph using the conda command:
 
 ```bash
 # CUDA 13
-conda install -c rapidsai -c conda-forge -c nvidia wholegraph cudatoolkit=13.0
+conda install -c rapidsai -c conda-forge wholegraph cuda-version=13.1
 
 # CUDA 12
-conda install -c rapidsai -c conda-forge -c nvidia wholegraph cudatoolkit=12.9
+conda install -c rapidsai -c conda-forge wholegraph cuda-version=12.9
 ```
 
 <br>

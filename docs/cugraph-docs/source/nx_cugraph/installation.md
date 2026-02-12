@@ -23,12 +23,12 @@ Read the [RAPIDS Quick Start Guide](https://docs.rapids.ai/install) to learn mor
 ### Conda
 **Nightly version**
 ```bash
-conda install -c rapidsai-nightly -c conda-forge -c nvidia nx-cugraph
+conda install -c rapidsai-nightly -c conda-forge nx-cugraph
 ```
 
 **Stable version**
 ```bash
-conda install -c rapidsai -c conda-forge -c nvidia nx-cugraph
+conda install -c rapidsai -c conda-forge nx-cugraph
 ```
 
 ### pip

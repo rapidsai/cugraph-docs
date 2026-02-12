@@ -38,17 +38,18 @@ Install and update cuGraph using the conda command:
 
 ```bash
 # CUDA 13
-conda install -c rapidsai -c conda-forge -c nvidia cugraph cuda-version=13.0
+conda install -c rapidsai -c conda-forge cugraph cuda-version=13.1
 
 # CUDA 12
-conda install -c rapidsai -c conda-forge -c nvidia cugraph cuda-version=12.9
+conda install -c rapidsai -c conda-forge cugraph cuda-version=12.9
 ```
 
-Note: This conda installation only applies to Linux and Python versions 3.10/3.11/3.12/3.13.
+For the range of support Python versions, operating systems, etc. see https://docs.rapids.ai/install/.
 
 <br>
 
-## PIP
+## pip
+
 cuGraph, and all of RAPIDS, is available via pip.
 
 ```shell
