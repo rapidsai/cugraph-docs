@@ -44,7 +44,7 @@ conda install -c rapidsai -c conda-forge cugraph cuda-version=13.1
 conda install -c rapidsai -c conda-forge cugraph cuda-version=12.9
 ```
 
-For the range of support Python versions, operating systems, etc. see https://docs.rapids.ai/install/.
+For the range of supported Python versions, operating systems, etc. see https://docs.rapids.ai/install/.
 
 <br>
 
