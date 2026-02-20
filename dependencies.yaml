@@ -68,7 +68,6 @@ dependencies:
         packages:
           - breathe>=4.35
           - doxygen
-          - graphviz
           - ipython
           - myst-parser>=0.13
           - nbsphinx
