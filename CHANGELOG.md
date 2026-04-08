@@ -1,3 +1,12 @@
+# cugraph-docs 26.04.00 (8 Apr 2026)
+
+### 🛠️ Improvements
+* remove references to 'nvidia' channel, other misc. updates by @jameslamb in https://github.com/rapidsai/cugraph-docs/pull/188
+* Add support for Python 3.14 by @gforsyth in https://github.com/rapidsai/cugraph-docs/pull/189
+
+
+**Full Changelog**: https://github.com/rapidsai/cugraph-docs/compare/v26.04.00a...release/26.04
+
 # cugraph-docs 26.02.00 (4 Feb 2026)
 
 ### 📖 Documentation
