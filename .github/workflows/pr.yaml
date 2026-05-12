@@ -1,14 +1,11 @@
 name: pr
-
 on:
   push:
     branches:
       - "pull-request/[0-9]+"
-
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
-
 jobs:
   pr-builder:
     needs:
@@ -24,7 +21,7 @@ jobs:
     runs-on: ubuntu-latest
     continue-on-error: true
     env:
-        OTEL_SERVICE_NAME: "pr-cugraph-docs"
+      OTEL_SERVICE_NAME: "pr-cugraph-docs"
     steps:
       - name: Telemetry setup
         uses: rapidsai/shared-actions/telemetry-dispatch-stash-base-env-vars@main
@@ -54,3 +51,5 @@ jobs:
     steps:
       - name: Telemetry summarize
         uses: rapidsai/shared-actions/telemetry-dispatch-summarize@main
+    permissions:
+      actions: write
