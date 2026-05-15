@@ -33,7 +33,7 @@ permissions: {}
 jobs:
   docs-build:
     if: github.ref_type == 'branch'
-    secrets: inherit
+    secrets: inherit # zizmor: ignore[secrets-inherit]
     uses: rapidsai/shared-workflows/.github/workflows/custom-job.yaml@main
     with:
       arch: "amd64"
