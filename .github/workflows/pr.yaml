@@ -6,6 +6,7 @@ on:
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
+permissions: {}
 jobs:
   pr-builder:
     needs:
@@ -17,6 +18,8 @@ jobs:
     if: always()
     with:
       needs: ${{ toJSON(needs) }}
+    permissions:
+      contents: read
   telemetry-setup:
     runs-on: ubuntu-latest
     continue-on-error: true
@@ -32,6 +35,8 @@ jobs:
     with:
       enable_check_generated_files: false
       ignored_pr_jobs: "telemetry-summarize"
+    permissions:
+      contents: read
   docs-build:
     needs: checks
     secrets: inherit
@@ -42,6 +47,12 @@ jobs:
       arch: "amd64"
       container_image: "rapidsai/ci-conda:26.08-latest"
       script: "ci/build_docs.sh"
+    permissions:
+      actions: read
+      contents: read
+      id-token: write
+      packages: read
+      pull-requests: read
   telemetry-summarize:
     # This job must use a self-hosted runner to record telemetry traces.
     runs-on: linux-amd64-cpu4
