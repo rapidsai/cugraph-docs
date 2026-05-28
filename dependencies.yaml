@@ -79,7 +79,7 @@ dependencies:
           - pydata-sphinx-theme
           - sphinx-copybutton
           - sphinx-markdown-tables
-          - sphinx
+          - sphinx>=8.2
           - sphinxcontrib-websupport
 
   # this repo only uses conda and 1 major version of CUDA, so

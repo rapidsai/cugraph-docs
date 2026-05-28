@@ -21,8 +21,8 @@ dependencies:
 - pydata-sphinx-theme
 - pylibcugraph==26.6.*,>=0.0.0a0
 - pylibwholegraph==26.6.*,>=0.0.0a0
-- sphinx
 - sphinx-copybutton
 - sphinx-markdown-tables
+- sphinx>=8.2
 - sphinxcontrib-websupport
 name: all_cuda-132_arch-x86_64
