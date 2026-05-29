@@ -15,7 +15,6 @@ single-GPU
    cugraph.biased_random_walks
    cugraph.heterogeneous_neighbor_sample
    cugraph.homogeneous_neighbor_sample
-   cugraph.random_walks
 
 multi-GPU
 ^^^^^^^^^
@@ -33,7 +32,7 @@ single-GPU
 .. autosummary::
    :toctree: ../api/cugraph/
 
-   cugraph.node2vec_random_walks.node2vec_random_walks
+   cugraph.sampling.node2vec_random_walks
 
 multi-GPU
 ^^^^^^^^^

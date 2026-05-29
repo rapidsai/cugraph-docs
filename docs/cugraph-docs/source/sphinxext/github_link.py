@@ -1,4 +1,4 @@
-# Copyright (c) 2019-2025, NVIDIA CORPORATION.
+# Copyright (c) 2019-2026, NVIDIA CORPORATION.
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
@@ -18,7 +18,6 @@
 import inspect
 import re
 import subprocess
-from functools import partial
 from operator import attrgetter
 
 orig = inspect.isfunction
@@ -134,6 +133,8 @@ def make_linkcode_resolve(url_fmt):
                                    '{path}#L{lineno}')
     """
     revision = _get_git_revision()
-    return partial(_linkcode_resolve,
-                   revision=revision,
-                   url_fmt=url_fmt)
+
+    def linkcode_resolve(domain, info):
+        return _linkcode_resolve(domain, info, url_fmt=url_fmt, revision=revision)
+
+    return linkcode_resolve
