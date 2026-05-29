@@ -73,7 +73,7 @@ dependencies:
           - breathe>=4.35
           - doxygen
           - ipython
-          - myst-parser>=0.13
+          - myst-parser>=5.0
           - nbsphinx
           - numpydoc
           - pydata-sphinx-theme

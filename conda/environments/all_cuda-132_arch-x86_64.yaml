@@ -14,7 +14,7 @@ dependencies:
 - ipython
 - libcugraph==26.6.*,>=0.0.0a0
 - libcugraph_etl==26.6.*,>=0.0.0a0
-- myst-parser>=0.13
+- myst-parser>=5.0
 - nbsphinx
 - numpydoc
 - pre-commit
