@@ -14,15 +14,15 @@ dependencies:
 - ipython
 - libcugraph==26.8.*,>=0.0.0a0
 - libcugraph_etl==26.8.*,>=0.0.0a0
-- myst-parser>=0.13
+- myst-parser>=5.0
 - nbsphinx
 - numpydoc
 - pre-commit
 - pydata-sphinx-theme
 - pylibcugraph==26.8.*,>=0.0.0a0
 - pylibwholegraph==26.8.*,>=0.0.0a0
-- sphinx
 - sphinx-copybutton
 - sphinx-markdown-tables
+- sphinx>=8.2
 - sphinxcontrib-websupport
 name: all_cuda-132_arch-x86_64
