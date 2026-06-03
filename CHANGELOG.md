@@ -1,3 +1,15 @@
+# cugraph-docs 26.06.00 (3 Jun 2026)
+
+### 🐛 Bug Fixes
+* fix random_walks references, bump Sphinx floor to 8.2 by @jameslamb in https://github.com/rapidsai/cugraph-docs/pull/199
+### 🛠️ Improvements
+* Build and test with CUDA 13.2.0 by @bdice in https://github.com/rapidsai/cugraph-docs/pull/193
+* fix(ci): add explicit `actions: write` permission for `telemetry-summarize`
+ by @gforsyth in https://github.com/rapidsai/cugraph-docs/pull/194
+
+
+**Full Changelog**: https://github.com/rapidsai/cugraph-docs/compare/v26.06.00a...release/26.06
+
 # cugraph-docs 26.04.00 (8 Apr 2026)
 
 ### 🛠️ Improvements
