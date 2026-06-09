@@ -13,7 +13,7 @@ jobs:
       - telemetry-setup
       - checks
       - docs-build
-    uses: rapidsai/shared-workflows/.github/workflows/pr-builder.yaml@main
+    uses: rapidsai/shared-workflows/.github/workflows/pr-builder.yaml@cuda-13.3.0
     if: always()
     with:
       needs: ${{ toJSON(needs) }}
@@ -29,7 +29,7 @@ jobs:
         uses: rapidsai/shared-actions/telemetry-dispatch-stash-base-env-vars@main
   checks:
     needs: telemetry-setup
-    uses: rapidsai/shared-workflows/.github/workflows/checks.yaml@main
+    uses: rapidsai/shared-workflows/.github/workflows/checks.yaml@cuda-13.3.0
     with:
       enable_check_generated_files: false
       ignored_pr_jobs: "telemetry-summarize"
@@ -38,7 +38,7 @@ jobs:
   docs-build:
     needs: checks
     secrets: inherit # zizmor: ignore[secrets-inherit]
-    uses: rapidsai/shared-workflows/.github/workflows/custom-job.yaml@main
+    uses: rapidsai/shared-workflows/.github/workflows/custom-job.yaml@cuda-13.3.0
     with:
       build_type: pull-request
       node_type: "gpu-l4-latest-1"
