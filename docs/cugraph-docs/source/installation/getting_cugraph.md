@@ -38,7 +38,7 @@ Install and update cuGraph using the conda command:
 
 ```bash
 # CUDA 13
-conda install -c rapidsai -c conda-forge cugraph cuda-version=13.2
+conda install -c rapidsai -c conda-forge cugraph cuda-version=13.3
 
 # CUDA 12
 conda install -c rapidsai -c conda-forge cugraph cuda-version=12.9
