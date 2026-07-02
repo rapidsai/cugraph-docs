@@ -121,7 +121,7 @@ todo_include_todos = False
 # a list of builtin themes.
 #
 
-html_theme = 'pydata_sphinx_theme'
+html_theme = 'nvidia_sphinx_theme'
 
 
 
@@ -138,6 +138,8 @@ html_theme_options = {
     "twitter_url": "https://twitter.com/rapidsai",
     "show_toc_level": 1,
     "navbar_align": "right",
+    "navbar_center": "navbar-nav, version-switcher, navbar-external-links",
+    "navigation_with_keys": True,
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
@@ -213,8 +215,6 @@ numpydoc_class_members_toctree = False
 
 
 def setup(app):
-    app.add_css_file("https://docs.rapids.ai/assets/css/custom.css")
-    app.add_js_file("https://docs.rapids.ai/assets/js/custom.js", loading_method="defer")
     app.add_css_file("references.css")
 
 
