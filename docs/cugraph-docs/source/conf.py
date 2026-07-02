@@ -1,4 +1,4 @@
-# Copyright (c) 2018-2025, NVIDIA CORPORATION.
+# Copyright (c) 2018-2026, NVIDIA CORPORATION.
 #
 # pygdf documentation build configuration file, created by
 # sphinx-quickstart on Wed May  3 10:59:22 2017.
@@ -16,6 +16,7 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
+import datetime
 import os
 import sys
 
@@ -79,9 +80,9 @@ templates_path = ['_templates']
 master_doc = 'index'
 
 # General information about the project.
-project = 'cugraph-docs'
-copyright = '2024-2025, NVIDIA Corporation'
-author = 'NVIDIA Corporation'
+project = "NVIDIA cuGraph"
+copyright = f"2024-{datetime.datetime.today().year}, NVIDIA Corporation"
+author = "NVIDIA Corporation"
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
