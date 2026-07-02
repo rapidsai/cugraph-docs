@@ -1,26 +1,22 @@
+NVIDIA cuGraph Documentation
+============================
 
-*** NOTICE ***
-==============
+.. note::
 
-**cuGraph-DGL has been removed from cuGraph GNN as of release 25.06.** We recommend migrating to 
-cuGraph-PyG, which offers the same functionality along with additional features like support for heterogeneous sampling and a unified API. 
-The cuGraph team is not planning any further work in the DGL ecosystem going forward.
+   **cuGraph-DGL has been removed from cuGraph GNN as of release 25.06.** We recommend migrating to
+   cuGraph-PyG, which offers the same functionality along with additional features like support for heterogeneous sampling and a unified API.
+   The cuGraph team is not planning any further work in the DGL ecosystem going forward.
 
-The cuGraph repository has been refactored to make it more efficient to build, maintain and use.
+   The cuGraph repository has been refactored to make it more efficient to build, maintain and use.
 
-Libraries supporting GNNs are now located in the `cugraph-gnn repository <https://github.com/rapidsai/cugraph-gnn>`_
+   Libraries supporting GNNs are now located in the `cugraph-gnn repository <https://github.com/rapidsai/cugraph-gnn>`_.
 
-* `pylibwholegraph <https://github.com/rapidsai/cugraph-gnn/tree/main/python/>`_ - the `Wholegraph <https://docs.rapids.ai/api/cugraph/nightly/wholegraph/>`_ library for client memory management supporting cuGraph-PyG for even greater scalability
-* `cugraph_pyg <https://github.com/rapidsai/cugraph-gnn/blob/main/readme_pages/cugraph_pyg.md>`_ provides native implementations of Pytorch Geometric's (PyG's) `GraphStore`, `FeatureStore`, and `Loader` interfaces, unlocking powerful GPU-accelerated graph analytics—including neighborhood sampling, centrality metrics, and community detection—directly within PyG workflows.
+   * `pylibwholegraph <https://github.com/rapidsai/cugraph-gnn/tree/main/python/>`_ - the `Wholegraph <https://docs.rapids.ai/api/cugraph/nightly/wholegraph/>`_ library for client memory management supporting cuGraph-PyG for even greater scalability
+   * `cugraph_pyg <https://github.com/rapidsai/cugraph-gnn/blob/main/readme_pages/cugraph_pyg.md>`_ provides native implementations of Pytorch Geometric's (PyG's) `GraphStore`, `FeatureStore`, and `Loader` interfaces, unlocking powerful GPU-accelerated graph analytics—including neighborhood sampling, centrality metrics, and community detection—directly within PyG workflows.
 
-`RAPIDS nx-cugraph <https://rapids.ai/nx-cugraph/>`_ is now located in the `nx-cugraph repository <https://github.com/rapidsai/nx-cugraph>`_ containing a backend to NetworkX for running supported algorithms with GPU acceleration.
+   `RAPIDS nx-cugraph <https://rapids.ai/nx-cugraph/>`_ is now located in the `nx-cugraph repository <https://github.com/rapidsai/nx-cugraph>`_ containing a backend to NetworkX for running supported algorithms with GPU acceleration.
 
-The `cugraph-docs repository <https://github.com/rapidsai/cugraph-docs>`_ contains code to generate cuGraph documentation.
-
----
-
-RAPIDS Graph documentation
-==========================
+   The `cugraph-docs repository <https://github.com/rapidsai/cugraph-docs>`_ contains code to generate NVIDIA cuGraph documentation.
 
 .. image:: images/cugraph_logo_2.png
    :width: 600
@@ -28,7 +24,7 @@ RAPIDS Graph documentation
 ~~~~~~~~~~~~
 Introduction
 ~~~~~~~~~~~~
-cuGraph is a library of graph algorithms that seamlessly integrates into the
+NVIDIA cuGraph is a library of graph algorithms that seamlessly integrates into the
 RAPIDS data science ecosystem and allows data scientists to easily call
 graph algorithms using data stored in cuDF/Pandas DataFrames or CuPy/SciPy
 sparse matrices.
@@ -92,8 +88,6 @@ This includes several ways to set up cuGraph
  The cuGraph `test code <https://github.com/rapidsai/cugraph/tree/main/python/cugraph/cugraph/tests>`_ contains script examples of setting up and calling cuGraph algorithms.
 
  A simple example of `testing the degree centrality algorithm <https://github.com/rapidsai/cugraph/blob/HEAD/python/cugraph/cugraph/tests/centrality/test_degree_centrality.py>`_ is a good place to start. There are also `multi-GPU examples <https://github.com/rapidsai/cugraph/blob/HEAD/python/cugraph/cugraph/tests/centrality/test_degree_centrality_mg.py>`_ with larger data sets as well.
-
-----
 
 ~~~~~~~~~~~~~~~~~
 Table of Contents
