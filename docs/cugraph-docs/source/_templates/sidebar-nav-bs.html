@@ -10,11 +10,14 @@
   That is correct for nested pages, where the sidebar should still show the
   active section and its foldable children. For top-level section landing
   pages, that output duplicates the primary navbar item in the sidebar, so we
-  render only the active section's child <ul> on those landing pages.
+  render only the active section's child <ul> on those landing pages. Orphaned
+  autosummary pages have no navigation parent, so they cannot generate a
+  section toctree and intentionally omit it.
 #}
 {% set show_nav_level = meta['html_theme.show_nav_level'] if (meta is defined and meta is not none and 'html_theme.show_nav_level' in meta) else theme_show_nav_level %}
 {% set special_page = pagename == root_doc or pagename in ["genindex", "py-modindex", "search"] %}
-{% if not special_page %}
+{% set has_navigation_parent = parents is defined and parents %}
+{% if not special_page and has_navigation_parent %}
   {% set nav_tree = generate_toctree_html(
     "sidebar",
     startdepth=1,
