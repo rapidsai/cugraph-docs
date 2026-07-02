@@ -1,34 +1,54 @@
 NVIDIA cuGraph Documentation
 ============================
 
-.. note::
-
-   **cuGraph-DGL has been removed from cuGraph GNN as of release 25.06.** We recommend migrating to
-   cuGraph-PyG, which offers the same functionality along with additional features like support for heterogeneous sampling and a unified API.
-   The cuGraph team is not planning any further work in the DGL ecosystem going forward.
-
-   The cuGraph repository has been refactored to make it more efficient to build, maintain and use.
-
-   Libraries supporting GNNs are now located in the `cugraph-gnn repository <https://github.com/rapidsai/cugraph-gnn>`_.
-
-   * `pylibwholegraph <https://github.com/rapidsai/cugraph-gnn/tree/main/python/>`_ - the `Wholegraph <https://docs.rapids.ai/api/cugraph/nightly/wholegraph/>`_ library for client memory management supporting cuGraph-PyG for even greater scalability
-   * `cugraph_pyg <https://github.com/rapidsai/cugraph-gnn/blob/main/readme_pages/cugraph_pyg.md>`_ provides native implementations of Pytorch Geometric's (PyG's) `GraphStore`, `FeatureStore`, and `Loader` interfaces, unlocking powerful GPU-accelerated graph analytics—including neighborhood sampling, centrality metrics, and community detection—directly within PyG workflows.
-
-   `RAPIDS nx-cugraph <https://rapids.ai/nx-cugraph/>`_ is now located in the `nx-cugraph repository <https://github.com/rapidsai/nx-cugraph>`_ containing a backend to NetworkX for running supported algorithms with GPU acceleration.
-
-   The `cugraph-docs repository <https://github.com/rapidsai/cugraph-docs>`_ contains code to generate NVIDIA cuGraph documentation.
-
 .. image:: images/cugraph_logo_2.png
    :width: 600
 
-~~~~~~~~~~~~
-Introduction
-~~~~~~~~~~~~
-NVIDIA cuGraph is a library of graph algorithms that seamlessly integrates into the
-RAPIDS data science ecosystem and allows data scientists to easily call
-graph algorithms using data stored in cuDF/Pandas DataFrames or CuPy/SciPy
-sparse matrices.
+Overview
+--------
 
+NVIDIA cuGraph is an open-source collection of GPU-accelerated graph analytics
+libraries. It supports creating and manipulating graphs and running scalable
+graph algorithms. Its Python APIs integrate with data stored in cuDF and pandas
+DataFrames, CuPy and SciPy sparse matrices, and NetworkX graphs. Lower-level
+Python, C, and C++ APIs support applications that need closer integration with
+cuGraph's graph primitives.
+
+NVIDIA cuGraph libraries and supporting projects are maintained across several
+repositories:
+
+* `cuGraph <https://github.com/rapidsai/cugraph>`_ provides the core
+  GPU-accelerated graph analytics libraries, including the high-level
+  :doc:`Python API <api_docs/cugraph/index>`, the lower-level
+  :doc:`pylibcugraph Python API <api_docs/plc/pylibcugraph>`, the
+  :doc:`C API <api_docs/cugraph_c/index>`, and the
+  :doc:`C++ API <api_docs/cugraph_cpp/index>`.
+* `cuGraph-GNN <https://github.com/rapidsai/cugraph-gnn>`_ contains
+  GPU-accelerated packages for graph neural network workflows built on NVIDIA
+  cuGraph.
+
+  * `cuGraph-PyG <https://github.com/rapidsai/cugraph-gnn/tree/main/python/cugraph-pyg>`_
+    integrates NVIDIA cuGraph with PyTorch Geometric and implements its
+    ``GraphStore``, ``FeatureStore``, ``Loader``, and ``Sampler`` interfaces.
+    See the :doc:`Python API <api_docs/cugraph-pyg/cugraph_pyg>`.
+  * `pylibwholegraph <https://github.com/rapidsai/cugraph-gnn/tree/main/python/pylibwholegraph>`_
+    provides Python interfaces for distributed graph and key-value storage
+    through WholeGraph. cuGraph-PyG can use WholeGraph for greater scalability.
+    See the :doc:`Python API <api_docs/wholegraph/pylibwholegraph/index>`.
+
+* `nx-cugraph <https://github.com/rapidsai/nx-cugraph>`_ provides a NetworkX
+  backend that can accelerate supported NetworkX algorithms on NVIDIA GPUs with
+  zero code changes. See the :doc:`nx-cugraph documentation <nx_cugraph/index>`.
+* `cuGraph Docs <https://github.com/rapidsai/cugraph-docs>`_ contains the
+  documentation sources and build configuration for NVIDIA cuGraph and its
+  related libraries.
+
+.. note::
+
+   **cuGraph-DGL was removed in release 25.08.** We recommend migrating to
+   cuGraph-PyG, which provides the same functionality along with additional
+   features such as heterogeneous sampling and a unified API. The cuGraph team
+   is not planning further work in the DGL ecosystem.
 
 ---------------------------
 cuGraph Using NetworkX Code
