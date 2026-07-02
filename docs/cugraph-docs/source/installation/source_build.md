@@ -82,7 +82,7 @@ Note that libraries will be installed to the location set in `$PREFIX` if set
 
 #### Updating the RAFT branch
 
-`libcugraph` uses the [RAFT](https://github.com/rapidsai/raft) library and
+`libcugraph` uses the [RAFT](https://github.com/NVIDIA/raft) library and
 there are times when it might be desirable to build against a different RAFT
 branch, such as when working on new features that might span both RAFT and
 cuGraph.

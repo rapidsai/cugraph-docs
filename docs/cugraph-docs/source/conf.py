@@ -135,8 +135,14 @@ todo_include_todos = False
 #
 html_theme_options = {
     "external_links": [],
-    "github_url": "https://github.com/rapidsai/cugraph",
-    "twitter_url": "https://twitter.com/rapidsai",
+    "icon_links": [
+        {
+            "name": "GitHub",
+            "url": "https://github.com/rapidsai/cugraph",
+            "icon": "fa-brands fa-github",
+            "type": "fontawesome",
+        },
+    ],
     "show_toc_level": 1,
     "navbar_align": "right",
     "navbar_center": "navbar-nav, version-switcher, navbar-external-links",
@@ -179,7 +185,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'cugraph.tex', 'cugraph Documentation',
+    (master_doc, 'cugraph.tex', f'{project} Documentation',
      'NVIDIA Corporation', 'manual'),
 ]
 
@@ -189,7 +195,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'cugraph', 'cugraph Documentation',
+    (master_doc, 'cugraph', f'{project} Documentation',
      [author], 1)
 ]
 
@@ -200,7 +206,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'cugraph', 'cugraph Documentation',
+    (master_doc, 'cugraph', f'{project} Documentation',
      author, 'cugraph', 'GPU-accelerated graph analysis.',
      'Miscellaneous'),
 ]
