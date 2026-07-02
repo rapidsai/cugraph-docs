@@ -1,3 +1,5 @@
+NVIDIA cuGraph Documentation
+============================
 
 .. note::
 
@@ -15,11 +17,6 @@
    `RAPIDS nx-cugraph <https://rapids.ai/nx-cugraph/>`_ is now located in the `nx-cugraph repository <https://github.com/rapidsai/nx-cugraph>`_ containing a backend to NetworkX for running supported algorithms with GPU acceleration.
 
    The `cugraph-docs repository <https://github.com/rapidsai/cugraph-docs>`_ contains code to generate NVIDIA cuGraph documentation.
-
----
-
-NVIDIA cuGraph Documentation
-============================
 
 .. image:: images/cugraph_logo_2.png
    :width: 600
@@ -91,8 +88,6 @@ This includes several ways to set up cuGraph
  The cuGraph `test code <https://github.com/rapidsai/cugraph/tree/main/python/cugraph/cugraph/tests>`_ contains script examples of setting up and calling cuGraph algorithms.
 
  A simple example of `testing the degree centrality algorithm <https://github.com/rapidsai/cugraph/blob/HEAD/python/cugraph/cugraph/tests/centrality/test_degree_centrality.py>`_ is a good place to start. There are also `multi-GPU examples <https://github.com/rapidsai/cugraph/blob/HEAD/python/cugraph/cugraph/tests/centrality/test_degree_centrality_mg.py>`_ with larger data sets as well.
-
-----
 
 ~~~~~~~~~~~~~~~~~
 Table of Contents
