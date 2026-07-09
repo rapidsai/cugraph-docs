@@ -80,7 +80,8 @@ dependencies:
           - myst-parser>=5.0
           - nbsphinx
           - numpydoc
-          - pydata-sphinx-theme
+          - pip:
+              - nvidia-sphinx-theme
           - sphinx-copybutton
           - sphinx-markdown-tables
           - sphinx>=8.2

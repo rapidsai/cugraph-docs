@@ -1,4 +1,4 @@
-# Copyright (c) 2018-2025, NVIDIA CORPORATION.
+# Copyright (c) 2018-2026, NVIDIA CORPORATION.
 #
 # pygdf documentation build configuration file, created by
 # sphinx-quickstart on Wed May  3 10:59:22 2017.
@@ -16,6 +16,7 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
+import datetime
 import os
 import sys
 
@@ -79,9 +80,9 @@ templates_path = ['_templates']
 master_doc = 'index'
 
 # General information about the project.
-project = 'cugraph-docs'
-copyright = '2024-2025, NVIDIA Corporation'
-author = 'NVIDIA Corporation'
+project = "NVIDIA cuGraph"
+copyright = f"2024-{datetime.datetime.today().year}, NVIDIA Corporation"
+author = "NVIDIA Corporation"
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -121,7 +122,7 @@ todo_include_todos = False
 # a list of builtin themes.
 #
 
-html_theme = 'pydata_sphinx_theme'
+html_theme = 'nvidia_sphinx_theme'
 
 
 
@@ -134,10 +135,18 @@ todo_include_todos = False
 #
 html_theme_options = {
     "external_links": [],
-    "github_url": "https://github.com/rapidsai/cugraph",
-    "twitter_url": "https://twitter.com/rapidsai",
+    "icon_links": [
+        {
+            "name": "GitHub",
+            "url": "https://github.com/rapidsai/cugraph",
+            "icon": "fa-brands fa-github",
+            "type": "fontawesome",
+        },
+    ],
     "show_toc_level": 1,
     "navbar_align": "right",
+    "navbar_center": "navbar-nav, version-switcher, navbar-external-links",
+    "navigation_with_keys": True,
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
@@ -176,7 +185,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'cugraph.tex', 'cugraph Documentation',
+    (master_doc, 'cugraph.tex', f'{project} Documentation',
      'NVIDIA Corporation', 'manual'),
 ]
 
@@ -186,7 +195,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'cugraph', 'cugraph Documentation',
+    (master_doc, 'cugraph', f'{project} Documentation',
      [author], 1)
 ]
 
@@ -197,7 +206,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'cugraph', 'cugraph Documentation',
+    (master_doc, 'cugraph', f'{project} Documentation',
      author, 'cugraph', 'GPU-accelerated graph analysis.',
      'Miscellaneous'),
 ]
@@ -213,8 +222,6 @@ numpydoc_class_members_toctree = False
 
 
 def setup(app):
-    app.add_css_file("https://docs.rapids.ai/assets/css/custom.css")
-    app.add_js_file("https://docs.rapids.ai/assets/js/custom.js", loading_method="defer")
     app.add_css_file("references.css")
 
 
