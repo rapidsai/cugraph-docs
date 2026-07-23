@@ -5,44 +5,12 @@ libwholegraph API
 generated from every public header in ``cpp/include/wholememory`` so it stays
 synchronized with the 26.10 nightly library.
 
-Initialization, communicators, and memory
------------------------------------------
+.. toctree::
+   :maxdepth: 1
+   :caption: API Documentation
 
-.. doxygenfile:: wholememory.h
-   :project: libwholegraph
-
-Tensor descriptions and handles
--------------------------------
-
-.. doxygenfile:: tensor_description.h
-   :project: libwholegraph
-
-.. doxygenfile:: wholememory_tensor.h
-   :project: libwholegraph
-
-.. doxygenfile:: global_reference.h
-   :project: libwholegraph
-
-Tensor and graph operations
----------------------------
-
-.. doxygenfile:: wholememory_op.h
-   :project: libwholegraph
-
-.. doxygenfile:: graph_op.h
-   :project: libwholegraph
-
-.. doxygenfile:: wholegraph_op.h
-   :project: libwholegraph
-
-Embeddings
-----------
-
-.. doxygenfile:: embedding.h
-   :project: libwholegraph
-
-Environment callbacks
----------------------
-
-.. doxygenfile:: env_func_ptrs.h
-   :project: libwholegraph
+   initialization_communicators_memory
+   tensor_descriptions_handles
+   tensor_graph_operations
+   embeddings
+   environment_callbacks

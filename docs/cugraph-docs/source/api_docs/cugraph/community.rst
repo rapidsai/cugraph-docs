@@ -48,7 +48,7 @@ single-GPU
    cugraph.k_truss
    cugraph.ktruss_subgraph
 
-multi_GPU
+multi-GPU
 ^^^^^^^^^
 .. autosummary::
    :toctree: ../api/cugraph/

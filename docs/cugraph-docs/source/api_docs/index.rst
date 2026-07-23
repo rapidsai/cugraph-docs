@@ -8,7 +8,7 @@ Traditional Graph Analytics in Python
 -------------------------------------
 
 .. toctree::
-    :maxdepth: 3
+    :maxdepth: 1
     :caption: Traditional Graph Analytics in Python
 
     cugraph/index
@@ -19,7 +19,7 @@ GNN Libraries
 -------------
 
 .. toctree::
-    :maxdepth: 3
+    :maxdepth: 1
     :caption: GNN Libraries
 
     cugraph-pyg/cugraph_pyg
@@ -29,7 +29,7 @@ Core Libraries
 --------------
 
 .. toctree::
-    :maxdepth: 3
+    :maxdepth: 1
     :caption: Core Libraries
 
     libcugraph/index
