@@ -1,7 +1,7 @@
 Linear
 ======
 
- .. doxygengroup:: linear_cpp
-     :project: libcugraph
-     :members:
-     :content-only:
+.. doxygengroup:: linear_cpp
+   :project: libcugraph
+   :members:
+   :content-only:

@@ -10,6 +10,7 @@ Constructors
 
    Graph
    MultiGraph
+   BiPartiteGraph
 
 
 Adding Data
@@ -32,7 +33,7 @@ Adding Data
 Checks
 ------
 .. autosummary::
-    :toctree: ../api/cugraph/
+   :toctree: ../api/cugraph/
 
    Graph.has_isolated_vertices
    Graph.is_bipartite
@@ -44,6 +45,11 @@ Checks
    Graph.lookup_internal_vertex_id
    Graph.to_directed
    Graph.to_undirected
+   cugraph.is_weighted
+   cugraph.is_directed
+   cugraph.is_multigraph
+   cugraph.is_bipartite
+   cugraph.is_multipartite
 
 
 Symmetrize
@@ -74,7 +80,7 @@ Conversion from Other Formats
    cugraph.to_pandas_edgelist
 
 NumberMap
------------------------------
+---------
 .. autosummary::
    :toctree: ../api/cugraph/
 
@@ -92,7 +98,7 @@ NumberMap
    cugraph.structure.NumberMap.vertex_column_size
 
 Other
------------------------------
+-----
 .. autosummary::
    :toctree: ../api/cugraph/
 

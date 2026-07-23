@@ -26,6 +26,8 @@ Blogs & Conferences
   * `NVIDIA cuGraph: Accelerate Graph Analytics with GPUs <https://medium.com/data-science-in-your-pocket/nvidia-cugraph-accelerate-graph-analytics-with-gpus-4d809345040f>`_
   * `Enhanced Data Analytics: Integrating NVIDIA Rapids cuGraph with TigerGraph <https://www.tigergraph.com/blog/tigergraph-copilot-enters-public-alpha-release-copy/>`_
   * `Insights, Techniques, and Evaluation for LLM-Driven Knowledge Graphs <https://developer.nvidia.com/blog/insights-techniques-and-evaluation-for-llm-driven-knowledge-graphs/>`_
+
+2023
 ------
   * `Intro to Graph Neural Networks with cuGraph-DGL <https://medium.com/rapids-ai/introduction-to-graph-neural-networks-with-cugraph-dgl-64c632e9cc52>`_
   * `GTC 2023 Ask the Experts Q&A <https://forums.developer.nvidia.com/c/blogs-events/connect-with-experts/ama-cugraph/652?ncid=em-even-260150-vt33#cid=dev03_em-even_en-us>`_
@@ -33,6 +35,7 @@ Blogs & Conferences
   * `Introduction to Graph Neural Networks with NVIDIA cuGraph-DGL <https://developer.nvidia.com/blog/introduction-to-graph-neural-networks-with-nvidia-cugraph-dgl/>`_
   * `Supercharge Graph Analytics at Scale with GPU-CPU Fusion for 100x Performance <https://developer.nvidia.com/blog/supercharge-graph-analytics-at-scale-with-gpu-cpu-fusion-for-100x-performance/>`_
   * `Introduction to Graph Analysis using cuGraph <https://medium.com/rapids-ai/introduction-to-graph-analysis-using-cugraph-a9dc2fbc3c5e>`_
+
 2022
 ------
   * `GTC: State of cuGraph  (video & slides) <https://www.nvidia.com/gtc/session-catalog/?search=cuGraph&tab.scheduledorondemand=1583520458947001NJiE&search=cuGraph#/session/1635793340204001n4p2>`_
@@ -41,7 +44,7 @@ Blogs & Conferences
 
 2021
 ------
-   * `GTC 21 - State of RAPIDS cuGraph and what's comming next <https://www.nvidia.com/en-us/on-demand/session/gtcspring21-s32418/>`_
+   * `GTC 21 - State of RAPIDS cuGraph and what's coming next <https://www.nvidia.com/en-us/on-demand/session/gtcspring21-s32418/>`_
 
 2020
 ------

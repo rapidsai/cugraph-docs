@@ -72,14 +72,6 @@ multi-GPU
 
    cugraph.dask.community.leiden.leiden
 
-Leiden (MG)
-------------
-.. autosummary::
-   :toctree: ../api/cugraph/
-
-   cugraph.dask.community.leiden.leiden
-
-
 Louvain
 -------
 

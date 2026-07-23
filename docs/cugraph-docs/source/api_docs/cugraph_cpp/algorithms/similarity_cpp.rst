@@ -1,7 +1,7 @@
 Similarity
 ==========
 
- .. doxygengroup:: similarity_cpp
-     :project: libcugraph
-     :members:
-     :content-only:
+.. doxygengroup:: similarity_cpp
+   :project: libcugraph
+   :members:
+   :content-only:

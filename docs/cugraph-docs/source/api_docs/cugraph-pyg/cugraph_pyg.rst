@@ -1,56 +1,59 @@
-~~~~~~~~~~~~~~~~~~~~~~~~~
-cugraph-pyg API Reference
-~~~~~~~~~~~~~~~~~~~~~~~~~
+cuGraph-PyG API
+===============
 
-cugraph-pyg
+cuGraph-PyG implements PyTorch Geometric storage, loader, and sampler
+interfaces on top of cuGraph and WholeGraph.
 
-.. currentmodule:: cugraph_pyg
-
-Graph Storage
+Graph storage
 -------------
+
 .. autosummary::
-   :toctree: ../api/cugraph-pyg/
+   :toctree: ../api/cugraph-pyg
 
-   cugraph_pyg.data.graph_store.GraphStore
+   cugraph_pyg.data.GraphStore
 
-Feature Storage
+Feature storage
 ---------------
-.. autosummary::
-   :toctree: ../api/cugraph-pyg/
-   
-   cugraph_pyg.data.feature_store.FeatureStore
 
-Tensors and Embeddings
+.. autosummary::
+   :toctree: ../api/cugraph-pyg
+
+   cugraph_pyg.data.FeatureStore
+
+Tensors and embeddings
 ----------------------
+
 .. autosummary::
-   :toctree ../api/cugraph-pyg/
+   :toctree: ../api/cugraph-pyg
 
-   cugraph_pyg.tensor.dist_tensor.DistTensor
-   cugraph_pyg.tensor.dist_tensor.DistEmbedding
-   cugraph_pyg.tensor.dist_matrix.DistMatrix
+   cugraph_pyg.tensor.DistTensor
+   cugraph_pyg.tensor.DistEmbedding
+   cugraph_pyg.tensor.DistMatrix
+   cugraph_pyg.tensor.is_empty
+   cugraph_pyg.tensor.empty
 
-
-Data Loaders
+Data loaders
 ------------
+
 .. autosummary::
-   :toctree: ../api/cugraph-pyg/
+   :toctree: ../api/cugraph-pyg
 
-   cugraph_pyg.loader.node_loader.NodeLoader
-   cugraph_pyg.loader.neighbor_loader.NeighborLoader
-
-   cugraph_pyg.loader.link_loader.LinkLoader
-   cugraph_pyg.loader.link_neighbor_loader.LinkNeighborLoader
+   cugraph_pyg.loader.NodeLoader
+   cugraph_pyg.loader.NeighborLoader
+   cugraph_pyg.loader.LinkLoader
+   cugraph_pyg.loader.LinkNeighborLoader
 
 Samplers
 --------
-.. autosummary::
-   :toctree: ../api/cugraph-pyg/
 
-   cugraph_pyg.sampler.sampler.BaseSampler
+.. autosummary::
+   :toctree: ../api/cugraph-pyg
+
+   cugraph_pyg.sampler.BaseSampler
+   cugraph_pyg.sampler.SampleIterator
+   cugraph_pyg.sampler.BaseDistributedSampler
+   cugraph_pyg.sampler.DistributedNeighborSampler
    cugraph_pyg.sampler.sampler.SampleReader
    cugraph_pyg.sampler.sampler.HomogeneousSampleReader
    cugraph_pyg.sampler.sampler.HeterogeneousSampleReader
-   cugraph_pyg.sampler.sampler.SampleIterator
-
-   cugraph_pyg.sampler.distributed_sampler.BaseDistributedSampler
-   cugraph_pyg.sampler.distributed_sampler.DistributedNeighborSampler
+   cugraph_pyg.sampler.io.BufferedSampleReader

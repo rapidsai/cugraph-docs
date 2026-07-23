@@ -11,6 +11,8 @@ Breadth-first-search
 
    cugraph.bfs
    cugraph.bfs_edges
+   cugraph.concurrent_bfs
+   cugraph.multi_source_bfs
 
 Breadth-first-search (MG)
 -------------------------

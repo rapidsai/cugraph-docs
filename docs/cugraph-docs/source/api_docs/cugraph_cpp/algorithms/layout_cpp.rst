@@ -1,7 +1,7 @@
 Layout
 ======
 
- .. doxygengroup:: layout_cpp
-     :project: libcugraph
-     :members:
-     :content-only:
+.. doxygengroup:: layout_cpp
+   :project: libcugraph
+   :members:
+   :content-only:

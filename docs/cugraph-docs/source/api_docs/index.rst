@@ -1,26 +1,35 @@
 API Reference
 =============
 
-This page provides a list of all publicly accessible Python modules with in the Graph collection
+The API reference is organized by cuGraph component and reflects the 26.10
+nightly packages.
 
-Core Graph API Documentation
-----------------------------
-
-.. toctree::
-    :maxdepth: 3
-    :caption: Core Graph API Documentation
-
-    cugraph/index.rst
-    plc/pylibcugraph.rst
-    cugraph_c/index.rst
-    cugraph_cpp/index.rst
-
-Graph Neural Networks API Documentation
----------------------------------------
+Traditional Graph Analytics in Python
+-------------------------------------
 
 .. toctree::
     :maxdepth: 3
-    :caption: Graph Neural Networks API Documentation
+    :caption: Traditional Graph Analytics in Python
 
-    cugraph-pyg/cugraph_pyg.rst
-    .. wholegraph/index.rst
+    cugraph/index
+    plc/pylibcugraph
+    nx-cugraph API <https://docs.rapids.ai/api/nx-cugraph/nightly/>
+
+GNN Libraries
+-------------
+
+.. toctree::
+    :maxdepth: 3
+    :caption: GNN Libraries
+
+    cugraph-pyg/cugraph_pyg
+    wholegraph/index
+
+Core Libraries
+--------------
+
+.. toctree::
+    :maxdepth: 3
+    :caption: Core Libraries
+
+    libcugraph/index
