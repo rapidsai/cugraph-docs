@@ -25,11 +25,9 @@ It would be simple to modify the methods to return `self` rather than `None`, ho
 
 ```
 # cascade flow - makes sense
-
 G = cugraph.Graph().from_cudf_edgelist(df)
 
 # non-cascaded code can be confusing
-
 G = cugraph.Graph()
 G2 = G.from_cudf_edgelist(df)
 G3 = G.from_cudf_edgelist(df2)
@@ -39,7 +37,6 @@ The confusion with the non-cascade code is that G, G1, and G3 are all the same o
 _Why not add a flag "return_self" to the methods?_<br>
 ```
 # cascade flow - makes sense
-
 G = cugraph.Graph().from_cudf_edgelist(df, return_self=True)
 ```
 The fact that a developer would explicitly add a "return_self" flag to the method indicates that the developer is aware that the method returns None. It is just as easy for the developer to use a non-cascading workflow.
@@ -54,6 +51,5 @@ This pattern allows cuGraph to maintain a particular object-oriented model, wher
 
 ```
 # will not work
-
 G = cugraph.Graph().from_cudf_edgelist(df).pagerank()
 ```

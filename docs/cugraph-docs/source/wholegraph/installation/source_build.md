@@ -51,17 +51,12 @@ __Create the conda development environment__
 
 ```bash
 # create the conda environment (assuming in base `wholegraph` directory)
-
 # for CUDA 13.x
-
 conda env create --name cugraph_gnn_dev --file conda/environments/all_cuda-130_arch-x86_64.yaml
 
 # activate the environment
-
 conda activate cugraph_gnn_dev
-
 # to deactivate an environment
-
 conda deactivate
 ```
 
@@ -69,9 +64,7 @@ conda deactivate
 
 
 ```bash
-
 # Where XXX is the CUDA version
-
 conda env update --name wholegraph_dev --file conda/environments/all_cuda-XXX_arch-x86_64.yaml
 
 conda activate cugraph_gnn_dev
@@ -120,7 +113,6 @@ $ ./build.sh clean                        # remove prior build artifacts (start 
 $ ./build.sh
 
 # make parallelism options can also be defined: Example build jobs using 4 threads (make -j4)
-
 $ PARALLEL_LEVEL=4 ./build.sh libwholegraph
 
 Note that the libraries will be installed to the location set in `$PREFIX` if set (i.e. `export PREFIX=/install/path`), otherwise to `$CONDA_PREFIX`.

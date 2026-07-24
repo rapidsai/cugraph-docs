@@ -35,11 +35,9 @@ Install and update WholeGraph using the conda command:
 
 ```bash
 # CUDA 13
-
 conda install -c rapidsai -c conda-forge wholegraph cuda-version=13.3
 
 # CUDA 12
-
 conda install -c rapidsai -c conda-forge wholegraph cuda-version=12.9
 ```
 
@@ -51,11 +49,9 @@ wholegraph, and all of RAPIDS, is available via `pip`.
 
 ```shell
 # CUDA 13
-
 pip install wholegraph-cu13 --extra-index-url=https://pypi.nvidia.com
 
 # CUDA 12
-
 pip install wholegraph-cu12 --extra-index-url=https://pypi.nvidia.com
 ```
 

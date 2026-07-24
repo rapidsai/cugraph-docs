@@ -41,15 +41,12 @@ files](https://github.com/rapidsai/cugraph/blob/main/conda/environments).
 
 ```bash
 # for CUDA 13.x
-
 conda env create --name cugraph_dev --file $CUGRAPH_HOME/conda/environments/all_cuda-130_arch-x86_64.yaml
 
 # activate the environment
-
 conda activate cugraph_dev
 
 # to deactivate an environment
-
 conda deactivate
 ```
 
@@ -57,7 +54,6 @@ The environment can be updated as cugraph adds/removes/updates its dependencies.
 
 ```bash
 # for CUDA 13.x
-
 conda env update --name cugraph_dev --file $CUGRAPH_HOME/conda/environments/all_cuda-130_arch-x86_64.yaml
 conda activate cugraph_dev
 ```
@@ -201,7 +197,6 @@ vi ./etc/conda/activate.d/env_vars.sh
 
 #!/bin/bash
 # for CUDA 13.x
-
 export PATH=/usr/local/cuda-13.3/bin:$PATH
 export LD_LIBRARY_PATH=/usr/local/cuda-13.3/lib64:$LD_LIBRARY_PATH
 ```
