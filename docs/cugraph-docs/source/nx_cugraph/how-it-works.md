@@ -55,7 +55,6 @@ import nx_cugraph as nxcg
 G = nx.Graph()
 
 # populate the graph
-
 #  ...
 
 nxcg_G = nxcg.from_networkx(G)             # conversion happens once here
