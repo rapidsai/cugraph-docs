@@ -15,6 +15,6 @@ Algorithms
     algorithms/linear_cpp.rst
     algorithms/link_analysis_cpp.rst
     algorithms/layout_cpp.rst
-    algorithms/component_cpp.rst
+    algorithms/components_cpp.rst
     algorithms/tree_cpp.rst
     algorithms/utility_cpp.rst
