@@ -12,7 +12,7 @@ See [Katz on Wikipedia](https://en.wikipedia.org/wiki/Katz_centrality) for more 
 
 * in disconnected graphs
 * in sparse graphs
-* in graphs with multi-hop propogation like innovation
+* in graphs with multi-hop propagation like innovation
 
 ## When not to use Katz Centrality
 

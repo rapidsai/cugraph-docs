@@ -1,6 +1,6 @@
 # Louvain Community
 
-Louvain community detection seeks to maximize modularity which measures, in quantitative terms, how effectively the graph has been partitioned. It actually compares the paritioning to a random partitioning. Modularity is caculated as follows.
+Louvain community detection seeks to maximize modularity which measures, in quantitative terms, how effectively the graph has been partitioned. It actually compares the partitioning to a random partitioning. Modularity is calculated as follows.
 
 See [Louvain community on Wikipedia](https://en.wikipedia.org/wiki/Louvain_method) for more details on the algorithm.
 

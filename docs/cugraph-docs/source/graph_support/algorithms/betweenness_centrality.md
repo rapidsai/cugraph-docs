@@ -28,7 +28,7 @@ Betweenness Centrality is less efficient in certain circumstances:
 * Disconnected networks or networks with many isolated components limit the value of betweenness centrality
 * Betweenness centality is more costly and less useful in weighted graphs.
 * In networks with hierarchical structure, BC might not accurately reflect true influence
-* Networks with multiple edge types often require a seperate method of measuring influence for each edge type.
+* Networks with multiple edge types often require a separate method of measuring influence for each edge type.
 
 
 ## How computationally expensive is BC?

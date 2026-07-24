@@ -47,7 +47,7 @@ Blogs & Conferences
 2021
 ------
 
-   * `GTC 21 - State of RAPIDS cuGraph and what's comming next <https://www.nvidia.com/en-us/on-demand/session/gtcspring21-s32418/>`_
+   * `GTC 21 - State of RAPIDS cuGraph and what's coming next <https://www.nvidia.com/en-us/on-demand/session/gtcspring21-s32418/>`_
 
 2020
 ------
@@ -113,6 +113,6 @@ Other Blogs
 RAPIDS Event Notebooks
 ======================
 
-* `KDD 2022 Notebook that demonstates using cuDF for ETL/data cleaning and XGBoost for training a fraud predection model.  <https://github.com/rapidsai-community/event-notebooks/blob/main/KDD_2022/notebooks/NonGNN-Graph.ipynb>`_
+* `KDD 2022 Notebook that demonstrates using cuDF for ETL/data cleaning and XGBoost for training a fraud predection model.  <https://github.com/rapidsai-community/event-notebooks/blob/main/KDD_2022/notebooks/NonGNN-Graph.ipynb>`_
 * `SciPy 22 Notebook comparing cuGraph to NetworkX  <https://github.com/rapidsai-community/event-notebooks/blob/8a9b660fada8186615a642b52b5ca78f20205838/SCIPY_2022/cugraph_presentation/SciPy_cuGraph_comparison.ipynb>`_
 * `KDD 2020 Tutorial Notebooks - Accelerating and Expanding End-to-End Data Science Workflows with DL/ML Interoperability Using RAPIDS  <https://github.com/rapidsai-community/event-notebooks/tree/8a9b660fada8186615a642b52b5ca78f20205838/KDD_2020/notebooks>`_

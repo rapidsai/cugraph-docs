@@ -1,6 +1,6 @@
 # Leiden Community
 
-Leiden coummunity detection is very similar to [Louvain community detection](./louvain_community) in that both seek to maximize modularity. Modularity, in quantitative terms, measures how effectively the graph has been partitioned. Both Louvain and Leiden compare a proposed partitioning to random partitioning,opting for the partition that maximixes modularity which is calculated as follows.
+Leiden community detection is very similar to [Louvain community detection](./louvain_community) in that both seek to maximize modularity. Modularity, in quantitative terms, measures how effectively the graph has been partitioned. Both Louvain and Leiden compare a proposed partitioning to random partitioning,opting for the partition that maximixes modularity which is calculated as follows.
 
 To summarize, like Louvain, Leiden starts by putting each node in its own community, then iteratively, putting nodes into the same community and recalculating the modularity.
 
@@ -44,7 +44,7 @@ See [Leiden community on Wikipedia](https://en.wikipedia.org/wiki/Louvain_method
 ## When Leiden Community is not preferred to Louvain
 
 * For quick runs on small datasets
-* When discconected communities are expected and of interest
+* When disconnected communities are expected and of interest
 
 ## How computationally expensive is it?
 

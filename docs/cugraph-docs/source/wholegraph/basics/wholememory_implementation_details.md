@@ -38,7 +38,7 @@ As there are six types of WholeMemory, the allocation process of each type are a
 ### Device Continuous WholeMemory
 
 For Device Continuous WholeMemory, first a range of virtual address space is reserved in each GPU, which covers the
-entire memory range. Then a part of pyhsical memory is allocated in each GPU, as shown in the following figure.
+entire memory range. Then a part of physical memory is allocated in each GPU, as shown in the following figure.
 ![Device Continuous WholeMemory Allocation Step 1](../imgs/device_continuous_wholememory_step1.png)
 After that, each GPU gathers all the memory handles from all GPUs, and maps them to the reserved address space.
 ![Device Continuous WholeMemory Allocation Step 2](../imgs/device_continuous_wholememory_step2.png)
