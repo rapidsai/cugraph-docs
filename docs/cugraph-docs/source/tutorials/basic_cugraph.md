@@ -9,6 +9,7 @@ cuGraph is part of [RAPIDS](https://docs.rapids.ai/user-guide/) and has the foll
  * NetworkX >= version 3.3 or newer in order to use use [NetworkX Configs](https://networkx.org/documentation/stable/reference/backends.html#module-networkx.utils.configs) **This is required for use of nx-cuGraph, [see below](#cugraph-using-networkx-code).**
 
 ## Installation
+
 The latest RAPIDS System Requirements documentation is located [here](https://docs.rapids.ai/install#system-req).
 
 This includes several ways to set up cuGraph
@@ -27,11 +28,13 @@ This includes several ways to set up cuGraph
 To build from source, check each RAPIDS GitHub README for set up and build instructions. Further links are provided in the [selector tool](https://docs.rapids.ai/install#selector). If additional help is needed reach out on our [Slack Channel](https://rapids-goai.slack.com/archives/C5E06F4DC).
 
 ## CuGraph Using NetworkX Code
+
 While the steps above are required to use the full suite of cuGraph graph analytics, cuGraph is now supported as a NetworkX backend using [nx-cugraph](https://docs.rapids.ai/api/cugraph/nightly/nx_cugraph/nx_cugraph/).
 Nx-cugraph offers those with existing NetworkX code, a **zero code change** option with a growing list of supported algorithms.
 
 
 ## Cugraph API Example
+
 Coming soon !
 
 

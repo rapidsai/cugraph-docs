@@ -1,14 +1,17 @@
 ========
 Sampling
 ========
+
 .. currentmodule:: cugraph
 
 
 
 Random Walks
 ------------
+
 single-GPU
 ^^^^^^^^^^
+
 .. autosummary::
    :toctree: ../api/cugraph/
 
@@ -18,6 +21,7 @@ single-GPU
 
 multi-GPU
 ^^^^^^^^^
+
 .. autosummary::
    :toctree: ../api/cugraph/
 
@@ -27,8 +31,10 @@ multi-GPU
 
 Node2Vec
 ---------
+
 single-GPU
 ^^^^^^^^^^
+
 .. autosummary::
    :toctree: ../api/cugraph/
 
@@ -36,6 +42,7 @@ single-GPU
 
 multi-GPU
 ^^^^^^^^^
+
 .. autosummary::
    :toctree: ../api/cugraph/
 

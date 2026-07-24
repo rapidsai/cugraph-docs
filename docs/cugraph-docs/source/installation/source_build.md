@@ -22,6 +22,7 @@ Further details and download links for these prerequisites are available on the
 ## Setting up the development environment
 
 ### Clone the repository:
+
 ```bash
 CUGRAPH_HOME=$(pwd)/cugraph
 git clone https://github.com/rapidsai/cugraph.git $CUGRAPH_HOME
@@ -40,12 +41,15 @@ files](https://github.com/rapidsai/cugraph/blob/main/conda/environments).
 
 ```bash
 # for CUDA 13.x
+
 conda env create --name cugraph_dev --file $CUGRAPH_HOME/conda/environments/all_cuda-130_arch-x86_64.yaml
 
 # activate the environment
+
 conda activate cugraph_dev
 
 # to deactivate an environment
+
 conda deactivate
 ```
 
@@ -53,6 +57,7 @@ The environment can be updated as cugraph adds/removes/updates its dependencies.
 
 ```bash
 # for CUDA 13.x
+
 conda env update --name cugraph_dev --file $CUGRAPH_HOME/conda/environments/all_cuda-130_arch-x86_64.yaml
 conda activate cugraph_dev
 ```
@@ -60,6 +65,7 @@ conda activate cugraph_dev
 ### Build and Install
 
 #### Build and install using `build.sh`
+
 Using the `build.sh` script, located in the `$CUGRAPH_HOME` directory, is the
 recommended way to build and install the cugraph libraries. By default,
 `build.sh` will build and install a predefined set of targets
@@ -99,8 +105,11 @@ modify the bottom of the `cpp/cmake/thirdparty/get_raft.cmake` file as follows:
 
 ```cmake
 # Change pinned tag and fork here to test a commit in CI
+
 # To use a different RAFT locally, set the CMake variable
+
 # RPM_raft_SOURCE=/path/to/local/raft
+
 find_and_configure_raft(VERSION    ${CUGRAPH_MIN_VERSION_raft}
                         FORK       <your_git_fork>
                         PINNED_TAG <your_git_branch_or_tag>
@@ -192,6 +201,7 @@ vi ./etc/conda/activate.d/env_vars.sh
 
 #!/bin/bash
 # for CUDA 13.x
+
 export PATH=/usr/local/cuda-13.3/bin:$PATH
 export LD_LIBRARY_PATH=/usr/local/cuda-13.3/lib64:$LD_LIBRARY_PATH
 ```
@@ -210,4 +220,5 @@ Python API documentation can be generated from _./docs/cugraph directory_. Or
 through using "./build.sh docs"
 
 ## Attribution
+
 Portions adopted from https://github.com/pytorch/pytorch/blob/master/CONTRIBUTING.md

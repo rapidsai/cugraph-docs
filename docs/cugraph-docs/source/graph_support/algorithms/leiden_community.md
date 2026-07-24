@@ -35,19 +35,23 @@ See [Leiden community on Wikipedia](https://en.wikipedia.org/wiki/Louvain_method
 
 
 ## When to use Leiden Community over Louvain
+
 * When isolated nodes and disconnected commnuties are not desired
 * In larger graphs since Leiden is typically faster
 * When more deterministic results are need since Louvain can be more random.
 
 
 ## When Leiden Community is not preferred to Louvain
+
 * For quick runs on small datasets
 * When discconected communities are expected and of interest
 
 ## How computationally expensive is it?
+
 While cuGraph's parallelism mitigates run time, [Big O notation](https://en.wikipedia.org/wiki/Big_O_notation) is still the standard to compare algorithm costs.
 
 ## Leiden cost
+
 Leiden is a very efficient algorithm.
 The cost of Leiden is $O(m)
 Where:

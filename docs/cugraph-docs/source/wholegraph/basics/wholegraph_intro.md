@@ -1,4 +1,5 @@
 # WholeGraph Introduction
+
 WholeGraph helps train large-scale Graph Neural Networks(GNN).
 WholeGraph provides underlying storage structure called WholeMemory.
 WholeMemory is a Tensor like storage and provides multi-GPU support.
@@ -7,11 +8,13 @@ By working together with cuGraph, cuGraph-PyG, and PyG,
 it will be easy to build GNN applications.
 
 ## WholeMemory
+
 WholeMemory can be regarded as a whole view of GPU memory.
 WholeMemory exposes a handle of the memory instance no matter how the underlying data is stored across multiple GPUs.
 WholeMemory assumes that separate process is used to control each GPU.
 
 ### WholeMemory Basics
+
 To define WholeMemory, we need to specify the following:
 
 #### 1. Specify the set of GPU to handle the Memory
@@ -47,6 +50,7 @@ To learn more details about WholeMemory locations and WholeMemory types, please 
 [WholeMemory Implementation Details](wholememory_implementation_details.md)
 
 ### WholeMemory Communicator
+
 WholeMemory Communicator has two main purpose:
 
 - **Defines a set of GPUs which works together on WholeMemory.** WholeMemory Communicator is created by all GPUs that
@@ -59,11 +63,13 @@ will call WholeMemory Communicator creation function using this WholeMemory Uniq
 well as all GPU count.
 
 ### WholeMemory Granularity
+
 As underlying storage may be partitioned into multiple GPUs physically, this is usually not wanted inside one single
 user data block. To help on this, when creating WholeMemory, the granularity of data can be specified. Then the
 WholeMemory is considered as multiple block of the same granularity and will not get split inside the granularity.
 
 ### WholeMemory Mapping
+
 As WholeMemory provides a whole view of memory to GPU, to access WholeMemory, mapping is usually needed.
 Different types of WholeMemory have different mapping methods supported as their names.
 Some mappings supported include
@@ -79,27 +85,34 @@ Some mappings supported include
   GPUs. This mapping will be handled by hardware (CPU pagetable or GPU pagetable).
 
 ### Operations on WholeMemory
+
 There are some operations that can be performed on WholeMemory. They are based on the mapping of WholeMemory.
 #### Local Operation
+
 As all WholeMemory supports mapping of local memory, so operation on local memory is supported. The operation can be
 either read or write. Just use it as GPU memory of current device is OK.
 #### Load and Store
+
 To facilitate file operation, Load / Store WholeMemory from file or to file is supported. WholeMemory uses raw binary
 file format for disk operation. For Load, the input file can be a single file or a list of files, if it is a list, they
 will be logically concatenated together and then loaded. For store, each GPU stores its local memory to file, producing
 a list of files.
 #### Gather and Scatter
+
 WholeMemory also supports Gather / Scatter operation, usually they operate on a
 [WholeMemory Tensor](#wholememory-tensor).
 
 ### WholeMemory Tensor
+
 Compared to PyTorch, WholeMemory is like PyTorch Storage while a WholeMemory Tensor is like a PyTorch Tensor.
 For now, WholeMemory supports only 1D and 2D tensors, or arrays and matrices. Only first dimension is partitioned.
 
 ### WholeMemory Embedding
+
 WholeMemory Embedding is just like a 2D WholeMemory Tensor, with two features added. They support cache and sparse
 optimizers.
 #### Cache Support
+
 To create WholeMemory Embedding with a cache, WholeMemory CachePolicy needs to be be created first. WholeMemoryCachePolicy can be created with following fields:
 - **WholeMemory Communicator**: WholeMemory CachePolicy also needs WholeMemory Communicator.
   WholeMemory Communicator defines the set of GPUs that cache all the Embedding.
@@ -123,12 +136,14 @@ The two most commonly used caches are:
   machine. For local cached global memory, only readonly is supported.
 
 #### WholeMemory Embedding Sparse Optimizer
+
 Another feature of WholeMemory Embedding is that WholeMemory Embedding supports embedding training.
 To efficiently train large embedding tables, a sparse optimizer is needed.
 WholeMemory Embedding Sparse Optimizer can run on a cached or noncached WholeMemory Embedding.
 Currently supported optimizers include SGD, Adam, RMSProp and AdaGrad.
 
 ## Graph Structure
+
 Graph structure in WholeGraph is also based on WholeMemory.
 In WholeGraph, graph is stored in [CSR format](https://en.wikipedia.org/wiki/Sparse_matrix#Compressed_sparse_row_(CSR,_CRS_or_Yale_format)).
 Both ROW_INDEX (noted as `csr_row_ptr`) and COL_INDEX (notated as `csr_col_ind`) are stored in a

@@ -1,4 +1,5 @@
 # Centrality algorithms
+
 cuGraph Pagerank is implemented using our graph primitive library
 
 ## Pagerank

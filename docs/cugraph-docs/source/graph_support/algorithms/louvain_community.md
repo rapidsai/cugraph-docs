@@ -26,6 +26,7 @@ Louvain works well in cases where there are natural communities. For example, so
 
 
 ## When not to use Louvain Community
+
 In addition to the inverse of the helpful characteristics listed above, several other graph-level attributes can hinder Louvain.
 
 * Graphs with many small communities which are often merged
@@ -33,6 +34,7 @@ In addition to the inverse of the helpful characteristics listed above, several 
 * Sparse graphs since low modularity can make the algorithm results useless.
 
 ## How computationally expensive is it?
+
 While cuGraph's parallelism mitigates run time, [Big O notation](https://en.wikipedia.org/wiki/Big_O_notation) is still the standard to compare algorithm costs.
 
 

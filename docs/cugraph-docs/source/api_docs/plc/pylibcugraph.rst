@@ -8,6 +8,7 @@ pylibcugraph
 
 Methods
 -------
+
 .. autosummary::
    :toctree: ../api/plc/
 

@@ -1,5 +1,6 @@
 WholeGraph
 ==========
+
 RAPIDS WholeGraph has following package:
 
 * pylibwholegraph: shared memory-based GPU-accelerated GNN training

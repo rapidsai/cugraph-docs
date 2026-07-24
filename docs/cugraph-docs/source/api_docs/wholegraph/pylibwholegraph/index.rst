@@ -6,6 +6,7 @@ pylibwholegraph API doc
 
 APIs
 ----
+
 .. autosummary::
     :toctree: ../../api/wg
 

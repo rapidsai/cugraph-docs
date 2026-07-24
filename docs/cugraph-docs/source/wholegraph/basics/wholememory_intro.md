@@ -1,9 +1,11 @@
 ## WholeMemory
+
 WholeMemory can be regarded as a whole view of GPU memory.
 WholeMemory exposes a handle to the memory instance no matter how the underlying data is stored across multiple GPUs.
 WholeMemory assumes that a separate process is used to control each GPU.
 
 ### WholeMemory Basics
+
 To define WholeMemory, we need to specify the following:
 
 #### 1. Specify the set of GPU to handle the Memory
@@ -40,6 +42,7 @@ If you would like to know more details about WholeMemory locations and WholeMemo
 [WholeMemory Implementation Details](wholememory_implementation_details.md)
 
 ### WholeMemory Communicator
+
 WholeMemory Communicator has two main purpose:
 
 - **Defines a set of GPUs which works together on WholeMemory.** WholeMemory Communicator is created by all GPUs that
@@ -53,11 +56,13 @@ will call WholeMemory Communicator creation function using this WholeMemory Uniq
 well as all GPU count.
 
 ### WholeMemory Granularity
+
 As underlying storage may be physically partitioned into multiple GPUs, it is usually not wanted inside one single
 user data block. To help with this, when creating WholeMemory, the granularity of data can be specified. Therefore
 WholeMemory is considered as multiple blocks of the same granularity and will not get split inside the granularity.
 
 ### WholeMemory Mapping
+
 Since WholeMemory provides a whole view of memory to GPU,  mapping is usually needed to access WholeMemory.
 Different types of WholeMemory have different mapping methods supported as their names.
 Some mappings supported include:
@@ -73,26 +78,33 @@ Some mappings supported include:
   GPUs. This mapping will be handled by hardware (CPU pagetable or GPU pagetable).
 
 ### Operations on WholeMemory
+
 There are some operations that can be performed on WholeMemory. They are based on the mapping of WholeMemory.
 #### Local Operation
+
 As all WholeMemory supports mapping of local memory, so operation on local memory is supported. The operation can be
 either read or write. Just use it as GPU memory of current device is OK.
 #### Load / Store
+
 To facilitate file operation, Load / Store WholeMemory from file or to file is supported. WholeMemory use raw binary
 file format for disk operation. For Load, the input file can be single file or a list of files, if it is a list, they
 will be logically concatenated together and then loaded. For store, each GPU stores its local memory to file, producing
 a list of files.
 #### Gather / Scatter
+
 WholeMemory also supports Gather / Scatter operations, usually they operate on a
 [WholeMemory Tensor](#wholememory-tensor).
 
 ### WholeMemory Tensor
+
 Compared to PyTorch, WholeMemory is like PyTorch Storage while WholeMemory Tensor is like PyTorch Tensor.
 For now, WholeMemory supports only 1D and 2D tensor, or array and matrix. Only first dimension is partitioned.
 
 ### WholeMemory Embedding
+
 WholeMemory Embedding is just like 2D WholeMemory Tensor, with  cache support and sparse optimizer support added.
 #### Cache Support
+
 WholeMemory Embedding supports cache. To create WholeMemory Embedding with cache, WholeMemory CachePolicy need first be
 created. WholeMemoryCachePolicy can be created with following fields:
 - **WholeMemory Communicator**: WholeMemory CachePolicy also need WholeMemory Communicator.
@@ -117,6 +129,7 @@ There are two most commonly used caches. They are:
   machine. For local cached global memory supports just readonly.
 
 #### WholeMemory Embedding Sparse Optimizer
+
 Another feature of WholeMemory Embedding is that WholeMemory Embedding supports embedding training.
 To efficiently train large embedding tables, a sparse optimizer is needed.
 The WholeMemory Embedding Sparse Optimizer can run on cached or non-cached WholeMemory Embedding.

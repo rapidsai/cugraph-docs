@@ -30,9 +30,11 @@ __Other Packages__:
 * nanobind>=0.2.0
 
 ## Building gnn
+
 To install gnn from source, ensure the dependencies are met.
 
 ### Clone Repo and Configure Conda Environment
+
 __GIT clone a version of the repository__
 
   ```bash
@@ -51,12 +53,15 @@ __Create the conda development environment__
 # create the conda environment (assuming in base `wholegraph` directory)
 
 # for CUDA 13.x
+
 conda env create --name cugraph_gnn_dev --file conda/environments/all_cuda-130_arch-x86_64.yaml
 
 # activate the environment
+
 conda activate cugraph_gnn_dev
 
 # to deactivate an environment
+
 conda deactivate
 ```
 
@@ -66,6 +71,7 @@ conda deactivate
 ```bash
 
 # Where XXX is the CUDA version
+
 conda env update --name wholegraph_dev --file conda/environments/all_cuda-XXX_arch-x86_64.yaml
 
 conda activate cugraph_gnn_dev
@@ -73,6 +79,7 @@ conda activate cugraph_gnn_dev
 
 
 ### Build and Install Using the `build.sh` Script
+
 Using the `build.sh` script make compiling and installing wholegraph a
 breeze. To build and install, simply do:
 
@@ -113,6 +120,7 @@ $ ./build.sh clean                        # remove prior build artifacts (start 
 $ ./build.sh
 
 # make parallelism options can also be defined: Example build jobs using 4 threads (make -j4)
+
 $ PARALLEL_LEVEL=4 ./build.sh libwholegraph
 
 Note that the libraries will be installed to the location set in `$PREFIX` if set (i.e. `export PREFIX=/install/path`), otherwise to `$CONDA_PREFIX`.
@@ -120,7 +128,9 @@ Note that the libraries will be installed to the location set in `$PREFIX` if se
 
 
 ## Building each section independently
+
 ### Build and Install the C++/CUDA `libwholegraph` Library
+
 CMake depends on the `nvcc` executable being on your path or defined in `$CUDACXX`.
 
 This project uses cmake for building the C/C++ library. To configure cmake, run:
@@ -181,4 +191,5 @@ Note: This conda installation only applies to Linux and Python versions 3.11, 3.
 
 
 ## Attribution
+
 Portions adopted from https://github.com/pytorch/pytorch/blob/master/CONTRIBUTING.md

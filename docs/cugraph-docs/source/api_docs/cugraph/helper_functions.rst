@@ -1,11 +1,13 @@
 ========================
 DASK MG Helper functions
 ========================
+
 .. currentmodule:: cugraph
 
 
 Methods
 -------
+
 .. autosummary::
    :toctree: ../api/cugraph/
 

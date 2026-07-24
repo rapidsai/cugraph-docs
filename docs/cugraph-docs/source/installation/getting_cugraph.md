@@ -15,6 +15,7 @@ There are 4 ways to get cuGraph packages:
 <br>
 
 ## Docker
+
 The RAPIDS Docker containers contain all RAPIDS packages, including all from cuGraph, as well as all required supporting packages. To download a RAPIDS container, please see the [Docker Hub page for rapidsai/base](https://hub.docker.com/r/rapidsai/base), choosing a tag based on the NVIDIA CUDA version you're running. Also, the [rapidsai/notebooks](https://hub.docker.com/r/rapidsai/notebooks) container provides a ready to run Docker container with example notebooks and data, showcasing how you can utilize all of the RAPIDS libraries: cuDF, cuML, and cuGraph.
 
 <br>
@@ -38,9 +39,11 @@ Install and update cuGraph using the conda command:
 
 ```bash
 # CUDA 13
+
 conda install -c rapidsai -c conda-forge cugraph cuda-version=13.3
 
 # CUDA 12
+
 conda install -c rapidsai -c conda-forge cugraph cuda-version=12.9
 ```
 
@@ -54,9 +57,11 @@ cuGraph, and all of RAPIDS, is available via pip.
 
 ```shell
 # CUDA 13
+
 pip install cugraph-cu13 --extra-index-url=https://pypi.nvidia.com
 
 # CUDA 12
+
 pip install cugraph-cu12 --extra-index-url=https://pypi.nvidia.com
 ```
 

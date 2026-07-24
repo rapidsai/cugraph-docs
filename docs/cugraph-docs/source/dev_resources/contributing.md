@@ -1,4 +1,5 @@
 # Contributing to cuGraph
+
 cuGraph is an open-source project where we encourage community involvement.
 
 There are multiple ways to be involved and contribute to the cuGraph community, the top paths are listed below:
@@ -19,11 +20,13 @@ __Style Formatting Tools:__
 
 
 ## New Issue
+
 1) File an Issue for the RAPIDS cuGraph team to work  <a name="issue"></a>
 To file an issue, go to the RAPIDS cuGraph [issue](https://github.com/rapidsai/cugraph/issues/new/choose) page an select the appropriate issue type.  Once an issue is filed the RAPIDS cuGraph team will evaluate and triage the issue.  If you believe the issue needs priority attention, please include that in the issue to notify the team.
 
 
 ## Find a Bug
+
 ***Bug Report***</pr>
 If you notice something not working please file an issue
 -	Select **Bug** Report
@@ -55,6 +58,7 @@ We love when people want to get involved, and if you have a suggestion for a new
 
 
 ## 3) You want to implement a feature or bug-fix for an outstanding issue <a name="bugfix"></a>
+
 - Find an open Issue, and post that you would like to work that issues
 - Once we agree that the plan looks good, go ahead and implement it
 - Follow the [code contributions](#so-you-want-to-contribute-code) guide below.
@@ -90,6 +94,7 @@ We are implementing a script to count and track the number of FIXME in the code.
 
 
 ## Fork a private copy of cuGraph <a name="fork"></a>
+
 The RAPIDS cuGraph repo cannot directly be modified.  Contributions must come in the form of a *Pull Request* from a forked version of cugraph.    GitHub as a nice write up ion the process:  https://help.github.com/en/github/getting-started-with-github/fork-a-repo
 
 1. Fork the cugraph repo to your GitHub account
@@ -162,9 +167,11 @@ implementation of the issue, ask them in the issue instead of the PR.
 
 
 ### Style Guide
+
 All Python code most pass flake8 style checking
 All C++ code must pass clang style checking
 All code must adhere to the [RAPIDS Style Guide](https://docs.rapids.ai/resources/style/)
 
 ### Tests
+
 All code must have associate test cases.  Code without test will not be accepted

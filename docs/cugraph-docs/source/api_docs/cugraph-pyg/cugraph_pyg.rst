@@ -8,6 +8,7 @@ cugraph-pyg
 
 Graph Storage
 -------------
+
 .. autosummary::
    :toctree: ../api/cugraph-pyg/
 
@@ -15,13 +16,15 @@ Graph Storage
 
 Feature Storage
 ---------------
+
 .. autosummary::
    :toctree: ../api/cugraph-pyg/
-   
+
    cugraph_pyg.data.feature_store.FeatureStore
 
 Tensors and Embeddings
 ----------------------
+
 .. autosummary::
    :toctree ../api/cugraph-pyg/
 
@@ -32,6 +35,7 @@ Tensors and Embeddings
 
 Data Loaders
 ------------
+
 .. autosummary::
    :toctree: ../api/cugraph-pyg/
 
@@ -43,6 +47,7 @@ Data Loaders
 
 Samplers
 --------
+
 .. autosummary::
    :toctree: ../api/cugraph-pyg/
 

@@ -1,12 +1,15 @@
 ===============
 Link Prediction
 ===============
+
 .. currentmodule:: cugraph
 
 Cosine
 ------
+
 single-GPU
 ^^^^^^^^^^
+
 .. autosummary::
    :toctree: ../api/cugraph/
 
@@ -15,6 +18,7 @@ single-GPU
 
 multi-GPU
 ^^^^^^^^^
+
 .. autosummary::
    :toctree: ../api/cugraph/
    cugraph.dask.link_prediction.cosine.cosine
@@ -22,8 +26,10 @@ multi-GPU
 
 Jaccard Coefficient
 -------------------
+
 single-GPU
 ^^^^^^^^^^
+
 .. autosummary::
    :toctree: ../api/cugraph/
 
@@ -32,14 +38,17 @@ single-GPU
 
 multi-GPU
 ^^^^^^^^^
+
 .. autosummary::
    :toctree: ../api/cugraph/
    cugraph.dask.link_prediction.jaccard.jaccard
 
 Overlap Coefficient
 -------------------
+
 single-GPU
 ^^^^^^^^^^
+
 .. autosummary::
    :toctree: ../api/cugraph/
 
@@ -48,6 +57,7 @@ single-GPU
 
 multi-GPU
 ^^^^^^^^^
+
 .. autosummary::
    :toctree: ../api/cugraph/
 
@@ -55,8 +65,10 @@ multi-GPU
 
 Sorensen Coefficient
 --------------------
+
 single-GPU
 ^^^^^^^^^^
+
 .. autosummary::
    :toctree: ../api/cugraph/
 
@@ -65,6 +77,7 @@ single-GPU
 
 multi-GPU
 ^^^^^^^^^
+
 .. autosummary::
    :toctree: ../api/cugraph/
 

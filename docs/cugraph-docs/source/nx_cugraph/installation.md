@@ -21,6 +21,7 @@ Read the [RAPIDS Quick Start Guide](https://docs.rapids.ai/install) to learn mor
 `nx-cugraph` can be installed using conda or pip. It is included in the RAPIDS metapackage, or can be installed separately.
 
 ### Conda
+
 **Nightly version**
 ```bash
 conda install -c rapidsai-nightly -c conda-forge nx-cugraph
@@ -37,9 +38,11 @@ conda install -c rapidsai -c conda-forge nx-cugraph
 
 ```bash
 # CUDA 13
+
 pip install nx-cugraph-cu13 --extra-index-url https://pypi.anaconda.org/rapidsai-wheels-nightly/simple
 
 # CUDA 12
+
 pip install nx-cugraph-cu12 --extra-index-url https://pypi.anaconda.org/rapidsai-wheels-nightly/simple
 ```
 
@@ -47,9 +50,11 @@ pip install nx-cugraph-cu12 --extra-index-url https://pypi.anaconda.org/rapidsai
 
 ```bash
 # CUDA 13
+
 pip install nx-cugraph-cu13 --extra-index-url https://pypi.nvidia.com
 
 # CUDA 12
+
 pip install nx-cugraph-cu12 --extra-index-url https://pypi.nvidia.com
 ```
 

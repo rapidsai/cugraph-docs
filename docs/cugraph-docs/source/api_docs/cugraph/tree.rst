@@ -1,11 +1,13 @@
 ====
 Tree
 ====
+
 .. currentmodule:: cugraph
 
 
 Minimum Spanning Tree
 ---------------------
+
 .. autosummary::
    :toctree: ../api/cugraph/
 
@@ -14,6 +16,7 @@ Minimum Spanning Tree
 
 Maximum Spanning Tree
 ---------------------
+
 .. autosummary::
    :toctree: ../api/cugraph/
 

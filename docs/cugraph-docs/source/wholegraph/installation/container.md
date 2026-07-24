@@ -1,4 +1,5 @@
 # Build Container for WholeGraph
+
 To run WholeGraph or build WholeGraph from source, set up the environment first.
 We recommend using Docker images.
 For example, to build the WholeGraph base image from the NGC pytorch 22.10 image, you can follow `Dockerfile`:
@@ -17,6 +18,7 @@ RUN apt-key adv --fetch-keys https://apt.kitware.com/keys/kitware-archive-latest
     apt update && apt install -y cmake
 
 # update py for pytest
+
 RUN pip3 install -U py
 RUN pip3 install Cython setuputils3 scikit-build nanobind pytest-forked pytest
 ```

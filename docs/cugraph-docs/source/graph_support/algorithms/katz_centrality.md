@@ -9,16 +9,19 @@ $$
 See [Katz on Wikipedia](https://en.wikipedia.org/wiki/Katz_centrality) for more details on the algorithm.
 
 ## When to use Katz Centrality
+
 * in disconnected graphs
 * in sparse graphs
 * in graphs with multi-hop propogation like innovation
 
 ## When not to use Katz Centrality
+
 * in graphs with heavy cyclical dependency (feedback loops), Katz Centrality might not converge preventing usable results.
 * when a graph contains multiple distinct influence factors Katz can blur them.
 * Katz is very expensive so use in large graphs depends on cuGraph parallelism to be viable.
 
 ## How computationally expensive is it?
+
 Katz centraility has several stages with costs that add up as the graph gets larger. The overall cost is often O(n<sup>2</sup>) to O(n<sup>3</sup>) where n is the number of nodes.
 
 ___
