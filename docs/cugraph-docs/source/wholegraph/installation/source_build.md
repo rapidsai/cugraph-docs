@@ -51,11 +51,13 @@ __Create the conda development environment__
 
 ```bash
 # create the conda environment (assuming in base `wholegraph` directory)
+
 # for CUDA 13.x
 conda env create --name cugraph_gnn_dev --file conda/environments/all_cuda-130_arch-x86_64.yaml
 
 # activate the environment
 conda activate cugraph_gnn_dev
+
 # to deactivate an environment
 conda deactivate
 ```
