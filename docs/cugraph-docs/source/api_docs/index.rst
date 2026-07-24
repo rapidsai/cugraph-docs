@@ -13,7 +13,7 @@ Traditional Graph Analytics in Python
 
     cugraph/index
     plc/pylibcugraph
-    nx-cugraph API <https://docs.rapids.ai/api/nx-cugraph/nightly/>
+    nx-cugraph API <https://networkx.org/documentation/latest/>
 
 GNN Libraries
 -------------
