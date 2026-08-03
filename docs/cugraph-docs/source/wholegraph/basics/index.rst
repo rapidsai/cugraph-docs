@@ -1,7 +1,5 @@
-======
-Basics
-======
-
+Concepts and architecture
+=========================
 
 .. toctree::
    :maxdepth: 2

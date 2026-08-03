@@ -1,22 +1,18 @@
-~~~~~~~~~~~~~~~~~~~~~~~~~~
-pylibcugraph API reference
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+pylibcugraph API
+================
 
-pylibcugraph
+``pylibcugraph`` provides lower-level Python bindings to ``libcugraph_c``.
+The reference is organized by functional area and lists the public classes and
+callables exported by the 26.10 nightly package.
 
-.. currentmodule:: pylibcugraph
+.. toctree::
+   :maxdepth: 2
+   :caption: API Documentation
 
-Methods
--------
-.. autosummary::
-   :toctree: ../api/plc/
-
-   pylibcugraph.eigenvector_centrality
-   pylibcugraph.katz_centrality
-   pylibcugraph.strongly_connected_components
-   pylibcugraph.weakly_connected_components
-   pylibcugraph.pagerank
-   pylibcugraph.hits
-   pylibcugraph.node2vec
-   pylibcugraph.bfs
-   pylibcugraph.sssp
+   pylibcugraph/graphs_resources
+   pylibcugraph/centrality_link_analysis
+   pylibcugraph/traversal_components_cores
+   pylibcugraph/community_subgraphs
+   pylibcugraph/sampling
+   pylibcugraph/similarity
+   pylibcugraph/graph_construction_utilities

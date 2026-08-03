@@ -48,7 +48,7 @@ single-GPU
    cugraph.k_truss
    cugraph.ktruss_subgraph
 
-multi_GPU
+multi-GPU
 ^^^^^^^^^
 .. autosummary::
    :toctree: ../api/cugraph/
@@ -71,14 +71,6 @@ multi-GPU
    :toctree: ../api/cugraph/
 
    cugraph.dask.community.leiden.leiden
-
-Leiden (MG)
-------------
-.. autosummary::
-   :toctree: ../api/cugraph/
-
-   cugraph.dask.community.leiden.leiden
-
 
 Louvain
 -------

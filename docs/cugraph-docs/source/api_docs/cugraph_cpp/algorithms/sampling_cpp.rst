@@ -1,7 +1,7 @@
 Sampling
 ========
 
- .. doxygengroup:: sampling_cpp
-     :project: libcugraph
-     :members:
-     :content-only:
+.. doxygengroup:: sampling_cpp
+   :project: libcugraph
+   :members:
+   :content-only:

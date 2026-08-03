@@ -1,7 +1,7 @@
 Tree
 ====
 
- .. doxygengroup:: tree_cpp
-     :project: libcugraph
-     :members:
-     :content-only:
+.. doxygengroup:: tree_cpp
+   :project: libcugraph
+   :members:
+   :content-only:
