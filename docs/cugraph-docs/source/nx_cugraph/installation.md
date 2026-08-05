@@ -21,7 +21,6 @@ Read the [RAPIDS Quick Start Guide](https://docs.rapids.ai/install) to learn mor
 `nx-cugraph` can be installed using conda or pip. It is included in the RAPIDS metapackage, or can be installed separately.
 
 ### Conda
-
 **Nightly version**
 ```bash
 conda install -c rapidsai-nightly -c conda-forge nx-cugraph

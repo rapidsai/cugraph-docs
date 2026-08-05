@@ -1,61 +1,15 @@
-~~~~~~~~~~~~~~~~~~~~~~~~~
-cugraph-pyg API Reference
-~~~~~~~~~~~~~~~~~~~~~~~~~
+cuGraph-PyG API
+===============
 
-cugraph-pyg
+cuGraph-PyG implements PyTorch Geometric storage, loader, and sampler
+interfaces on top of cuGraph and WholeGraph.
 
-.. currentmodule:: cugraph_pyg
+.. toctree::
+   :maxdepth: 2
+   :caption: API Documentation
 
-Graph Storage
--------------
-
-.. autosummary::
-   :toctree: ../api/cugraph-pyg/
-
-   cugraph_pyg.data.graph_store.GraphStore
-
-Feature Storage
----------------
-
-.. autosummary::
-   :toctree: ../api/cugraph-pyg/
-
-   cugraph_pyg.data.feature_store.FeatureStore
-
-Tensors and Embeddings
-----------------------
-
-.. autosummary::
-   :toctree ../api/cugraph-pyg/
-
-   cugraph_pyg.tensor.dist_tensor.DistTensor
-   cugraph_pyg.tensor.dist_tensor.DistEmbedding
-   cugraph_pyg.tensor.dist_matrix.DistMatrix
-
-
-Data Loaders
-------------
-
-.. autosummary::
-   :toctree: ../api/cugraph-pyg/
-
-   cugraph_pyg.loader.node_loader.NodeLoader
-   cugraph_pyg.loader.neighbor_loader.NeighborLoader
-
-   cugraph_pyg.loader.link_loader.LinkLoader
-   cugraph_pyg.loader.link_neighbor_loader.LinkNeighborLoader
-
-Samplers
---------
-
-.. autosummary::
-   :toctree: ../api/cugraph-pyg/
-
-   cugraph_pyg.sampler.sampler.BaseSampler
-   cugraph_pyg.sampler.sampler.SampleReader
-   cugraph_pyg.sampler.sampler.HomogeneousSampleReader
-   cugraph_pyg.sampler.sampler.HeterogeneousSampleReader
-   cugraph_pyg.sampler.sampler.SampleIterator
-
-   cugraph_pyg.sampler.distributed_sampler.BaseDistributedSampler
-   cugraph_pyg.sampler.distributed_sampler.DistributedNeighborSampler
+   graph_storage
+   feature_storage
+   tensors_embeddings
+   data_loaders
+   samplers

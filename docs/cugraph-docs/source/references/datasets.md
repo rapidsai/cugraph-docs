@@ -33,7 +33,7 @@
 ## dining_prefs
   - J. L. Moreno (1960). The Sociometry Reader. The Free Press, Glencoe, Illinois, pg.35
 ## europe_osm
-  - Rossi, Ryan. Ahmed, Nesreen. The Network Data Repository with Interactive Graph Analytics and Visualization.
+  - Rossi, Ryan. Ahmed, Nesreen. The Network Data Respository with Interactive Graph Analytics and Visualization.
 ## hollywood
 ..- The WebGraph Framework I Compression Techniques, Paolo Boldi
   and Sebastiano Vigna, Proc. of the Thirteenth International

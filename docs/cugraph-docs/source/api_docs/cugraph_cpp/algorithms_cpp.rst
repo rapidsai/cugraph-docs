@@ -1,20 +1,19 @@
-===========
 Algorithms
-===========
-
+==========
 
 .. toctree::
-    :maxdepth: 3
-    :caption: C++ Algorithms
+   :maxdepth: 2
+   :caption: C++ algorithms
 
-    algorithms/centrality_cpp.rst
-    algorithms/community_cpp.rst
-    algorithms/sampling_cpp.rst
-    algorithms/similarity_cpp.rst
-    algorithms/traversal_cpp.rst
-    algorithms/linear_cpp.rst
-    algorithms/link_analysis_cpp.rst
-    algorithms/layout_cpp.rst
-    algorithms/components_cpp.rst
-    algorithms/tree_cpp.rst
-    algorithms/utility_cpp.rst
+   algorithms/centrality_cpp
+   algorithms/community_cpp
+   algorithms/components_cpp
+   algorithms/dag_cpp
+   algorithms/sampling_cpp
+   algorithms/similarity_cpp
+   algorithms/traversal_cpp
+   algorithms/linear_cpp
+   algorithms/link_analysis_cpp
+   algorithms/layout_cpp
+   algorithms/tree_cpp
+   algorithms/utility_cpp

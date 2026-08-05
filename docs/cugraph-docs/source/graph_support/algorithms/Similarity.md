@@ -24,7 +24,7 @@ Manipulation of the data before or after the graph analytic is not covered here.
 
 |Algorithm          |Notebooks Containing                                                     |Description                                                  |
 | --------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-|Jaccard Similarity| [Jaccard Similarity](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/link_prediction/Jaccard-Similarity.ipynb)                 ||
+|Jaccard Smiliarity| [Jaccard Similarity](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/link_prediction/Jaccard-Similarity.ipynb)                 ||
 |Overlap Similarity| [Overlap Similarity](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/link_prediction/Overlap-Similarity.ipynb)                    ||
 |Sorensen|[Sorensen Similarity](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/link_prediction/Sorensen_coefficient.ipynb)||
 |Personal Pagerank|[Pagerank](https://github.com/rapidsai/cugraph/blob/main/notebooks/algorithms/link_analysis/Pagerank.ipynb)                 ||

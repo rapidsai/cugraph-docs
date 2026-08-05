@@ -1,58 +1,63 @@
+# Install WholeGraph
 
-# Getting the WholeGraph Packages
+WholeGraph 26.10 is distributed as two packages:
 
-Start by reading the [RAPIDS Installation guide](https://docs.rapids.ai/install)
-and checkout the [RAPIDS install selector](https://rapids.ai/start.html) for a pick list of install options.
+- `libwholegraph` contains the native C/CUDA library.
+- `pylibwholegraph` contains the Python and PyTorch-facing API and depends on
+  `libwholegraph`.
 
-
-There are 4 ways to get WholeGraph packages:
-1. [Quick start with Docker Repo](#docker)
-2. [Conda Installation](#conda)
-3. [Pip Installation](#pip)
-4. [Build from Source](./source_build.md)
-
-
-<br>
-
-## Docker
-
-The RAPIDS Docker containers (as of Release 23.10) contain all RAPIDS packages, including WholeGraph, as well as all required supporting packages.   To download a container, please see the [Docker Repository](https://hub.docker.com/r/rapidsai/rapidsai/), choosing a tag based on the NVIDIA CUDA version you’re running.  This provides a ready to run Docker container with example notebooks and data, showcasing how you can utilize all of the RAPIDS libraries.
-
-<br>
-
+Review the [RAPIDS system requirements](https://docs.rapids.ai/install/#system-req)
+before installing. WholeGraph is supported on Linux; Windows users should use
+WSL2.
 
 ## Conda
 
-It is easy to install WholeGraph using conda. You can get a minimal conda installation with [miniforge](https://github.com/conda-forge/miniforge).
-
-WholeGraph conda packages
- * libwholegraph
- * pylibwholegraph
-
-Replace the package name in the example below to the one you want to install.
-
-Install and update WholeGraph using the conda command:
+Install the Python API and native dependency from the 26.10 nightly channel:
 
 ```bash
-# CUDA 13
-conda install -c rapidsai -c conda-forge wholegraph cuda-version=13.3
-
-# CUDA 12
-conda install -c rapidsai -c conda-forge wholegraph cuda-version=12.9
+conda install \
+  -c rapidsai-nightly -c conda-forge \
+  pylibwholegraph=26.10 cuda-version=13.3
 ```
 
-<br>
+Native C/CUDA users can install only `libwholegraph`:
+
+```bash
+conda install \
+  -c rapidsai-nightly -c conda-forge \
+  libwholegraph=26.10 cuda-version=13.3
+```
+
+Choose a CUDA version supported by the
+[RAPIDS release](https://docs.rapids.ai/install/#system-req) and the installed
+NVIDIA driver.
 
 ## pip
 
-wholegraph, and all of RAPIDS, is available via `pip`.
+RAPIDS wheels use a CUDA-major suffix. For CUDA 13, install the 26.10 nightly
+Python package with:
 
-```shell
-# CUDA 13
-pip install wholegraph-cu13 --extra-index-url=https://pypi.nvidia.com
-
-# CUDA 12
-pip install wholegraph-cu12 --extra-index-url=https://pypi.nvidia.com
+```bash
+python -m pip install \
+  --extra-index-url=https://pypi.nvidia.com \
+  --extra-index-url=https://pypi.anaconda.org/rapidsai-wheels-nightly/simple \
+  "pylibwholegraph-cu13==26.10.*"
 ```
 
-<br>
+Use `pylibwholegraph-cu12` on a supported CUDA 12 configuration. Installing
+`pylibwholegraph` also installs the matching `libwholegraph` wheel.
+
+## Verify the installation
+
+```bash
+pylibwholegraph_smoke_check
+```
+
+Importing the package without starting a distributed environment is also a
+useful basic check:
+
+```bash
+python -c "import pylibwholegraph; print(pylibwholegraph.__version__)"
+```
+
+For a development build, see [Build WholeGraph from source](source_build.md).

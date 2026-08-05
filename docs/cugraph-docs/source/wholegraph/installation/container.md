@@ -1,27 +1,26 @@
-# Build Container for WholeGraph
+# Run WholeGraph in a container
 
-To run WholeGraph or build WholeGraph from source, set up the environment first.
-We recommend using Docker images.
-For example, to build the WholeGraph base image from the NGC pytorch 22.10 image, you can follow `Dockerfile`:
-```dockerfile
-FROM nvcr.io/nvidia/pytorch:22.10-py3
+Use a RAPIDS container when you want a preconfigured Linux, CUDA, and RAPIDS
+environment. Select an image whose RAPIDS and CUDA versions match the desired
+WholeGraph packages.
 
-RUN apt update && DEBIAN_FRONTEND=noninteractive apt install -y lsb-core software-properties-common wget libspdlog-dev
+The current image names and launch commands are maintained in the
+[RAPIDS installation guide](https://docs.rapids.ai/install/#docker). Follow
+that guide instead of pinning an old PyTorch or CUDA base image in application
+documentation.
 
-#RUN remove old cmake to update
-RUN conda remove --force -y cmake
-RUN rm -rf /usr/local/bin/cmake && rm -rf /usr/local/lib/cmake && rm -rf /usr/lib/cmake
+WholeGraph requires:
 
-RUN apt-key adv --fetch-keys https://apt.kitware.com/keys/kitware-archive-latest.asc && \
-    export LSB_CODENAME=$(lsb_release -cs) && \
-    apt-add-repository -y "deb https://apt.kitware.com/ubuntu/ ${LSB_CODENAME} main" && \
-    apt update && apt install -y cmake
+- access to NVIDIA GPUs through the NVIDIA Container Toolkit;
+- shared memory sized for the workload; and
+- the networking and IPC access required by NCCL for multi-GPU or multi-node
+  execution.
 
-# update py for pytest
+After starting the container, verify the installed version:
 
-RUN pip3 install -U py
-RUN pip3 install Cython setuputils3 scikit-build nanobind pytest-forked pytest
+```bash
+python -c "import pylibwholegraph; print(pylibwholegraph.__version__)"
 ```
 
-To run GNN applications, you may also need PyG libraries to run the GNN layers.
-You may refer to [PyG](https://pytorch-geometric.readthedocs.io/en/latest/notes/installation.html)
+If the selected RAPIDS image does not include WholeGraph, install the matching
+packages using the [WholeGraph installation instructions](getting_wholegraph.md).

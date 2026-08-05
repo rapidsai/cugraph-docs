@@ -1,6 +1,5 @@
 Data Stores
 ===========
-
 .. toctree::
    :maxdepth: 3
 

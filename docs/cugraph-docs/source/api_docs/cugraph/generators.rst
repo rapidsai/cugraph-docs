@@ -1,14 +1,12 @@
 ==========
 Generators
 ==========
-
 .. currentmodule:: cugraph
 
 
 
 RMAT
 ----
-
 .. autosummary::
    :toctree: ../api/cugraph/
 

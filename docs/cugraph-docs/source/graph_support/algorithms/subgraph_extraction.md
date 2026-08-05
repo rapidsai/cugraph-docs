@@ -4,13 +4,11 @@ The Subgraph Extraction algorithm is the most straight-forward of the community 
 
 
 ## When to use Subgraph Extraction
-
 * when there are known nodes of interest and their related edges need to be analyzed further
 * When a data set is "too large" for analysis or display.
 * when previous analysis has revealed a community and a graph object containing that community is needed.
 
 ## When not to use Subgraph Extraction
-
 * For discovery or analysis, subgraph extraction can prune data that might otherwise reveal graph structure
 * To extract a community, subgraph extraction pulls out _ALL_ edges, so it neither cleans nor promotes edges.
 * To extract all nodes within _n-hops_ of a node. cuGraph alsow supplies this related function but subgraph extraction does not do this.

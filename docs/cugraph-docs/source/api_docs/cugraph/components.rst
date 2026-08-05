@@ -1,16 +1,13 @@
 ==========
 Components
 ==========
-
 .. currentmodule:: cugraph
 
 
 Connected Components
 --------------------
-
 single-GPU
 ^^^^^^^^^^
-
 .. autosummary::
    :toctree: ../api/cugraph/
 
@@ -20,7 +17,6 @@ single-GPU
 
 multi-GPU
 ^^^^^^^^^
-
 .. autosummary::
    :toctree: ../api/cugraph/
 

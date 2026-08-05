@@ -1,13 +1,11 @@
 ====================
 Graph Implementation
 ====================
-
 .. currentmodule:: cugraph.structure.graph_implementation.simpleGraphImpl
 
 
 Graph Implementation
 --------------------
-
 .. autosummary::
     :toctree: ../api/cugraph/
 

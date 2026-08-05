@@ -1,6 +1,8 @@
-~~~~~~~~~~~~~~~~~~~~~
-cugraph API Reference
-~~~~~~~~~~~~~~~~~~~~~
+cuGraph Python API
+==================
+
+The cuGraph Python API provides graph construction, single-GPU algorithms, and
+multi-GPU algorithms through ``cugraph.dask``.
 
 .. toctree::
     :maxdepth: 2
@@ -21,4 +23,4 @@ cugraph API Reference
     tree
     generators
     helper_functions
-    dask-cugraph.rst
+    dask-cugraph

@@ -1,13 +1,11 @@
 =========
 Community
 =========
-
 .. currentmodule:: cugraph
 
 
 EgoNet
 ------
-
 single-GPU
 ^^^^^^^^^^
 
@@ -18,7 +16,6 @@ single-GPU
 
 multi-GPU
 ^^^^^^^^^
-
 .. autosummary::
    :toctree: ../api/cugraph/
 
@@ -27,10 +24,8 @@ multi-GPU
 
 Ensemble clustering for graphs (ECG)
 ------------------------------------
-
 single-GPU
 ^^^^^^^^^^
-
 .. autosummary::
    :toctree: ../api/cugraph/
 
@@ -38,7 +33,6 @@ single-GPU
 
 multi-GPU
 ^^^^^^^^^
-
 .. autosummary::
    :toctree: ../api/cugraph/
 
@@ -46,19 +40,16 @@ multi-GPU
 
 K-Truss
 -------
-
 single-GPU
 ^^^^^^^^^^
-
 .. autosummary::
    :toctree: ../api/cugraph/
 
    cugraph.k_truss
    cugraph.ktruss_subgraph
 
-multi_GPU
+multi-GPU
 ^^^^^^^^^
-
 .. autosummary::
    :toctree: ../api/cugraph/
 
@@ -67,10 +58,8 @@ multi_GPU
 
 Leiden
 ------
-
 single-GPU
 ^^^^^^^^^^
-
 .. autosummary::
    :toctree: ../api/cugraph/
 
@@ -78,27 +67,16 @@ single-GPU
 
 multi-GPU
 ^^^^^^^^^
-
 .. autosummary::
    :toctree: ../api/cugraph/
 
    cugraph.dask.community.leiden.leiden
-
-Leiden (MG)
-------------
-
-.. autosummary::
-   :toctree: ../api/cugraph/
-
-   cugraph.dask.community.leiden.leiden
-
 
 Louvain
 -------
 
 single-GPU
 ^^^^^^^^^^
-
 .. autosummary::
    :toctree: ../api/cugraph/
 
@@ -107,7 +85,6 @@ single-GPU
 
 multi-GPU
 ^^^^^^^^^
-
 .. autosummary::
    :toctree: ../api/cugraph/
 
@@ -115,7 +92,6 @@ multi-GPU
 
 Spectral Clustering
 -------------------
-
 .. autosummary::
    :toctree: ../api/cugraph/
 
@@ -128,10 +104,8 @@ Spectral Clustering
 
 Induced Subgraph
 ----------------
-
 single-GPU
 ^^^^^^^^^^
-
 .. autosummary::
    :toctree: ../api/cugraph/
 
@@ -139,7 +113,6 @@ single-GPU
 
 multi-GPU
 ^^^^^^^^^
-
 .. autosummary::
    :toctree: ../api/cugraph/
 
@@ -147,10 +120,8 @@ multi-GPU
 
 Triangle Counting
 -----------------
-
 single-GPU
 ^^^^^^^^^^
-
 .. autosummary::
    :toctree: ../api/cugraph/
 
@@ -158,7 +129,6 @@ single-GPU
 
 multi-GPU
 ^^^^^^^^^
-
 .. autosummary::
    :toctree: ../api/cugraph/
 

@@ -46,7 +46,6 @@ Layout            |                                                             
 
 
 ## RAPIDS notebooks
-
 Visit the main RAPIDS [notebooks](https://github.com/rapidsai/cugraph/blob/main/notebooks/) repo for a listing of all notebooks across all RAPIDS libraries.
 
 ## Requirements

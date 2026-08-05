@@ -20,12 +20,10 @@ Where M(v) is the adjacency list for the set of vertices(v) and λ is a constant
 [Learn more about EigenVector Centrality](https://www.sci.unich.it/~francesc/teaching/network/eigenvector.html)
 
 ## When to use Eigenvector Centrality
-
 * When the quality and quantity of edges matters, in other words, connections to other high-degree nodes is important
 * To calculate influence in nuanced networks like social and financial networks.
 
 ## When not to use Eigenvector Centrality
-
 * in graphs with many disconnected groups
 * in graphs containing many distinct and different communities
 * in networks with negative weights
@@ -33,7 +31,6 @@ Where M(v) is the adjacency list for the set of vertices(v) and λ is a constant
 
 
 ## How computationally expensive is it?
-
 While cuGraph's parallelism migigates run time, [Big O notation](https://en.wikipedia.org/wiki/Big_O_notation) is still the standard to compare algorithm costs.
 
 O(VE) where V is the number of vertices(nodes) and Eis the number of edges.
