@@ -1,3 +1,18 @@
+# cugraph-docs 26.08.00 (5 Aug 2026)
+
+### 🐛 Bug Fixes
+### 📖 Documentation
+* Update docs to use NVIDIA Sphinx theme by @bdice in https://github.com/rapidsai/cugraph-docs/pull/205
+### 🛠️ Improvements
+* fix(ci): resolve all zizmor findings and add zizmor pre-commit checks by @gforsyth in https://github.com/rapidsai/cugraph-docs/pull/196
+* merge release/26.06 into main by @jameslamb in https://github.com/rapidsai/cugraph-docs/pull/201
+* Add SECURITY.md by @jameslamb in https://github.com/rapidsai/cugraph-docs/pull/197
+* Build and test with CUDA 13.3.0 by @bdice in https://github.com/rapidsai/cugraph-docs/pull/203
+* Use main shared-workflows branch by @bdice in https://github.com/rapidsai/cugraph-docs/pull/204
+
+
+**Full Changelog**: https://github.com/rapidsai/cugraph-docs/compare/v26.08.00a...release/26.08
+
 # cugraph-docs 26.06.00 (3 Jun 2026)
 
 ### 🐛 Bug Fixes
