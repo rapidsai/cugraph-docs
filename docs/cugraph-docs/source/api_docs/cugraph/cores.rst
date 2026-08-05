@@ -9,16 +9,14 @@ Cores
 Core Number
 -----------
 
-single-GPU
-^^^^^^^^^^
+.. rubric:: single-GPU
 
 .. autosummary::
    :toctree: ../api/cugraph/
 
    cugraph.core_number
 
-multi-GPU
-^^^^^^^^^
+.. rubric:: multi-GPU
 
 .. autosummary::
    :toctree: ../api/cugraph/
@@ -29,16 +27,14 @@ multi-GPU
 K-Core
 ------
 
-single-GPU
-^^^^^^^^^^
+.. rubric:: single-GPU
 
 .. autosummary::
    :toctree: ../api/cugraph/
 
    cugraph.k_core
 
-multi-GPU
-^^^^^^^^^
+.. rubric:: multi-GPU
 
 .. autosummary::
    :toctree: ../api/cugraph/
