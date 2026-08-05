@@ -1,3 +1,5 @@
+REM Copyright (c) 2024-2026, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+
 @ECHO OFF
 
 pushd %~dp0
@@ -9,6 +11,7 @@ if "%SPHINXBUILD%" == "" (
 )
 set SOURCEDIR=source
 set BUILDDIR=build
+set SPHINXOPTS=-v -W
 set SPHINXPROJ=cuGraph
 
 if "%1" == "" goto help
