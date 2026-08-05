@@ -8,14 +8,15 @@ $$
     \text{Triangle Count} = \frac{1}{3} \sum_{(u,v) \in E} |N(u) \cap N(v)|
 $$
 
-* $N(u)$ - set of neigbors of node $u$
-* $N(v)$ - set of neigbors of node $v$
-* $N(u) \cap N(v)$ - intersection of the neigbors of nodes $u$ and $v$ that contain an edge $(u,v)$
+* $N(u)$ - set of neighbors of node $u$
+* $N(v)$ - set of neighbors of node $v$
+* $N(u) \cap N(v)$ - intersection of the neighbors of nodes $u$ and $v$ that contain an edge $(u,v)$
 * Divide by three to remove triple counting
 
 
 
 ## When to use Triangle Counting
+
 * To detect anomalies. When compared to the graph triangle density, local sparsity or access can indicate outliers
 * Ranking importance, nodes in many triangles are a useful place to start in network analysis
 * Quantifying clustering by calculating the [Clustering Coefficient](https://en.wikipedia.org/wiki/Clustering_coefficient) which is an important network characteristic measuring density.
@@ -23,11 +24,13 @@ $$
 
 
 ## When not to use Triangle Counting
+
 * Sparse graphs which don't contain many triangles since it might eliminate edges
 * When searching for overlapping communities
 * When you are interested in paths in the graph rather than communities
 
 ## How computationally expensive is it?
+
 In cuGraph, the set intersection algorithm is used to count triangles.
 The cost of that algorithm is in terms of Big O:
 

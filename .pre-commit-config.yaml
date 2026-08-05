@@ -1,16 +1,35 @@
-# Copyright (c) 2024, NVIDIA CORPORATION.
+# Copyright (c) 2024-2026, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+exclude: |
+  (?x)^(
+    ^CHANGELOG.md$
+  )
 
 repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
   - repo: https://github.com/rapidsai/pre-commit-hooks
-    rev: v1.4.3
+    rev: v1.6.1
     hooks:
       - id: verify-alpha-spec
       - id: verify-copyright
+        files: |
+          (?x)
+            [.](bat|py|sh|yaml|yml)$|
+            Makefile$
   - repo: https://github.com/rapidsai/dependency-file-generator
-    rev: v1.20.2
+    rev: v1.21.0
     hooks:
       - id: rapids-dependency-file-generator
         args: ["--clean", "--warn-all", "--strict"]
+  - repo: https://github.com/codespell-project/codespell
+    rev: v2.4.3
+    hooks:
+      - id: codespell
+        additional_dependencies: [tomli]
+        args: ["--toml", "pyproject.toml"]
   - repo: https://github.com/shellcheck-py/shellcheck-py
     rev: v0.11.0.1
     hooks:
@@ -26,7 +45,7 @@ repos:
             conda/environments/.*
           )
   - repo: https://github.com/zizmorcore/zizmor-pre-commit
-    rev: v1.24.1
+    rev: v1.29.0
     hooks:
       - id: zizmor
 

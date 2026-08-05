@@ -11,7 +11,7 @@
 ./katz_centrality
 ```
 
-The RAPIDS cuGraph Community folder contains a collection of Jupyter Notebooks that demonstrate algorithms to identify communities within the graph. 
+The RAPIDS cuGraph Community folder contains a collection of Jupyter Notebooks that demonstrate algorithms to identify communities within the graph.
 
 * Which vertices have the highest degree (most direct links) ?
 * Which vertices are on the most efficient paths through the graph?

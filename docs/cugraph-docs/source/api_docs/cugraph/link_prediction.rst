@@ -5,8 +5,10 @@ Link Prediction
 
 Cosine
 ------
+
 single-GPU
 ^^^^^^^^^^
+
 .. autosummary::
    :toctree: ../api/cugraph/
 
@@ -16,6 +18,7 @@ single-GPU
 
 multi-GPU
 ^^^^^^^^^
+
 .. autosummary::
    :toctree: ../api/cugraph/
 
@@ -25,8 +28,10 @@ multi-GPU
 
 Jaccard Coefficient
 -------------------
+
 single-GPU
 ^^^^^^^^^^
+
 .. autosummary::
    :toctree: ../api/cugraph/
 
@@ -36,6 +41,7 @@ single-GPU
 
 multi-GPU
 ^^^^^^^^^
+
 .. autosummary::
    :toctree: ../api/cugraph/
 
@@ -44,8 +50,10 @@ multi-GPU
 
 Overlap Coefficient
 -------------------
+
 single-GPU
 ^^^^^^^^^^
+
 .. autosummary::
    :toctree: ../api/cugraph/
 
@@ -55,6 +63,7 @@ single-GPU
 
 multi-GPU
 ^^^^^^^^^
+
 .. autosummary::
    :toctree: ../api/cugraph/
 
@@ -63,8 +72,10 @@ multi-GPU
 
 Sorensen Coefficient
 --------------------
+
 single-GPU
 ^^^^^^^^^^
+
 .. autosummary::
    :toctree: ../api/cugraph/
 
@@ -74,6 +85,7 @@ single-GPU
 
 multi-GPU
 ^^^^^^^^^
+
 .. autosummary::
    :toctree: ../api/cugraph/
 

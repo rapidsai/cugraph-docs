@@ -14,6 +14,7 @@ $$
 
 
 ## When to use BC
+
 Betweenness centrality is often used to answer questions like:
 * Which vertices are most influential in the network?
 * What are the bridge vertices in a network?
@@ -21,20 +22,23 @@ Betweenness centrality is often used to answer questions like:
 * In a social network analysis, betweenness centrality can be used to identify roles in an organization.
 
 ## When not to use BC
+
 Betweenness Centrality is less efficient in certain circumstances:
 * Large graphs may require approximationing betweenness centrality as the computational cost increases.
 * Disconnected networks or networks with many isolated components limit the value of betweenness centrality
 * Betweenness centality is more costly and less useful in weighted graphs.
 * In networks with hierarchical structure, BC might not accurately reflect true influence
-* Networks with multiple edge types often require a seperate method of measuring influence for each edge type.
+* Networks with multiple edge types often require a separate method of measuring influence for each edge type.
 
 
 ## How computationally expensive is BC?
+
 While cuGraph's parallelism migigates run time, [Big O notation](https://en.wikipedia.org/wiki/Big_O_notation) is still the standard to compare algorithm costs.
 * The cost is  O(V(E+V)) for a non-weighted graph and O(V(E+V)log(V)) for a weighted graph.
 * A breadth-first search is done to determine shortest paths betweeb all nodes prior to calculating BC.
 
 ## Sample benchmarks
+
 Coming Soon
 
 ___

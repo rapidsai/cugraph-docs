@@ -1,6 +1,6 @@
 # Louvain Community
 
-Louvain community detection seeks to maximize modularity which measures, in quantitative terms, how effectively the graph has been partitioned. It actually compares the paritioning to a random partitioning. Modularity is caculated as follows.
+Louvain community detection seeks to maximize modularity which measures, in quantitative terms, how effectively the graph has been partitioned. It actually compares the partitioning to a random partitioning. Modularity is calculated as follows.
 
 See [Louvain community on Wikipedia](https://en.wikipedia.org/wiki/Louvain_method) for more details on the algorithm.
 
@@ -26,6 +26,7 @@ Louvain works well in cases where there are natural communities. For example, so
 
 
 ## When not to use Louvain Community
+
 In addition to the inverse of the helpful characteristics listed above, several other graph-level attributes can hinder Louvain.
 
 * Graphs with many small communities which are often merged
@@ -33,6 +34,7 @@ In addition to the inverse of the helpful characteristics listed above, several 
 * Sparse graphs since low modularity can make the algorithm results useless.
 
 ## How computationally expensive is it?
+
 While cuGraph's parallelism mitigates run time, [Big O notation](https://en.wikipedia.org/wiki/Big_O_notation) is still the standard to compare algorithm costs.
 
 

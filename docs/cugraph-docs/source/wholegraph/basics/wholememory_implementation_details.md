@@ -21,6 +21,7 @@ allocations divide communication into local and cross groups so operations can
 use topology-aware paths.
 
 ## WholeMemory Layout
+
 Because one WholeMemory object can span several GPUs, WholeGraph partitions it
 across communicator ranks. Each rank owns one continuous portion of the
 allocation. The portion can reside in device memory, pinned host memory, or a
@@ -41,6 +42,7 @@ The following sections describe the allocation process for the supported
 memory-type and location combinations.
 
 ### Device Continuous WholeMemory
+
 For device continuous WholeMemory, a virtual-address range covering the entire
 allocation is first reserved on each GPU. Each GPU then allocates its physical
 portion:
@@ -50,6 +52,7 @@ address range:
 ![Device Continuous WholeMemory Allocation Step 2](../imgs/device_continuous_wholememory_step2.png)
 
 ### Device Chunked WholeMemory
+
 For device chunked WholeMemory, each GPU allocates its local portion with the
 CUDA runtime:
 ![Device Chunked WholeMemory Allocation Step 1](../imgs/device_chunked_wholememory_step1.png)
@@ -57,6 +60,7 @@ Each GPU exchanges CUDA IPC handles and maps one chunk for every peer:
 ![Device Chunked WholeMemory Allocation Step 2](../imgs/device_chunked_wholememory_step2.png)
 
 ### Host Mapped WholeMemory
+
 Host continuous and host chunked allocations use the same shared pinned-memory
 allocation:
 ![Host Mapped WholeMemory Allocation Step 1](../imgs/host_mapped_wholememory_step1.png)
@@ -64,6 +68,7 @@ Each rank then registers the host allocation in its GPU address space:
 ![Host Mapped WholeMemory Allocation Step 2](../imgs/host_mapped_wholememory_step2.png)
 
 ### Distributed WholeMemory
+
 For distributed WholeMemory, each GPU allocates only its local portion. Remote
 access uses explicit communication.
 ![Distributed WholeMemory Allocation](../imgs/distributed_wholememory.png)

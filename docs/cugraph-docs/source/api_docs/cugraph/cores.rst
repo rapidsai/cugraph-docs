@@ -1,14 +1,17 @@
 =====
 Cores
 =====
+
 .. currentmodule:: cugraph
 
 
 
 Core Number
 -----------
+
 single-GPU
 ^^^^^^^^^^
+
 .. autosummary::
    :toctree: ../api/cugraph/
 
@@ -16,6 +19,7 @@ single-GPU
 
 multi-GPU
 ^^^^^^^^^
+
 .. autosummary::
    :toctree: ../api/cugraph/
 
@@ -24,8 +28,10 @@ multi-GPU
 
 K-Core
 ------
+
 single-GPU
 ^^^^^^^^^^
+
 .. autosummary::
    :toctree: ../api/cugraph/
 
@@ -33,6 +39,7 @@ single-GPU
 
 multi-GPU
 ^^^^^^^^^
+
 .. autosummary::
    :toctree: ../api/cugraph/
 

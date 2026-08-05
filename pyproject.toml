@@ -1,0 +1,9 @@
+# Copyright (c) 2026, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+
+[tool.codespell]
+# note: pre-commit passes explicit lists of files here, which this skip file list doesn't override -
+# this is only to allow you to run codespell interactively
+skip = "./.git,./.github"
+ignore-words-list = "thirdparty,unich"
+builtin = "clear"
+quiet-level = 3
