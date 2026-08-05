@@ -37,7 +37,7 @@ If there is a feature or enhancement to an existing feature, please file an issu
 -	describing what you want to see added or changed.  For new features, if there is a white paper on the analytic, please include a reference to it
 
 ***Ask a Question***
-There are several ways to ask questions, including [Stack Overflow]( https://stackoverflow.com/), the quickest is by submiting a GitHub question issue.
+There are several ways to ask questions, including [Stack Overflow]( https://stackoverflow.com/), the quickest is by submitting a GitHub question issue.
 
 -	Select Question
 -	describing your question
@@ -109,7 +109,7 @@ cuGraph only allows contribution to the current branch and not main or a future 
 
 4. Code .....
 5. Once your code works and passes tests
-   1. Run pre-commit to verify and correct come style convension ```pre-commit run --all-files```
+   1. Run pre-commit to verify and correct come style convention ```pre-commit run --all-files```
    1. commit your code
     ```git push```
 6. From the GitHub web page, open a Pull Request

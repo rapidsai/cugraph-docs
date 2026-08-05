@@ -11,7 +11,7 @@ C_d(v) = \frac{{\text{degree of vertex } \ v}}{{\text{number of vertices in grap
 $$
 
 ## When to use Degree Centrality
-* When you need a really quick identifcation of important nodes on very simply structured data.
+* When you need a really quick identification of important nodes on very simply structured data.
 * In cases like collaboration networks where all links have equal importance.
 * In many biologic and transportation networks, shear number of connections is important to itentify critical nodes whether they be proteins or airports.
 * In huge graphs, Degree centrality is a the quickest

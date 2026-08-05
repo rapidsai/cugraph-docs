@@ -1,4 +1,4 @@
-# Copyright (c) 2018-2026, NVIDIA CORPORATION.
+# Copyright (c) 2018-2026, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
 #
 # pygdf documentation build configuration file, created by
 # sphinx-quickstart on Wed May  3 10:59:22 2017.

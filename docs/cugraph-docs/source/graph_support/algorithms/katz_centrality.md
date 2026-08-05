@@ -11,7 +11,7 @@ See [Katz on Wikipedia](https://en.wikipedia.org/wiki/Katz_centrality) for more 
 ## When to use Katz Centrality
 * in disconnected graphs
 * in sparse graphs
-* in graphs with multi-hop propogation like innovation
+* in graphs with multi-hop propagation like innovation
 
 ## When not to use Katz Centrality
 * in graphs with heavy cyclical dependency (feedback loops), Katz Centrality might not converge preventing usable results.

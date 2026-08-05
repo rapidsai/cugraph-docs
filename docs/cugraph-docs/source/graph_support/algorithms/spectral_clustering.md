@@ -2,7 +2,7 @@
 
 Spectral clustering uses the eigenvectors of a Laplacian of the input graph to find a given number of clusters which satisfy a given quality metric. Balanced Cut and Modularity Maximization are two such quality metrics. CuGraph supports the [Balanced Cut](https://en.wikipedia.org/wiki/Balanced_clustering) and [Modularity](https://en.wikipedia.org/wiki/Modularity_(networks) metrics for clustering. Balanced cut seeks to balance the size of the resulting clusters. Modularity maximization seeks to find clusters that maximize connectedness compared to random edge distributions.
 
-The cuGraph Balanced Cut implementation minimizes the Ratio Cut calcutation to keep cluster sizes similar.
+The cuGraph Balanced Cut implementation minimizes the Ratio Cut calculation to keep cluster sizes similar.
 
 $$
 \text{RatioCut}(S_1, \dots, S_k) = \sum_{i=1}^{k} \frac{\text{cut}(S_i, \bar{S}_i)}{|S_i|}
@@ -28,7 +28,7 @@ See [Spectral Clustering on Wikipedia](https://en.wikipedia.org/wiki/Spectral_cl
 ## When not to use Spectral Clustering
 * The dataset is large. Spectral clustering is expensive
 * Sparse graphs can cause the algorithm to fail
-* Unequal cluster sizes in the graph can be incorrectly partioned as the algorithm seeks similar size ones
+* Unequal cluster sizes in the graph can be incorrectly partitioned as the algorithm seeks similar size ones
 
 
 ## How computationally expensive is it?
