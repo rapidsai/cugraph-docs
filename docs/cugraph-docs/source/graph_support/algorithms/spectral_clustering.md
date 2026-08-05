@@ -20,21 +20,22 @@ See [Spectral Clustering on Wikipedia](https://en.wikipedia.org/wiki/Spectral_cl
 
 
 ## When to use Spectral Clustering
+
 * complex clusters are expected
 * Communities of similar sizes are needed/expected
 
-
-
 ## When not to use Spectral Clustering
+
 * The dataset is large. Spectral clustering is expensive
 * Sparse graphs can cause the algorithm to fail
 * Unequal cluster sizes in the graph can be incorrectly partitioned as the algorithm seeks similar size ones
 
-
 ## How computationally expensive is it?
+
 Spectral clustering can approach a Big-O cost of $\mathcal{O}(n^3)$
 
 ### Balanced Cut vs Modularity maximization
+
 CuGraph supports two functions as the underlying value to partition the graph. The decision of one over the other comes down to knowing the data and the purpose of the clustering. If the data is known to contain isolated communities of similar sizes, Balanced Cut is the better choice. However, if the data is not well understood, Modularity maximization can discover disparate communities without forcing uniformity where it really doesn't exist.
 
 ___

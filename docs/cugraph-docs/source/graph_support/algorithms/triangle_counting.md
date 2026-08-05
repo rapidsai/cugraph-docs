@@ -16,6 +16,7 @@ $$
 
 
 ## When to use Triangle Counting
+
 * To detect anomalies. When compared to the graph triangle density, local sparsity or access can indicate outliers
 * Ranking importance, nodes in many triangles are a useful place to start in network analysis
 * Quantifying clustering by calculating the [Clustering Coefficient](https://en.wikipedia.org/wiki/Clustering_coefficient) which is an important network characteristic measuring density.
@@ -23,11 +24,13 @@ $$
 
 
 ## When not to use Triangle Counting
+
 * Sparse graphs which don't contain many triangles since it might eliminate edges
 * When searching for overlapping communities
 * When you are interested in paths in the graph rather than communities
 
 ## How computationally expensive is it?
+
 In cuGraph, the set intersection algorithm is used to count triangles.
 The cost of that algorithm is in terms of Big O:
 

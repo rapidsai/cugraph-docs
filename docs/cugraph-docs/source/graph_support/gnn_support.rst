@@ -22,5 +22,6 @@ Here is a talk that explains `Training GNNs at Internet Scale using cuGraph and 
 
 Resources for RAPIDS cuGraph GNN support
 ========================================
+
   * `Optimizing Memory and Retrieval for Graph Neural Networks with WholeGraph, Part 1 <https://developer.nvidia.com/blog/optimizing-memory-and-retrieval-for-graph-neural-networks-with-wholegraph-part-1/>`_
   * `https://blogs.nvidia.com/blog/ai-blueprint-fraud-detection/ <https://blogs.nvidia.com/blog/ai-blueprint-fraud-detection/>`_

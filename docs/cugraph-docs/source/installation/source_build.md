@@ -22,6 +22,7 @@ Further details and download links for these prerequisites are available on the
 ## Setting up the development environment
 
 ### Clone the repository:
+
 ```bash
 CUGRAPH_HOME=$(pwd)/cugraph
 git clone https://github.com/rapidsai/cugraph.git $CUGRAPH_HOME
@@ -60,6 +61,7 @@ conda activate cugraph_dev
 ### Build and Install
 
 #### Build and install using `build.sh`
+
 Using the `build.sh` script, located in the `$CUGRAPH_HOME` directory, is the
 recommended way to build and install the cugraph libraries. By default,
 `build.sh` will build and install a predefined set of targets
@@ -210,4 +212,5 @@ Python API documentation can be generated from _./docs/cugraph directory_. Or
 through using "./build.sh docs"
 
 ## Attribution
+
 Portions adopted from https://github.com/pytorch/pytorch/blob/master/CONTRIBUTING.md

@@ -11,18 +11,21 @@ C_d(v) = \frac{{\text{degree of vertex } \ v}}{{\text{number of vertices in grap
 $$
 
 ## When to use Degree Centrality
+
 * When you need a really quick identification of important nodes on very simply structured data.
 * In cases like collaboration networks where all links have equal importance.
 * In many biologic and transportation networks, shear number of connections is important to itentify critical nodes whether they be proteins or airports.
 * In huge graphs, Degree centrality is a the quickest
 
 ## When not to use Degree Centrality
+
 * When weights, edge direction or edge types matter
 * Graphs with self loops
 * Multi-graphs ( graphs with multiple edges between the same two nodes)
 * In general Degree Centrality falls short in most cases where the data is complex or nuanced.
 
 ## How computationally expensive is it?
+
 While cuGraph's parallelism migigates run time, [Big O notation](https://en.wikipedia.org/wiki/Big_O_notation) is still the standard to compare algorithm costs.
 
 The cost of Degree Centrality is O(n) where n is the number of nodes.

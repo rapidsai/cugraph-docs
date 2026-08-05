@@ -2,7 +2,6 @@
 References
 ==========
 
-
 .. toctree::
    :maxdepth: 3
 

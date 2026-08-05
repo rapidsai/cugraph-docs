@@ -1,11 +1,13 @@
 =========
 Traversal
 =========
+
 .. currentmodule:: cugraph
 
 
 Breadth-first-search
 --------------------
+
 .. autosummary::
    :toctree: ../api/cugraph/
 
@@ -16,6 +18,7 @@ Breadth-first-search
 
 Breadth-first-search (MG)
 -------------------------
+
 .. autosummary::
    :toctree: ../api/cugraph/
 
@@ -23,6 +26,7 @@ Breadth-first-search (MG)
 
 Single-source-shortest-path
 ---------------------------
+
 .. autosummary::
    :toctree: ../api/cugraph/
 
@@ -33,6 +37,7 @@ Single-source-shortest-path
 
 Single-source-shortest-path (MG)
 --------------------------------
+
 .. autosummary::
    :toctree: ../api/cugraph/
 

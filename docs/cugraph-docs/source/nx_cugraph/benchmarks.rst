@@ -8,7 +8,7 @@ The goal is to provide a clear comparison of how dispatching to a GPU-accelerate
 As datasets grow larger, the GPU-accelerated backend typically begins to show increasingly faster speedups over the CPU. This trend demonstrates how the GPU's parallel processing capabilities allow it to handle large-scale graph analytics much more efficiently than the CPU.
 
 Datasets
-************
+********
 
 The datasets used in the benchmarks are:
 

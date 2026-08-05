@@ -9,8 +9,10 @@ Here, we've selected just a few that are of particular interest to cuGraph users
 
 Blogs & Conferences
 ====================
+
 2025
-------
+----
+
   * `RAPIDS Adds GPU Polars Streaming, a Unified GNN API, and Zero-Code ML Speedups <https://developer.nvidia.com/blog/rapids-adds-gpu-polars-streaming-a-unified-gnn-api-and-zero-code-ml-speedups/>`_
   * `Bring Receipts: New NVIDIA AI Blueprint Detects Fraudulent Credit Card Transactions With Precision <https://blogs.nvidia.com/blog/ai-blueprint-fraud-detection/>`_
   * `Using NetworkX, Jaccard Similarity, and cuGraph to Predict Your Next Favorite Movie <https://developer.nvidia.com/blog/using-networkx-jaccard-similarity-and-cugraph-to-predict-your-next-favorite-movie/>`_
@@ -18,7 +20,8 @@ Blogs & Conferences
   * `ArangoDB Building the Next-Gen Agentic App with GraphRAG & NVIDIA cuGraph, Hackathon projects <https://arangodbhackathon.devpost.com/project-gallery>`_
 
 2024
-------
+----
+
   * `NVIDIA cuGraph: 500x faster alternate for NetworkX for Graphs <https://medium.com/data-science-in-your-pocket/nvidia-cugraph-500x-faster-alternate-for-networkx-for-graphs-ef7e2ad9fbda>`_
   * `Revolutionizing Graph Analytics: Next-Gen Architecture with NVIDIA cuGraph Acceleration <https://developer.nvidia.com/blog/revolutionizing-graph-analytics-next-gen-architecture-with-nvidia-cugraph-acceleration/>`_
   * `Accelerated, Production-Ready Graph Analytics for NetworkX Users <https://developer.nvidia.com/blog/accelerated-production-ready-graph-analytics-for-networkx-users/>`_
@@ -28,7 +31,8 @@ Blogs & Conferences
   * `Insights, Techniques, and Evaluation for LLM-Driven Knowledge Graphs <https://developer.nvidia.com/blog/insights-techniques-and-evaluation-for-llm-driven-knowledge-graphs/>`_
 
 2023
-------
+----
+
   * `Intro to Graph Neural Networks with cuGraph-DGL <https://medium.com/rapids-ai/introduction-to-graph-neural-networks-with-cugraph-dgl-64c632e9cc52>`_
   * `GTC 2023 Ask the Experts Q&A <https://forums.developer.nvidia.com/c/blogs-events/connect-with-experts/ama-cugraph/652?ncid=em-even-260150-vt33#cid=dev03_em-even_en-us>`_
   * `Accelerating NetworkX on NVIDIA GPUs for High Performance Graph Analytics <https://developer.nvidia.com/blog/accelerating-networkx-on-nvidia-gpus-for-high-performance-graph-analytics/>`_
@@ -37,17 +41,20 @@ Blogs & Conferences
   * `Introduction to Graph Analysis using cuGraph <https://medium.com/rapids-ai/introduction-to-graph-analysis-using-cugraph-a9dc2fbc3c5e>`_
 
 2022
-------
+----
+
   * `GTC: State of cuGraph  (video & slides) <https://www.nvidia.com/gtc/session-catalog/?search=cuGraph&tab.scheduledorondemand=1583520458947001NJiE&search=cuGraph#/session/1635793340204001n4p2>`_
   * `GTC: Scaling and Validating Louvain in cuGraph against Massive Graphs  (video & slides) <https://www.nvidia.com/gtc/session-catalog/?tab.scheduledorondemand=1583520458947001NJiE&search=cuGraph#/session/1635797342151001A9kR>`_
   * `KDD Tutorial on Accelerated GNN Training with DGL/PyG and cuGraph <https://github.com/rapidsai-community/event-notebooks/tree/main/KDD_2022>`_
 
 2021
-------
+----
+
    * `GTC 21 - State of RAPIDS cuGraph and what's coming next <https://www.nvidia.com/en-us/on-demand/session/gtcspring21-s32418/>`_
 
 2020
-------
+----
+
   * `Status of RAPIDS cuGraph — Refactoring Code And Rethinking Graphs <https://medium.com/rapids-ai/status-of-rapids-cugraph-refactoring-code-and-rethinking-graphs-efe9956d5528>`_
   * `Tackling Large Graphs with RAPIDS cuGraph and CUDA Unified Memory on GPUs <https://medium.com/rapids-ai/tackling-large-graphs-with-rapids-cugraph-and-unified-virtual-memory-b5b69a065d4>`_
   * `RAPIDS cuGraph adds NetworkX and DiGraph Compatibility <https://t.co/6DEhyarVGa>`_
@@ -55,7 +62,8 @@ Blogs & Conferences
   * `GTC 20 Fall - cuGraph Goes Big <https://www.nvidia.com/en-us/on-demand/session/gtcfall20-a21128/>`_
 
 2019
--------
+----
+
   * `RAPIDS cuGraph <https://medium.com/rapids-ai/rapids-cugraph-1ab2d9a39ec6>`_
   * `RAPIDS cuGraph — The vision and journey to version 1.0 and beyond <https://towardsdatascience.com/rapids-cugraph-the-vision-and-journey-to-version-1-0-and-beyond-88eff2ce3e76>`_
   * `RAPIDS cuGraph : multi-GPU PageRank <https://medium.com/rapids-ai/rapids-cugraph-multi-gpu-pagerank-363aed1a2503>`_
@@ -64,13 +72,13 @@ Blogs & Conferences
   * `GTC19 Fall -  Multi-Node Multi-GPU Machine Learning and Graph Analytics with RAPIDS <https://www.nvidia.com/en-us/on-demand/session/gtcdc19-dc91231/>`_
 
 2018
--------
+----
+
   * `GTC18 Fall - RAPIDS: Benchmarking Graph Analytics on the DGX-2 <https://www.nvidia.com/en-us/on-demand/session/gtcwashingtondc2018-dc8110/>`_
 
-
-
 Media
-===============
+=====
+
   * `NetworkX GPU Acceleration with cuGraph in Python <https://www.youtube.com/watch?v=92OxVC-1aiE>`
   * `NVIDIA RAPIDS cuGraph : GPU acceleration for NetworkX, Graph Analytics <https://www.youtube.com/watch?v=FBxAIoH49Xc>`
   * `Accelerating Graph Analysis on GPUs <https://www.youtube.com/watch?v=piNP2LbfMFk>`
@@ -94,7 +102,8 @@ Academic Papers
 
 
 Other Blogs
-========================
+===========
+
 * `4 graph algorithms on steroids for data scientists with cugraph <https://towardsdatascience.com/4-graph-algorithms-on-steroids-for-data-scientists-with-cugraph-43d784de8d0e>`_
 * `Where should I walk <https://towardsdatascience.com/where-should-i-walk-e66b26735de5>`_
 * `Where really are the parking spots? <https://towardsdatascience.com/where-really-are-the-parking-spots-ed6a1129035e>`_
@@ -104,6 +113,7 @@ Other Blogs
 
 RAPIDS Event Notebooks
 ======================
+
 * `KDD 2022 Notebook that demonstrates using cuDF for ETL/data cleaning and XGBoost for training a fraud predection model.  <https://github.com/rapidsai-community/event-notebooks/blob/main/KDD_2022/notebooks/NonGNN-Graph.ipynb>`_
 * `SciPy 22 Notebook comparing cuGraph to NetworkX  <https://github.com/rapidsai-community/event-notebooks/blob/8a9b660fada8186615a642b52b5ca78f20205838/SCIPY_2022/cugraph_presentation/SciPy_cuGraph_comparison.ipynb>`_
 * `KDD 2020 Tutorial Notebooks - Accelerating and Expanding End-to-End Data Science Workflows with DL/ML Interoperability Using RAPIDS  <https://github.com/rapidsai-community/event-notebooks/tree/8a9b660fada8186615a642b52b5ca78f20205838/KDD_2020/notebooks>`_

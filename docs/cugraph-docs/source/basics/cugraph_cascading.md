@@ -14,6 +14,7 @@ gdf = cudf.from_pandas(df).query(‘val > 200’).nlargest(‘va’3)
 cuGraph does not support method cascading for two main reasons: (1) the object-oriented nature of the Graph data object leverages in-place methods, and (2) the fact that algorithms operate on graphs rather than graphs running algorithms.
 
 ## Graph Data Objects
+
 cuGraph follows an object-oriented design for the Graph objects.  Users create a Graph and can then add data to object, but every add method call returns `None`.
 
 _Why Inplace methods?_ <br>
@@ -41,10 +42,13 @@ G = cugraph.Graph().from_cudf_edgelist(df, return_self=True)
 The fact that a developer would explicitly add a "return_self" flag to the method indicates that the developer is aware that the method returns None. It is just as easy for the developer to use a non-cascading workflow.
 
 ### Algorithms
+
 Algorithms operate on graph objects.
+
 ```
 cugraph.pagerank(G) and not G.pagerank()
 ```
+
 This pattern allows cuGraph to maintain a particular object-oriented model, where Graph objects simply maintain graph data, and algorithm functions operate independently on Graph objects. While this model has benefits that simplify the overall design and its usability in the majority of use cases, it does mean that the developer cannot cascade graph creation into an algorithm call.
 
 ```

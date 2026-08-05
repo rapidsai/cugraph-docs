@@ -1,10 +1,12 @@
 =============
 Graph Classes
 =============
+
 .. currentmodule:: cugraph
 
 Constructors
 ------------
+
 .. autosummary::
    :toctree: ../api/cugraph/
 
@@ -15,6 +17,7 @@ Constructors
 
 Adding Data
 -----------
+
 .. autosummary::
    :toctree: ../api/cugraph/
 
@@ -32,6 +35,7 @@ Adding Data
 
 Checks
 ------
+
 .. autosummary::
    :toctree: ../api/cugraph/
 
@@ -54,6 +58,7 @@ Checks
 
 Symmetrize
 ----------
+
 .. autosummary::
    :toctree: ../api/cugraph/
 
@@ -64,6 +69,7 @@ Symmetrize
 
 Conversion from Other Formats
 -----------------------------
+
 .. autosummary::
    :toctree: ../api/cugraph/
 
@@ -81,6 +87,7 @@ Conversion from Other Formats
 
 NumberMap
 ---------
+
 .. autosummary::
    :toctree: ../api/cugraph/
 
@@ -99,6 +106,7 @@ NumberMap
 
 Other
 -----
+
 .. autosummary::
    :toctree: ../api/cugraph/
 

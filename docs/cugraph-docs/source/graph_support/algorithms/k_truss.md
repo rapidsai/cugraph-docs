@@ -6,14 +6,17 @@ This algorithm computes the k-truss of a graph. A K-Truss is a relaxed cliques w
 
 
 ## Definition
+
 The k-truss in a graph is the largest subgraph of size k nodes, where there are k-2 triangles with edges in the subgraph.
 
 
 ## When to use K-Truss
+
 * for finding dense subgraphs in a large graph
 * as part of link prediction since undetected edges are common in dense communities.
 
 ## When not to use K-Truss
+
 * Sparse graphs which don't contain many triangles
 * When searching for overlapping communities
 * When you are looking for paths in the graph rather than communities
@@ -21,6 +24,7 @@ The k-truss in a graph is the largest subgraph of size k nodes, where there are 
 * graph representation of tree structures
 
 ## How computationally expensive is it?
+
 K-Truss is most commonly compared to k-clique in terms of cost. This is mostly because k-clique becomes quickly unusable at scale.
 
 The Big-O cost for k-truss is $\mathcal{O}(m^{1.5})$ where m is the number of edges.
