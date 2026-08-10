@@ -10,4 +10,3 @@ Graph Support
    compatibility.rst
    cugraph_cpp.rst
    gnn_support.rst
-   datastores.rst
