@@ -6,8 +6,7 @@ Link Prediction
 Cosine
 ------
 
-single-GPU
-^^^^^^^^^^
+.. rubric:: single-GPU
 
 .. autosummary::
    :toctree: ../api/cugraph/
@@ -16,8 +15,7 @@ single-GPU
    cugraph.cosine_coefficient
    cugraph.all_pairs_cosine
 
-multi-GPU
-^^^^^^^^^
+.. rubric:: multi-GPU
 
 .. autosummary::
    :toctree: ../api/cugraph/
@@ -29,8 +27,7 @@ multi-GPU
 Jaccard Coefficient
 -------------------
 
-single-GPU
-^^^^^^^^^^
+.. rubric:: single-GPU
 
 .. autosummary::
    :toctree: ../api/cugraph/
@@ -39,8 +36,7 @@ single-GPU
    cugraph.jaccard_coefficient
    cugraph.all_pairs_jaccard
 
-multi-GPU
-^^^^^^^^^
+.. rubric:: multi-GPU
 
 .. autosummary::
    :toctree: ../api/cugraph/
@@ -51,8 +47,7 @@ multi-GPU
 Overlap Coefficient
 -------------------
 
-single-GPU
-^^^^^^^^^^
+.. rubric:: single-GPU
 
 .. autosummary::
    :toctree: ../api/cugraph/
@@ -61,8 +56,7 @@ single-GPU
    cugraph.overlap_coefficient
    cugraph.all_pairs_overlap
 
-multi-GPU
-^^^^^^^^^
+.. rubric:: multi-GPU
 
 .. autosummary::
    :toctree: ../api/cugraph/
@@ -73,8 +67,7 @@ multi-GPU
 Sorensen Coefficient
 --------------------
 
-single-GPU
-^^^^^^^^^^
+.. rubric:: single-GPU
 
 .. autosummary::
    :toctree: ../api/cugraph/
@@ -83,8 +76,7 @@ single-GPU
    cugraph.sorensen_coefficient
    cugraph.all_pairs_sorensen
 
-multi-GPU
-^^^^^^^^^
+.. rubric:: multi-GPU
 
 .. autosummary::
    :toctree: ../api/cugraph/

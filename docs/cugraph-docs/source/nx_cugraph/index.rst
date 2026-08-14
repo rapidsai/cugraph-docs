@@ -9,7 +9,7 @@ Users can have GPU-based, large-scale performance **without** changing their fam
 
 .. centered:: Timed result from running the following code snippet (called ``demo.ipy``, showing NetworkX with vs. without ``nx-cugraph``)
 
-.. code-block:: python
+.. code-block:: ipython
 
     import pandas as pd
     import networkx as nx

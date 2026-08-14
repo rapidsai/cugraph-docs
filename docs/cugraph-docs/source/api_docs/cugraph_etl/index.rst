@@ -15,6 +15,9 @@ Renumber cuDF tables
 
 .. code-block:: cpp
 
+   #include <memory>
+   #include <tuple>
+
    std::tuple<std::unique_ptr<cudf::column>,
               std::unique_ptr<cudf::column>,
               std::unique_ptr<cudf::table>>

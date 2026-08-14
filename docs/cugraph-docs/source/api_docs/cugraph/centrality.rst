@@ -9,8 +9,7 @@ Centrality
 Betweenness Centrality
 ----------------------
 
-single-GPU
-^^^^^^^^^^
+.. rubric:: single-GPU
 
 .. autosummary::
    :toctree: ../api/cugraph/
@@ -18,8 +17,7 @@ single-GPU
    cugraph.centrality.betweenness_centrality
    cugraph.centrality.edge_betweenness_centrality
 
-multi-GPU
-^^^^^^^^^^
+.. rubric:: multi-GPU
 
 .. autosummary::
    :toctree: ../api/cugraph/
@@ -31,16 +29,14 @@ multi-GPU
 Katz Centrality
 ---------------
 
-single-GPU
-^^^^^^^^^^
+.. rubric:: single-GPU
 
 .. autosummary::
    :toctree: ../api/cugraph/
 
    cugraph.centrality.katz_centrality
 
-multi-GPU
-^^^^^^^^^^
+.. rubric:: multi-GPU
 
 .. autosummary::
    :toctree: ../api/cugraph/
@@ -51,8 +47,7 @@ multi-GPU
 Degree Centrality
 -----------------
 
-single-GPU
-^^^^^^^^^^
+.. rubric:: single-GPU
 
 .. autosummary::
    :toctree: ../api/cugraph/
@@ -63,16 +58,14 @@ single-GPU
 Eigenvector Centrality
 ----------------------
 
-single-GPU
-^^^^^^^^^^
+.. rubric:: single-GPU
 
 .. autosummary::
    :toctree: ../api/cugraph/
 
    cugraph.centrality.eigenvector_centrality
 
-multi-GPU
-^^^^^^^^^^
+.. rubric:: multi-GPU
 
 .. autosummary::
    :toctree: ../api/cugraph/
