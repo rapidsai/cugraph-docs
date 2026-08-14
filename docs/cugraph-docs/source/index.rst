@@ -69,7 +69,7 @@ cuGraph Using NetworkX Code
 ---------------------------
 
 cuGraph is available as a NetworkX backend through
-`nx-cugraph <https://rapids.ai/nx-cugraph/>`_. NetworkX users can accelerate
+`nx-cugraph <https://rapids.ai/nx-cugraph/>`__. NetworkX users can accelerate
 supported algorithms on an NVIDIA GPU without changing their existing code.
 
 See :doc:`zero-code-change NetworkX acceleration <nx_cugraph/index>`, or
@@ -101,9 +101,9 @@ The RAPIDS installation guide covers several ways to set up cuGraph:
 
 * On Windows
 
-  * `Conda <https://docs.rapids.ai/install#wsl2-conda>`_
-  * `Docker <https://docs.rapids.ai/install#wsl2-docker>`_
-  * `pip <https://docs.rapids.ai/install#wsl2-pip>`_
+  * `Conda <https://docs.rapids.ai/install#wsl2-conda>`__
+  * `Docker <https://docs.rapids.ai/install#wsl2-docker>`__
+  * `pip <https://docs.rapids.ai/install#wsl2-pip>`__
 
 cuGraph API example
 ~~~~~~~~~~~~~~~~~~~

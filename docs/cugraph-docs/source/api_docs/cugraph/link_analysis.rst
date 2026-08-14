@@ -8,16 +8,14 @@ Link Analysis
 HITS
 ----
 
-single-GPU
-^^^^^^^^^^
+.. rubric:: single-GPU
 
 .. autosummary::
    :toctree: ../api/cugraph/
 
    cugraph.hits
 
-multi-GPU
-^^^^^^^^^
+.. rubric:: multi-GPU
 
 .. autosummary::
    :toctree: ../api/cugraph/
@@ -28,16 +26,14 @@ multi-GPU
 Pagerank
 --------
 
-single-GPU
-^^^^^^^^^^
+.. rubric:: single-GPU
 
 .. autosummary::
    :toctree: ../api/cugraph/
 
    cugraph.pagerank
 
-multi-GPU
-^^^^^^^^^
+.. rubric:: multi-GPU
 
 .. autosummary::
    :toctree: ../api/cugraph/

@@ -8,16 +8,14 @@ Community
 EgoNet
 ------
 
-single-GPU
-^^^^^^^^^^
+.. rubric:: single-GPU
 
 .. autosummary::
    :toctree: ../api/cugraph/
 
    cugraph.ego_graph
 
-multi-GPU
-^^^^^^^^^
+.. rubric:: multi-GPU
 
 .. autosummary::
    :toctree: ../api/cugraph/
@@ -28,16 +26,14 @@ multi-GPU
 Ensemble clustering for graphs (ECG)
 ------------------------------------
 
-single-GPU
-^^^^^^^^^^
+.. rubric:: single-GPU
 
 .. autosummary::
    :toctree: ../api/cugraph/
 
    cugraph.ecg
 
-multi-GPU
-^^^^^^^^^
+.. rubric:: multi-GPU
 
 .. autosummary::
    :toctree: ../api/cugraph/
@@ -47,8 +43,7 @@ multi-GPU
 K-Truss
 -------
 
-single-GPU
-^^^^^^^^^^
+.. rubric:: single-GPU
 
 .. autosummary::
    :toctree: ../api/cugraph/
@@ -56,8 +51,7 @@ single-GPU
    cugraph.k_truss
    cugraph.ktruss_subgraph
 
-multi-GPU
-^^^^^^^^^
+.. rubric:: multi-GPU
 
 .. autosummary::
    :toctree: ../api/cugraph/
@@ -68,16 +62,14 @@ multi-GPU
 Leiden
 ------
 
-single-GPU
-^^^^^^^^^^
+.. rubric:: single-GPU
 
 .. autosummary::
    :toctree: ../api/cugraph/
 
    cugraph.leiden
 
-multi-GPU
-^^^^^^^^^
+.. rubric:: multi-GPU
 
 .. autosummary::
    :toctree: ../api/cugraph/
@@ -87,8 +79,7 @@ multi-GPU
 Louvain
 -------
 
-single-GPU
-^^^^^^^^^^
+.. rubric:: single-GPU
 
 .. autosummary::
    :toctree: ../api/cugraph/
@@ -96,8 +87,7 @@ single-GPU
    cugraph.louvain
 
 
-multi-GPU
-^^^^^^^^^
+.. rubric:: multi-GPU
 
 .. autosummary::
    :toctree: ../api/cugraph/
@@ -120,16 +110,14 @@ Spectral Clustering
 Induced Subgraph
 ----------------
 
-single-GPU
-^^^^^^^^^^
+.. rubric:: single-GPU
 
 .. autosummary::
    :toctree: ../api/cugraph/
 
    cugraph.induced_subgraph
 
-multi-GPU
-^^^^^^^^^
+.. rubric:: multi-GPU
 
 .. autosummary::
    :toctree: ../api/cugraph/
@@ -139,16 +127,14 @@ multi-GPU
 Triangle Counting
 -----------------
 
-single-GPU
-^^^^^^^^^^
+.. rubric:: single-GPU
 
 .. autosummary::
    :toctree: ../api/cugraph/
 
    cugraph.triangle_count
 
-multi-GPU
-^^^^^^^^^
+.. rubric:: multi-GPU
 
 .. autosummary::
    :toctree: ../api/cugraph/

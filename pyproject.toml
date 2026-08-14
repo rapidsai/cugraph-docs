@@ -7,3 +7,36 @@ skip = "./.git,./.github"
 ignore-words-list = "thirdparty,unich"
 builtin = "clear"
 quiet-level = 3
+
+[tool.rstcheck]
+report_level = "INFO"
+
+ignore_languages = [
+    # C++ code blocks in these docs are often incomplete snippets,
+    # not complete self-contained programs, which leads to a bunch of errors
+    # like 'error: template argument 2 is invalid' and similar.
+    #
+    # Listing 'cpp' here opts out of 'rstcheck' checking C++ syntax.
+    "cpp",
+]
+
+# rstcheck only knows about directives coming from 'docutils', not
+# those supplied by extensions. This list of ignores suppresses errors
+# like "no directive entry".
+ignore_directives = [
+    # rstcheck does not understand 'sphinx.ext.auto*' directives
+    "autoclass",
+    "autofunction",
+    "automodule",
+    "autosummary",
+    # rstcheck does not understand 'sphinx-design' directives
+    "dropdown",
+    # rstcheck does not understand 'doxygen' directives
+    "doxygenenum",
+    "doxygenfile",
+    "doxygenfunction",
+    "doxygengroup",
+    "doxygennamespace",
+    "doxygenstruct",
+    "doxygentypedef"
+]
