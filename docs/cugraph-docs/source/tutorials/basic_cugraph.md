@@ -13,7 +13,7 @@ cuGraph is part of [RAPIDS](https://docs.rapids.ai/user-guide/) and has the foll
 The latest RAPIDS System Requirements documentation is located [here](https://docs.rapids.ai/install#system-req).
 
 This includes several ways to set up cuGraph
-* From Unix
+* From Linux
     * [Conda](https://docs.rapids.ai/install#wsl-conda)
     * [Docker](https://docs.rapids.ai/install#wsl-docker)
     * [pip](https://docs.rapids.ai/install#wsl-pip)

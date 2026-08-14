@@ -90,7 +90,7 @@ Please see the latest `RAPIDS System Requirements documentation <https://docs.ra
 
 The RAPIDS installation guide covers several ways to set up cuGraph:
 
-* On Unix
+* On Linux
 
   * `Conda <https://docs.rapids.ai/install/#conda>`_
   * `Docker <https://docs.rapids.ai/install/#docker>`_
