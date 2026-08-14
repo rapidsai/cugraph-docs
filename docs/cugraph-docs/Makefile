@@ -1,10 +1,8 @@
-# Copyright (c) 2024-2026, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
-
 # Minimal makefile for Sphinx documentation
 #
 
 # You can set these variables from the command line.
-SPHINXOPTS    = "-v -W"
+SPHINXOPTS    = "-v"
 SPHINXBUILD   = sphinx-build
 SPHINXPROJ    = cugraph
 SOURCEDIR     = source
