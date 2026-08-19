@@ -1,3 +1,5 @@
+# Copyright (c) 2024-2026, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+
 name: build
 on:
   push:
@@ -27,7 +29,7 @@ on:
         type: string
         default: nightly
 concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}-${{ github.event_name }}
+  group: ${{ github.workflow }}-${{ github.ref }}-${{ github.event_name }}-${{ inputs.build_type || 'branch' }}
   cancel-in-progress: true
 permissions: {}
 jobs:
