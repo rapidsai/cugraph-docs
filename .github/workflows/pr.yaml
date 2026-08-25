@@ -72,7 +72,7 @@ jobs:
     uses: rapidsai/shared-workflows/.github/workflows/publish-api-docs.yaml@josephine/x-org-619-publish-api-docs-versions-json
     with:
       docs-projects: cugraph
-      dry-run: true
+      dry-run: false
       version-map: ${{ vars.VERSION_MAP }}
   telemetry-summarize:
     # This job must use a self-hosted runner to record telemetry traces.
