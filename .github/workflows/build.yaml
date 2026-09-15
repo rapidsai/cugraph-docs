@@ -83,4 +83,3 @@ jobs:
     with:
       docs-projects: cugraph
       dry-run: false
-      version-map: ${{ vars.VERSION_MAP }}
