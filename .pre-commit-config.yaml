@@ -20,6 +20,7 @@ repos:
           (?x)
             [.](bat|py|sh|yaml|yml)$|
             Makefile$
+        exclude: ^conda/environments/
   - repo: https://github.com/rapidsai/dependency-file-generator
     rev: v1.21.0
     hooks:
