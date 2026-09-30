@@ -81,7 +81,7 @@ jobs:
       target-archive-s3-bucket: ${{ secrets.NVIDIA_DOCS_ARCHIVE_S3_BUCKET }}
       target-s3-bucket: ${{ secrets.NVIDIA_DOCS_S3_BUCKET }}
     # TODO: Unpin once https://github.com/rapidsai/shared-workflows/pull/648 merges to main
-    uses: rapidsai/shared-workflows/.github/workflows/publish-api-docs.yaml@josephine/archived-docs-picker
+    uses: rapidsai/shared-workflows/.github/workflows/publish-api-docs.yaml@main
     with:
       docs-projects: cugraph
       dry-run: false
