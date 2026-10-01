@@ -78,32 +78,13 @@ continue below to use the cuGraph API directly.
 Getting started with cuGraph
 ----------------------------
 
-See the `RAPIDS system requirements
-<https://docs.rapids.ai/install/#system-req>`_ for required hardware and
-software.
-
-
 Installation
 ~~~~~~~~~~~~
 
-Please see the latest `RAPIDS System Requirements documentation <https://docs.rapids.ai/install#system-req>`_.
+Please see the latest `NVIDIA RAPIDS Installation Guide <https://docs.nvidia.com/datascience/install>`_.
 
-The RAPIDS installation guide covers several ways to set up cuGraph:
-
-* On Linux
-
-  * `Conda <https://docs.rapids.ai/install/#conda>`_
-  * `Docker <https://docs.rapids.ai/install/#docker>`_
-  * `pip <https://docs.rapids.ai/install/#pip>`_
-
-
-**Note: Windows use of RAPIDS depends on prior installation of** `WSL2 <https://learn.microsoft.com/en-us/windows/wsl/install>`_.
-
-* On Windows
-
-  * `Conda <https://docs.rapids.ai/install#wsl2-conda>`__
-  * `Docker <https://docs.rapids.ai/install#wsl2-docker>`__
-  * `pip <https://docs.rapids.ai/install#wsl2-pip>`__
+The guide covers several ways to install either the full RAPIDS suite or just cuGraph through a simple selector tool. The tool allow for the selection of installation via `conda`, `pip`, or `Docker`. 
+Additionally, the tool allow for the selection of the desired CUDA and Python versions as well as the option to install additional packages.
 
 cuGraph API example
 ~~~~~~~~~~~~~~~~~~~
@@ -120,10 +101,11 @@ cuGraph API example
 
 The cuGraph `notebooks
 <https://github.com/rapidsai/cugraph/blob/HEAD/notebooks/README.md>`_ include
-examples of loading graph data and running algorithms. The
-`Python tests
+examples of loading graph data and running algorithms. 
+
+The`Python tests
 <https://github.com/rapidsai/cugraph/tree/main/python/cugraph/cugraph/tests>`_
-also provide focused examples.
+section also provide focused examples.
 
 The `degree centrality test
 <https://github.com/rapidsai/cugraph/blob/HEAD/python/cugraph/cugraph/tests/centrality/test_degree_centrality.py>`_

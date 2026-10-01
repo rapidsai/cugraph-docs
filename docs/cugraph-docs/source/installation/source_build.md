@@ -17,7 +17,7 @@ __CUDA:__
 * NVIDIA GPU, Volta architecture or later, with [compute capability](https://developer.nvidia.com/cuda-gpus) 7.0+
 
 Further details and download links for these prerequisites are available on the
-[RAPIDS System Requirements page](https://docs.rapids.ai/install#system-req).
+[NVIDIA RAPIDS System Requirements page](https://docs.nvidia.com/datascience/install/#system-recommendations).
 
 ## Setting up the development environment
 
@@ -41,7 +41,7 @@ files](https://github.com/rapidsai/cugraph/blob/main/conda/environments).
 
 ```bash
 # for CUDA 13.x
-conda env create --name cugraph_dev --file $CUGRAPH_HOME/conda/environments/all_cuda-130_arch-x86_64.yaml
+conda env create --name cugraph_dev --file $CUGRAPH_HOME/conda/environments/all_cuda-133_arch-x86_64.yaml
 
 # activate the environment
 conda activate cugraph_dev
@@ -54,7 +54,7 @@ The environment can be updated as cugraph adds/removes/updates its dependencies.
 
 ```bash
 # for CUDA 13.x
-conda env update --name cugraph_dev --file $CUGRAPH_HOME/conda/environments/all_cuda-130_arch-x86_64.yaml
+conda env update --name cugraph_dev --file $CUGRAPH_HOME/conda/environments/all_cuda-133_arch-x86_64.yaml
 conda activate cugraph_dev
 ```
 
