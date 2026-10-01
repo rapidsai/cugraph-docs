@@ -6,7 +6,7 @@ WholeGraph 26.10 is distributed as two packages:
 - `pylibwholegraph` contains the Python and PyTorch-facing API and depends on
   `libwholegraph`.
 
-Review the [RAPIDS system requirements](https://docs.rapids.ai/install/#system-req)
+Review the [NVIDIA RAPIDS system requirements](https://docs.nvidia.com/datascience/install/#system-req)
 before installing. WholeGraph is supported on Linux; Windows users should use
 WSL2.
 
@@ -29,7 +29,7 @@ conda install \
 ```
 
 Choose a CUDA version supported by the
-[RAPIDS release](https://docs.rapids.ai/install/#system-req) and the installed
+[NVIDIA RAPIDS Selector Tool](https://docs.nvidia.com/datascience/install/#install-the-libraries) and the installed
 NVIDIA driver.
 
 ## pip

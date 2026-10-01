@@ -5,7 +5,7 @@ environment. Select an image whose RAPIDS and CUDA versions match the desired
 WholeGraph packages.
 
 The current image names and launch commands are maintained in the
-[RAPIDS installation guide](https://docs.rapids.ai/install/#docker). Follow
+[NVIDIA RAPIDS installation guide](https://docs.nvidia.com/datascience/install/#install-the-libraries). Follow
 that guide instead of pinning an old PyTorch or CUDA base image in application
 documentation.
 
