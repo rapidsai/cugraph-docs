@@ -1,3 +1,5 @@
+# Copyright (c) 2026, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+
 # Dependency list for https://github.com/rapidsai/dependency-file-generator
 files:
   all:
@@ -75,7 +77,7 @@ dependencies:
       - output_types: [conda]
         packages:
           - breathe>=4.35
-          - doxygen
+          - doxygen=1.18.0
           - ipython
           - myst-parser>=5.0
           - nbsphinx
@@ -93,9 +95,9 @@ dependencies:
     common:
       - output_types: [conda]
         packages:
-          - cugraph==26.10.*,>=0.0.0a0
-          - cugraph-pyg==26.10.*,>=0.0.0a0
-          - libcugraph==26.10.*,>=0.0.0a0
-          - libcugraph_etl==26.10.*,>=0.0.0a0
-          - pylibcugraph==26.10.*,>=0.0.0a0
-          - pylibwholegraph==26.10.*,>=0.0.0a0
+          - cugraph==26.12.*,>=0.0.0a0
+          - cugraph-pyg==26.12.*,>=0.0.0a0
+          - libcugraph==26.12.*,>=0.0.0a0
+          - libcugraph_etl==26.12.*,>=0.0.0a0
+          - pylibcugraph==26.12.*,>=0.0.0a0
+          - pylibwholegraph==26.12.*,>=0.0.0a0

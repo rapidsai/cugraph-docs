@@ -11,14 +11,16 @@ repos:
       - id: trailing-whitespace
       - id: end-of-file-fixer
   - repo: https://github.com/rapidsai/pre-commit-hooks
-    rev: v1.6.1
+    rev: v1.7.0
     hooks:
       - id: verify-alpha-spec
+      - id: verify-dependencies
       - id: verify-copyright
         files: |
           (?x)
             [.](bat|py|sh|yaml|yml)$|
             Makefile$
+        exclude: ^conda/environments/
   - repo: https://github.com/rapidsai/dependency-file-generator
     rev: v1.21.0
     hooks:
