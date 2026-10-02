@@ -59,6 +59,7 @@ extensions = [
     "sphinx_llm.txt",
 ]
 
+# configuration for 'sphinx-llm'
 llms_txt_suppress_unknown_node_warnings = True
 
 myst_enable_extensions = [
