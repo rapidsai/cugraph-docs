@@ -2,4 +2,4 @@
 API
 ===
 
-https://docs.rapids.ai/api/cugraph/nightly/api_docs/index.html
+https://docs.nvidia.com/cugraph/latest/api_docs/index.html
