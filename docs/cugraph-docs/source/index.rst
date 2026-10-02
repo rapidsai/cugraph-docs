@@ -83,7 +83,7 @@ Installation
 
 Please see the latest `NVIDIA RAPIDS Installation Guide <https://docs.nvidia.com/datascience/install>`_.
 
-The guide covers several ways to install either the full RAPIDS suite or just cuGraph through a simple selector tool. The tool allow for the selection of installation via `conda`, `pip`, or `Docker`. 
+The guide covers several ways to install either the full RAPIDS suite or just cuGraph through a simple selector tool. The tool allow for the selection of installation via `conda`, `pip`, or `Docker`.
 Additionally, the tool allow for the selection of the desired CUDA and Python versions as well as the option to install additional packages.
 
 cuGraph API example
@@ -101,7 +101,7 @@ cuGraph API example
 
 The cuGraph `notebooks
 <https://github.com/rapidsai/cugraph/blob/HEAD/notebooks/README.md>`_ include
-examples of loading graph data and running algorithms. 
+examples of loading graph data and running algorithms.
 
 The`Python tests
 <https://github.com/rapidsai/cugraph/tree/main/python/cugraph/cugraph/tests>`_
