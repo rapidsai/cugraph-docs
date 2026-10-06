@@ -5,7 +5,7 @@ environment. Select an image whose RAPIDS and CUDA versions match the desired
 WholeGraph packages.
 
 The current image names and launch commands are maintained in the
-[NVIDIA RAPIDS installation guide](https://docs.nvidia.com/datascience/install/#install-the-libraries). Follow
+[NVIDIA CUDA-X installation guide](https://docs.nvidia.com/datascience/install/#install-the-libraries). Follow
 that guide instead of pinning an old PyTorch or CUDA base image in application
 documentation.
 
@@ -22,5 +22,5 @@ After starting the container, verify the installed version:
 python -c "import pylibwholegraph; print(pylibwholegraph.__version__)"
 ```
 
-If the selected RAPIDS image does not include WholeGraph, install the matching
+If the selected image does not include WholeGraph, install the matching
 packages using the [WholeGraph installation instructions](getting_wholegraph.md).

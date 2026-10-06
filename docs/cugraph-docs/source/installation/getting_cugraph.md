@@ -1,7 +1,7 @@
 
 # Getting cuGraph Packages
 
-Start by reading the [NVIDIA RAPIDS Installation guide](https://docs.nvidia.com/datascience/install/)
+Start by reading the [Installation guide](https://docs.nvidia.com/datascience/install/)
 and checkout the [install selector](https://docs.nvidia.com/datascience/install/#install-the-libraries) for a pick list of install options.
 
 
