@@ -1,3 +1,23 @@
+# cugraph-docs 26.10.00 (7 Oct 2026)
+
+### 🐛 Bug Fixes
+* Remove data stores docs section by @alexbarghi-nv in https://github.com/rapidsai/cugraph-docs/pull/216
+### 📖 Documentation
+* Update cuGraph documentation and APIs for 26.10 by @alexbarghi-nv in https://github.com/rapidsai/cugraph-docs/pull/207
+* Enable public docs features in CI by @bdice in https://github.com/rapidsai/cugraph-docs/pull/223
+### 🛠️ Improvements
+* enforce 'yamllint' checks by @jameslamb in https://github.com/rapidsai/cugraph-docs/pull/209
+* X-ORG-210: Publish API docs to docs.nvidia.com by @josephine-wolf-oberholtzer in https://github.com/rapidsai/cugraph-docs/pull/211
+* X-ORG-210: Enable docs version picker by @josephine-wolf-oberholtzer in https://github.com/rapidsai/cugraph-docs/pull/212
+* fix TOC mistakes, enforce copyrights, other small fixes by @jameslamb in https://github.com/rapidsai/cugraph-docs/pull/208
+* enforce 'rstcheck' checks by @jameslamb in https://github.com/rapidsai/cugraph-docs/pull/214
+* Replace Unix references with Linux by @alexbarghi-nv in https://github.com/rapidsai/cugraph-docs/pull/217
+* ci: avoid triggered-by-schedule and triggered-by-merge builds cancelling each other by @jameslamb in https://github.com/rapidsai/cugraph-docs/pull/218
+* X-ORG-210: publish-api-docs version-map uses vars by @josephine-wolf-oberholtzer in https://github.com/rapidsai/cugraph-docs/pull/219
+
+
+**Full Changelog**: https://github.com/rapidsai/cugraph-docs/compare/v26.10.00a...release/26.10
+
 # cugraph-docs 26.08.00 (5 Aug 2026)
 
 ### 🐛 Bug Fixes
