@@ -11,13 +11,13 @@ This guide describes how to install ``nx-cugraph`` and use it in your workflows.
  - **Python >= 3.10**
  - **[NetworkX](https://networkx.org/documentation/stable/install.html#) >= 3.2 (version 3.4 or higher recommended)**
 
-More details about system requirements can be found in the [RAPIDS System Requirements Documentation](https://docs.rapids.ai/install#system-req).
+More details about system requirements can be found in the [NVIDIA CUDA-X System Requirements](https://docs.nvidia.com/datascience/install/#system-req).
 
 ## Installing Packages
 
-Read the [RAPIDS Quick Start Guide](https://docs.rapids.ai/install) to learn more about installing all RAPIDS libraries.
+Read the [NVIDIA CUDA-X Install the Libraries Guide](https://docs.nvidia.com/datascience/install/#install-the-libraries) to learn more about installing all the libraries.
 
-`nx-cugraph` can be installed using conda or pip. It is included in the RAPIDS metapackage, or can be installed separately.
+`nx-cugraph` can be installed using conda or pip. It is included in the metapackage, or can be installed separately.
 
 ### Conda
 

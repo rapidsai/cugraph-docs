@@ -1,8 +1,8 @@
 
 # Getting cuGraph Packages
 
-Start by reading the [RAPIDS Installation guide](https://docs.rapids.ai/install)
-and checkout the [RAPIDS install selector](https://rapids.ai/start.html) for a pick list of install options.
+Start by reading the [Installation guide](https://docs.nvidia.com/datascience/install/)
+and checkout the [install selector](https://docs.nvidia.com/datascience/install/#install-the-libraries) for a pick list of install options.
 
 
 There are 4 ways to get cuGraph packages:
