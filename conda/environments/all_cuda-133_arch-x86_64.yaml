@@ -21,6 +21,7 @@ dependencies:
 - pylibcugraph==26.12.*,>=0.0.0a0
 - pylibwholegraph==26.12.*,>=0.0.0a0
 - sphinx-copybutton
+- sphinx-llm>=1.1.0
 - sphinx-markdown-tables
 - sphinx>=8.2
 - sphinxcontrib-websupport

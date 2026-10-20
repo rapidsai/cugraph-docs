@@ -56,7 +56,12 @@ extensions = [
     "IPython.sphinxext.ipython_directive",
     "nbsphinx",
     "sphinx_copybutton",
+    "sphinx_llm.txt",
 ]
+
+# configuration for 'sphinx-llm'
+llms_txt_summary_enabled = False
+llms_txt_suppress_unknown_node_warnings = True
 
 myst_enable_extensions = [
     "dollarmath",

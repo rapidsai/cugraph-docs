@@ -85,6 +85,7 @@ dependencies:
           - pip:
               - nvidia-sphinx-theme
           - sphinx-copybutton
+          - sphinx-llm>=1.1.0
           - sphinx-markdown-tables
           - sphinx>=8.2
           - sphinxcontrib-websupport
