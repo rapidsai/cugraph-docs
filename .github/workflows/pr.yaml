@@ -35,6 +35,7 @@ jobs:
     with:
       build_type: pull-request
       matrix_name: docs-build
+      matrix_type: cuda-13-4-pr
   docs-build:
     needs: [docs-build-matrix, checks]
     secrets: inherit # zizmor: ignore[secrets-inherit]

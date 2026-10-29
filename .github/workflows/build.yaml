@@ -40,6 +40,7 @@ jobs:
     with:
       build_type: ${{ inputs.build_type || 'branch' }}
       matrix_name: docs-build
+      matrix_type: cuda-13-4-nightly
   docs-build:
     needs: [docs-build-matrix]
     if: github.ref_type == 'branch'
