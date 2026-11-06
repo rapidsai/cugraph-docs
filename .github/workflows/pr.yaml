@@ -12,7 +12,6 @@ permissions: {}
 jobs:
   pr-builder:
     needs:
-      - telemetry-setup
       - checks
       - docs-build
       - docs-build-matrix
@@ -23,20 +22,10 @@ jobs:
       needs: ${{ toJSON(needs) }}
     permissions:
       contents: read
-  telemetry-setup:
-    runs-on: ubuntu-latest
-    continue-on-error: true
-    env:
-      OTEL_SERVICE_NAME: "pr-cugraph-docs"
-    steps:
-      - name: Telemetry setup
-        uses: rapidsai/shared-actions/telemetry-dispatch-stash-base-env-vars@main
   checks:
-    needs: telemetry-setup
     uses: rapidsai/shared-workflows/.github/workflows/checks.yaml@main
     with:
       enable_check_generated_files: false
-      ignored_pr_jobs: "telemetry-summarize"
       # Main builds seed this cache. PR merge refs can restore it but should not create
       # duplicate archives that are inaccessible to other PRs.
       pre-commit-cache-read-only: true
@@ -49,6 +38,7 @@ jobs:
     with:
       build_type: pull-request
       matrix_name: docs-build
+      matrix_type: pull-request
   docs-build:
     needs: [docs-build-matrix, checks]
     secrets: inherit # zizmor: ignore[secrets-inherit]
@@ -89,14 +79,3 @@ jobs:
     with:
       docs-projects: cugraph
       dry-run: true
-  telemetry-summarize:
-    # This job must use a self-hosted runner to record telemetry traces.
-    runs-on: linux-amd64-cpu4
-    needs: pr-builder
-    if: ${{ vars.TELEMETRY_ENABLED == 'true' && !cancelled() }}
-    continue-on-error: true
-    steps:
-      - name: Telemetry summarize
-        uses: rapidsai/shared-actions/telemetry-dispatch-summarize@main
-    permissions:
-      actions: write

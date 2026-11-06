@@ -6,7 +6,7 @@ WholeGraph 26.10 is distributed as two packages:
 - `pylibwholegraph` contains the Python and PyTorch-facing API and depends on
   `libwholegraph`.
 
-Review the [RAPIDS system requirements](https://docs.rapids.ai/install/#system-req)
+Review the [NVIDIA CUDA-X system requirements](https://docs.nvidia.com/datascience/install/#system-req)
 before installing. WholeGraph is supported on Linux; Windows users should use
 WSL2.
 
@@ -17,7 +17,7 @@ Install the Python API and native dependency from the 26.10 nightly channel:
 ```bash
 conda install \
   -c rapidsai-nightly -c conda-forge \
-  pylibwholegraph=26.10 cuda-version=13.3
+  pylibwholegraph=26.10 cuda-version=13.4
 ```
 
 Native C/CUDA users can install only `libwholegraph`:
@@ -25,16 +25,16 @@ Native C/CUDA users can install only `libwholegraph`:
 ```bash
 conda install \
   -c rapidsai-nightly -c conda-forge \
-  libwholegraph=26.10 cuda-version=13.3
+  libwholegraph=26.10 cuda-version=13.4
 ```
 
 Choose a CUDA version supported by the
-[RAPIDS release](https://docs.rapids.ai/install/#system-req) and the installed
+[NVIDIA CUDA-X Selector Tool](https://docs.nvidia.com/datascience/install/#install-the-libraries) and the installed
 NVIDIA driver.
 
 ## pip
 
-RAPIDS wheels use a CUDA-major suffix. For CUDA 13, install the 26.10 nightly
+CUDA-X wheels use a CUDA-major suffix. For CUDA 13, install the 26.10 nightly
 Python package with:
 
 ```bash
