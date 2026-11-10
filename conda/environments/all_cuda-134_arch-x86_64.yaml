@@ -8,18 +8,18 @@ channels:
 dependencies:
 - breathe>=4.35
 - cuda-version=13.4
-- cugraph-pyg==26.12.*,>=0.0.0a0
-- cugraph==26.12.*,>=0.0.0a0
+- cugraph-pyg==27.2.*,>=0.0.0a0
+- cugraph==27.2.*,>=0.0.0a0
 - doxygen=1.18.0
 - ipython
-- libcugraph==26.12.*,>=0.0.0a0
-- libcugraph_etl==26.12.*,>=0.0.0a0
+- libcugraph==27.2.*,>=0.0.0a0
+- libcugraph_etl==27.2.*,>=0.0.0a0
 - myst-parser>=5.0
 - nbsphinx
 - numpydoc
 - pre-commit
-- pylibcugraph==26.12.*,>=0.0.0a0
-- pylibwholegraph==26.12.*,>=0.0.0a0
+- pylibcugraph==27.2.*,>=0.0.0a0
+- pylibwholegraph==27.2.*,>=0.0.0a0
 - sphinx-copybutton
 - sphinx-markdown-tables
 - sphinx>=8.2
