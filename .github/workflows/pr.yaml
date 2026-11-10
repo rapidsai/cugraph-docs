@@ -12,6 +12,7 @@ permissions: {}
 jobs:
   pr-builder:
     needs:
+      - burndown-pr
       - checks
       - docs-build
       - docs-build-matrix
@@ -22,6 +23,13 @@ jobs:
       needs: ${{ toJSON(needs) }}
     permissions:
       contents: read
+  burndown-pr:
+    permissions:
+      actions: read
+      contents: read
+      pull-requests: read
+    uses: rapidsai/shared-workflows/.github/workflows/burndown-pr.yaml@main
+
   checks:
     uses: rapidsai/shared-workflows/.github/workflows/checks.yaml@main
     with:
@@ -32,6 +40,9 @@ jobs:
     permissions:
       contents: read
   docs-build-matrix:
+    if: >-
+      needs.burndown-pr.result == 'success' && needs.burndown-pr.outputs.skip-product-ci != 'true'
+    needs: [burndown-pr]
     permissions:
       contents: read
     uses: rapidsai/shared-workflows/.github/workflows/compute-matrix.yaml@main
@@ -40,7 +51,9 @@ jobs:
       matrix_name: docs-build
       matrix_type: pull-request
   docs-build:
-    needs: [docs-build-matrix, checks]
+    if: >-
+      needs.burndown-pr.result == 'success' && needs.burndown-pr.outputs.skip-product-ci != 'true'
+    needs: [burndown-pr, docs-build-matrix, checks]
     secrets: inherit # zizmor: ignore[secrets-inherit]
     uses: rapidsai/shared-workflows/.github/workflows/custom-job.yaml@main
     strategy:
@@ -59,7 +72,9 @@ jobs:
       packages: read
       pull-requests: read
   publish-api-docs:
-    needs: [docs-build]
+    if: >-
+      needs.burndown-pr.result == 'success' && needs.burndown-pr.outputs.skip-product-ci != 'true'
+    needs: [burndown-pr, docs-build]
     permissions:
       contents: read
       id-token: write
