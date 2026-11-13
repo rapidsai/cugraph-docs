@@ -17,7 +17,7 @@ Install the Python API and native dependency from the 26.10 nightly channel:
 ```bash
 conda install \
   -c rapidsai-nightly -c conda-forge \
-  pylibwholegraph=26.10 cuda-version=13.3
+  pylibwholegraph=26.10 cuda-version=13.4
 ```
 
 Native C/CUDA users can install only `libwholegraph`:
@@ -25,7 +25,7 @@ Native C/CUDA users can install only `libwholegraph`:
 ```bash
 conda install \
   -c rapidsai-nightly -c conda-forge \
-  libwholegraph=26.10 cuda-version=13.3
+  libwholegraph=26.10 cuda-version=13.4
 ```
 
 Choose a CUDA version supported by the

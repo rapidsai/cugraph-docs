@@ -16,7 +16,7 @@ cd cugraph-gnn
 
 conda env create \
   --name cugraph_gnn_dev \
-  --file conda/environments/all_cuda-133_arch-x86_64.yaml
+  --file conda/environments/all_cuda-134_arch-x86_64.yaml
 conda activate cugraph_gnn_dev
 ```
 

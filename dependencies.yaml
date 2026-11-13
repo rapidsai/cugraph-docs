@@ -6,7 +6,7 @@ files:
     output: [conda]
     matrix:
       # docs are only built on the latest CUDA version RAPIDS supports
-      cuda: ["13.3"]
+      cuda: ["13.4"]
       arch: [x86_64]
     includes:
       - checks
@@ -71,6 +71,10 @@ dependencies:
               cuda: "13.3"
             packages:
               - cuda-version=13.3
+          - matrix:
+              cuda: "13.4"
+            packages:
+              - cuda-version=13.4
 
   docs:
     common:
@@ -95,9 +99,9 @@ dependencies:
     common:
       - output_types: [conda]
         packages:
-          - cugraph==26.12.*,>=0.0.0a0
-          - cugraph-pyg==26.12.*,>=0.0.0a0
-          - libcugraph==26.12.*,>=0.0.0a0
-          - libcugraph_etl==26.12.*,>=0.0.0a0
-          - pylibcugraph==26.12.*,>=0.0.0a0
-          - pylibwholegraph==26.12.*,>=0.0.0a0
+          - cugraph==27.2.*,>=0.0.0a0
+          - cugraph-pyg==27.2.*,>=0.0.0a0
+          - libcugraph==27.2.*,>=0.0.0a0
+          - libcugraph_etl==27.2.*,>=0.0.0a0
+          - pylibcugraph==27.2.*,>=0.0.0a0
+          - pylibwholegraph==27.2.*,>=0.0.0a0

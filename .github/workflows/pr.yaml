@@ -26,6 +26,9 @@ jobs:
     uses: rapidsai/shared-workflows/.github/workflows/checks.yaml@main
     with:
       enable_check_generated_files: false
+      # Main builds seed this cache. PR merge refs can restore it but should not create
+      # duplicate archives that are inaccessible to other PRs.
+      pre-commit-cache-read-only: true
     permissions:
       contents: read
   docs-build-matrix:
@@ -35,6 +38,7 @@ jobs:
     with:
       build_type: pull-request
       matrix_name: docs-build
+      matrix_type: pull-request
   docs-build:
     needs: [docs-build-matrix, checks]
     secrets: inherit # zizmor: ignore[secrets-inherit]
