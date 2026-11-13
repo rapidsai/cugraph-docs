@@ -19,5 +19,10 @@ docs/              @rapidsai/cugraph-doc-codeowners
 dependencies.yaml        @rapidsai/packaging-codeowners
 /build.sh                @rapidsai/packaging-codeowners
 
+# docs files updated when platform support (CUDA, Python, etc.) changes
+/docs/cugraph-docs/source/installation/                @rapidsai/packaging-codeowners
+/docs/cugraph-docs/source/nx_cugraph/installation.md   @rapidsai/packaging-codeowners
+/docs/cugraph-docs/source/wholegraph/installation/     @rapidsai/packaging-codeowners
+
 # Ops code owners
 /SECURITY.md             @rapidsai/ops-codeowners
