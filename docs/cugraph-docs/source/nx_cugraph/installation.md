@@ -1,58 +1,24 @@
-# Installing nx-cugraph
+# Installing the final nx-cugraph release
 
-This guide describes how to install ``nx-cugraph`` and use it in your workflows.
+nx-cugraph was deprecated in RAPIDS 26.12, its final release. It is not
+included in RAPIDS 27.02 or later. Use a separate environment with matching
+26.12 RAPIDS packages when installing this historical release.
 
-## System Requirements
+After the 26.12 release is published, install the final Conda package with:
 
-`nx-cugraph` requires the following:
-
- - **Volta architecture or later NVIDIA GPU, with [compute capability](https://developer.nvidia.com/cuda-gpus) 7.0+**
- - **[CUDA](https://docs.nvidia.com/cuda/index.html) 12.2+**
- - **Python >= 3.10**
- - **[NetworkX](https://networkx.org/documentation/stable/install.html#) >= 3.2 (version 3.4 or higher recommended)**
-
-More details about system requirements can be found in the [NVIDIA CUDA-X System Requirements](https://docs.nvidia.com/datascience/install/#system-req).
-
-## Installing Packages
-
-Read the [NVIDIA CUDA-X Install the Libraries Guide](https://docs.nvidia.com/datascience/install/#install-the-libraries) to learn more about installing all the libraries.
-
-`nx-cugraph` can be installed using conda or pip. It is included in the metapackage, or can be installed separately.
-
-### Conda
-
-**Nightly version**
 ```bash
-conda install -c rapidsai-nightly -c conda-forge nx-cugraph
+conda install -c rapidsai -c conda-forge 'nx-cugraph=26.12.*'
 ```
 
-**Stable version**
-```bash
-conda install -c rapidsai -c conda-forge nx-cugraph
-```
-
-### pip
-
-**Nightly version**
+Or install the final wheel for the appropriate CUDA major version:
 
 ```bash
 # CUDA 13
-pip install nx-cugraph-cu13 --extra-index-url https://pypi.anaconda.org/rapidsai-wheels-nightly/simple
+pip install 'nx-cugraph-cu13==26.12.*' --extra-index-url https://pypi.nvidia.com
 
 # CUDA 12
-pip install nx-cugraph-cu12 --extra-index-url https://pypi.anaconda.org/rapidsai-wheels-nightly/simple
+pip install 'nx-cugraph-cu12==26.12.*' --extra-index-url https://pypi.nvidia.com
 ```
 
-**Stable version**
-
-```bash
-# CUDA 13
-pip install nx-cugraph-cu13 --extra-index-url https://pypi.nvidia.com
-
-# CUDA 12
-pip install nx-cugraph-cu12 --extra-index-url https://pypi.nvidia.com
-```
-
-<div style="border: 1px solid #ccc; background-color: #f9f9f9; padding: 10px; border-radius: 5px;">
-
-</div>
+There are no nx-cugraph packages for RAPIDS 27.02 or later. For current
+GPU graph analytics, use [cuGraph](../installation/getting_cugraph.md).

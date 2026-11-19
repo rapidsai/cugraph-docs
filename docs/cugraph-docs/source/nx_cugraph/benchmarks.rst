@@ -1,6 +1,11 @@
 Benchmarks
 =================
 
+.. warning::
+
+   Historical documentation: nx-cugraph was deprecated in RAPIDS 26.12
+   and is not included in RAPIDS 27.02 or later.
+
 This page presents the performance of algorithms currently supported by ``nx-cugraph`` across four graphs of varying sizes.
 
 The goal is to provide a clear comparison of how dispatching to a GPU-accelerated backend compares against the default, CPU-based implementation of NetworkX. This allows users to get an idea of potential speedups that they might see by leveraging dispatching to a GPU with ``nx-cugraph``.

@@ -1,6 +1,11 @@
 Supported Algorithms
 =====================
 
+.. warning::
+
+   Historical documentation: nx-cugraph was deprecated in RAPIDS 26.12
+   and is not included in RAPIDS 27.02 or later.
+
 The nx-cugraph backend to NetworkX connects
 `pylibcugraph <https://github.com/rapidsai/cugraph/blob/HEAD/readme_pages/pylibcugraph.md>`_ (cuGraph's low-level Python
 interface to its CUDA-based graph analytics library) and
@@ -385,4 +390,4 @@ Generators
 +-------------------------------+
 
 
-To request nx-cugraph backend support for a NetworkX API that is not listed above, visit the `nx-cugraph GitHub repo <https://github.com/rapidsai/nx-cugraph>`_.
+nx-cugraph no longer accepts requests for additional algorithm support.

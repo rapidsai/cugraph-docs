@@ -22,10 +22,6 @@ Traditional Graph Analytics in Python
 * `pylibcugraph <https://github.com/rapidsai/cugraph/tree/main/python/pylibcugraph>`_
   provides lower-level Python bindings to ``libcugraph``. See the
   :doc:`pylibcugraph API <api_docs/plc/pylibcugraph>`.
-* `nx-cugraph <https://github.com/rapidsai/nx-cugraph>`_, maintained in the
-  nx-cugraph repository, is a NetworkX backend that accelerates supported
-  NetworkX algorithms on NVIDIA GPUs without changing application code. See
-  the :doc:`nx-cugraph guide <nx_cugraph/index>`.
 
 GNN Libraries
 ~~~~~~~~~~~~~
@@ -68,12 +64,10 @@ components.
 cuGraph Using NetworkX Code
 ---------------------------
 
-cuGraph is available as a NetworkX backend through
-`nx-cugraph <https://rapids.ai/nx-cugraph/>`__. NetworkX users can accelerate
-supported algorithms on an NVIDIA GPU without changing their existing code.
-
-See :doc:`zero-code-change NetworkX acceleration <nx_cugraph/index>`, or
-continue below to use the cuGraph API directly.
+nx-cugraph was deprecated in RAPIDS 26.12, its final release, and is not
+included in RAPIDS 27.02 or later. See the :doc:`retirement notice
+<nx_cugraph/index>`. Use the cuGraph API directly for supported GPU graph
+analytics.
 
 Getting started with cuGraph
 ----------------------------
