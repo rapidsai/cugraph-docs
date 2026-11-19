@@ -1,3 +1,5 @@
+> **Historical documentation:** nx-cugraph was deprecated in RAPIDS 26.12 and is not included in RAPIDS 27.02 or later.
+
 # How it Works
 
 NetworkX has the ability to **dispatch function calls to separately-installed third-party backends**.

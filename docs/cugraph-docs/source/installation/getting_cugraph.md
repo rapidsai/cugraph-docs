@@ -30,7 +30,6 @@ cuGraph Conda packages
    * pylibcugraph
    * libcugraph
  * cugraph-pyg
- * nx-cugraph
 
 Replace the package name in the example below to the one you want to install.
 
@@ -64,6 +63,5 @@ pip install cugraph-cu12 --extra-index-url=https://pypi.nvidia.com
 Also available:
 
 * `cugraph-pyg-cu{12,13}`
-* `nx-cugraph-cu{12, 13}`
 
 <br>
